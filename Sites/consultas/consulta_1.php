@@ -16,8 +16,7 @@
     #AND direccion_clientes.id_cliente = clientes.id
     #AND DATE(fecha_entrega) = $fecha_seleccionada;"
 
-    $query = "SELECT clientes.nombre, clientes.calle, clientes.numero_domicilio,
-    clientes.comuna
+    $query = "SELECT *
     FROM clientes, compras, despachos
     WHERE clientes.id_cliente = compras.id_cliente
     AND despachos.id_compra = compras.id_compra
