@@ -16,14 +16,13 @@
     #AND direccion_clientes.id_cliente = clientes.id
     #AND DATE(fecha_entrega) = $fecha_seleccionada;"
 
-    $query =  "SELECT * FROM despachos, compras, clientes 
+    $query =  "SELECT clientes.nombre, clientes.direccion FROM despachos, compras, clientes 
     WHERE despachos.id_compra = compras.id_compra and compras.id_cliente = clientes.id_cliente 
     and despachos.fecha_entrega = '$fecha_seleccionada';";
 
 	$result = $db -> prepare($query);
 
 	$result -> execute();
-    print_r($result->errorInfo());
 	$clientes = $result -> fetchAll();
   ?>
 
@@ -34,9 +33,9 @@
 
     </tr>
   <?php
-	#foreach ($clientes as $cliente) {
-  	#	echo "<tr><td>$cliente[0]</td><td>$cliente[1]</td></tr>";
-	#}
+	foreach ($clientes as $cliente) {
+  	echo "<tr><td>$cliente[0]</td><td>$cliente[1]</td></tr>";
+	}
   ?>
 	</table>
 
