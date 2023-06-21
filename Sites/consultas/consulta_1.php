@@ -18,7 +18,7 @@ ini_set('display_errors', 1);
     #AND direccion_clientes.id_cliente = clientes.id
     #AND DATE(fecha_entrega) = $fecha_seleccionada;"
 
-    $query =  "SELECT * FROM despachos, compras, clientes 
+    $query =  "SELECT clientes.nombre, clientes.calle, clientes.region, clientes.comuna FROM despachos, compras, clientes 
     WHERE despachos.id_compra = compras.id_compra and compras.id_cliente = clientes.id_cliente 
     and despachos.fecha_entrega = '$fecha_seleccionada';";
     print_r($_POST);
@@ -34,13 +34,15 @@ ini_set('display_errors', 1);
 
 	<table>
     <tr>
-      <th>ID</th>
       <th>Nombre</th>
+      <th>Calle</th>
+      <th>Calle</th>
+      <th>Calle</th>
 
     </tr>
   <?php
 	foreach ($clientes as $cliente) {
-  	echo "<tr><td>$cliente[0]</td><td>$cliente[1]</td></tr>";
+  	echo "<tr><td>$cliente[0]</td><td>$cliente[1]</td> <td>$cliente[2]</td><td>$cliente[3]</td></tr>";
 	}
   ?>
 	</table>
