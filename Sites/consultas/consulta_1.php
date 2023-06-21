@@ -18,7 +18,7 @@ ini_set('display_errors', 1);
     #AND direccion_clientes.id_cliente = clientes.id
     #AND DATE(fecha_entrega) = $fecha_seleccionada;"
 
-    $query =  "SELECT clientes.nombre, clientes.direccion FROM despachos, compras, clientes 
+    $query =  "SELECT clientes.nombre, clientes.calle FROM despachos, compras, clientes 
     WHERE despachos.id_compra = compras.id_compra and compras.id_cliente = clientes.id_cliente 
     and despachos.id_despacho = '$fecha_seleccionada';";
     print_r($_POST);
