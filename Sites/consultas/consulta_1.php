@@ -22,13 +22,13 @@ ini_set('display_errors', 1);
     FROM despachos, compras, clientes 
     WHERE despachos.id_compra = compras.id_compra and compras.id_cliente = clientes.id_cliente 
     and despachos.fecha_entrega = '$fecha_seleccionada';";
-    print_r($_POST);
+    #print_r($_POST);
 
-	#$result = $db -> prepare($query);
-	#$result -> execute();
+	$result = $db -> prepare($query);
+	$result -> execute();
     var_dump($result->errorInfo());
 	$clientes = $result -> fetchAll();
-    print_r($clientes);
+    #print_r($clientes);
 
     
   ?>
