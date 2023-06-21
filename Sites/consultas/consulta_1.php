@@ -24,6 +24,7 @@
 
 	$result -> execute();
 	$clientes = $result -> fetchAll();
+    print_r($clientes)
   ?>
 
 	<table>
