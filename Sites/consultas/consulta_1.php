@@ -18,7 +18,7 @@
 
     $query =  "SELECT * FROM despachos, compras, clientes 
     WHERE despachos.id_compra = compras.id_compra and compras.id_cliente = clientes.id_cliente 
-    and despachos.fecha_entrega = '$fecha_seleccionada';"
+    and despachos.fecha_entrega = '$fecha_seleccionada';";
 
 	$result = $db -> prepare($query);
 
