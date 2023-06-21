@@ -21,7 +21,9 @@
     and despachos.fecha_entrega = '$fecha_seleccionada';"
 
 	$result = $db -> prepare($query);
+
 	$result -> execute();
+    print_r($result->errorInfo());
 	$clientes = $result -> fetchAll();
   ?>
 
