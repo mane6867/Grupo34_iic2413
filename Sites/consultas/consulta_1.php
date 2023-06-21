@@ -20,7 +20,7 @@ ini_set('display_errors', 1);
 
     $query =  "SELECT clientes.nombre, clientes.calle FROM despachos, compras, clientes 
     WHERE despachos.id_compra = compras.id_compra and compras.id_cliente = clientes.id_cliente 
-    and despachos.id_despacho = '$fecha_seleccionada';";
+    and despachos.id_despachos = '$fecha_seleccionada';";
     print_r($_POST);
 
 	$result = $db -> prepare($query);
