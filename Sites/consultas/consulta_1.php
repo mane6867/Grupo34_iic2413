@@ -20,11 +20,13 @@
     WHERE despachos.id_compra = compras.id_compra and compras.id_cliente = clientes.id_cliente 
     and despachos.id_despacho = '$fecha_seleccionada';";
     print_r($_POST);
-    
+
 	$result = $db -> prepare($query);
 	$result -> execute();
+    var_dump($result->errorInfo());
 	$clientes = $result -> fetchAll();
     print_r($clientes);
+
     
   ?>
 
