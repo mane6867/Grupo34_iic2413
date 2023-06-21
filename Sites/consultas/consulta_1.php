@@ -18,14 +18,14 @@
 
     $query =  "SELECT clientes.nombre, clientes.direccion FROM despachos, compras, clientes 
     WHERE despachos.id_compra = compras.id_compra and compras.id_cliente = clientes.id_cliente 
-    and despachos.fecha_entrega = '$fecha_seleccionada';";
-
+    and despachos.id_despacho = '$fecha_seleccionada';";
+    print_r($_POST);
+    
 	$result = $db -> prepare($query);
-
 	$result -> execute();
 	$clientes = $result -> fetchAll();
     print_r($clientes);
-    print_r($_POST);
+    
   ?>
 
 	<table>
