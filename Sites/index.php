@@ -34,7 +34,8 @@
     header('Location: portal_admin.php');
       exit;
   }
-  else{header('Location: portal_usuarios.php');
+  elseif ($_POST['nombre']!= '') 
+    {header('Location: portal_usuarios.php');
     exit;}
 ?>
 
