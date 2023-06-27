@@ -18,12 +18,10 @@
 
     }
 
-
-    // Mostramos los cambios en una nueva tabla
-    $query = "SELECT * FROM pokemon ORDER BY id DESC;";
-    $result = $db -> prepare($query);
+    $query = "SELECT * FROM usuarios ORDER BY id;";
+    $result = $db34 -> prepare($query);
     $result -> execute();
-    $pokemons = $result -> fetchAll();
+    $usuarios = $result -> fetchAll();
 
 ?>
 
@@ -32,25 +30,16 @@
             <thead>
                 <tr>
                 <th>Id</th>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Total</th>
-                <th>HP</th>
-                <th>Attack</th>
-                <th>Defense</th>
-                <th>Sp. Atk</th>
-                <th>Sp. Def</th>
-                <th>Speed</th>
-                <th>Legendary</th>
-                <th>Generation</th>
+                <th>Nombre</th>
+                <th>Tipo</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-                foreach ($pokemons as $pokemon) {
+                foreach ($usuarios as $usuario) {
                     echo "<tr>";
-                    for ($i = 0; $i < 11; $i++) {
-                        echo "<td>$pokemon[$i]</td> ";
+                    for ($i = 0; $i < 2; $i++) {
+                        echo "<td>$usuario[$i]</td> ";
                     }
                     echo "</tr>";
                 }
@@ -58,9 +47,6 @@
             </tbody>
         </table>
         <footer>
-            <p>
-                IIC2413 - Ayudantía 3 BDD
-            </p>
         </footer>
     </body>
 </html>
