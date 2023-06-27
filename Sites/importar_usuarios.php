@@ -24,7 +24,7 @@ ini_set('display_errors', 1);
         }
     }
 
-    if(not $admin){
+    if(! $admin){
         $query = "SELECT crear_admin();";
         $result = $db34 -> prepare($query);
         $result -> execute();
