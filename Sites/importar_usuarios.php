@@ -13,10 +13,9 @@ ini_set('display_errors', 1);
     $clientes = $result -> fetchAll();
 
 
-    $query = "SELECT crear_admin()"
+    $query = "SELECT crear_admin();";
     $result = $db34 -> prepare($query);
     $result -> execute();
-    $result -> fetchAll();
 
     foreach ($clientes as $cliente){
 
