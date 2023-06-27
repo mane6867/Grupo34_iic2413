@@ -1,14 +1,12 @@
-CREATE OR REPLACE FUNCTION
+CREATE OR REPLACE FUNCTION crear_admin()
 
-crear_admin ()
-
-RETURN void AS $$
+RETURNS void AS $$
 
 BEGIN
-    -- verificar si existe o no el admin 
-    IF 'A' not in (SELECT tipo FROM usuarios) THEN
-        insert into usuarios values('ADMIN','admin','Admin');
+    -- verificar si existe o no el admin
+    IF NOT EXISTS (SELECT 1 FROM usuarios WHERE tipo = 'ADMIN') THEN
+        INSERT INTO usuarios VALUES ('ADMIN', 'admin', 'A');
     END IF;
-END
+END;
 
-$$ language plpqsql
+$$ LANGUAGE plpgsql;
