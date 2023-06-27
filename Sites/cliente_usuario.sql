@@ -1,13 +1,13 @@
 CREATE OR REPLACE FUNCTION
 
-importar_cliente (id int nombre varchar tipo varchar)
+importar_cliente (id INT , nombre VARCHAR,  tipo VARCHAR)
 
 RETURN BOOLEAN AS $$
 
 BEGIN
     
-    IF id not in (SELECT id_usuario from usuarios) THEN
-        INSERT INTO usuarios values(id, nombre, tipo, "1234");
+    IF id NOT IN (SELECT id_usuario from usuarios) THEN
+        INSERT INTO usuarios values(id, nombre, tipo, '1234');
         RETURN TRUE;
     ELSE
         RETURN FALSE;

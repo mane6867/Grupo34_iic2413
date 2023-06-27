@@ -18,7 +18,7 @@ ini_set('display_errors', 1);
     $result -> execute();
 
     foreach ($clientes as $cliente){
-        $query = cliente_usuario($cliente[0], $cliente[2], "C");
+        $query = importar_cliente($cliente[0], $cliente[2], "C");
 
     }
     $result = $db34 -> prepare($query);
