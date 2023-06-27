@@ -25,7 +25,7 @@
       Contraseña:
       <input type="text" name="contrasena">
       <br/>
-      <input type="submit" value="Buscar">
+      <input type="submit" value="Ingresar">
 </form>
 
   <br>
