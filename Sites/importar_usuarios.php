@@ -31,30 +31,18 @@ ini_set('display_errors', 1);
 
 ?>
 
-    <body>  
-        <table class='table'>
-            <thead>
-                <tr>
-                <th>Id</th>
-                <th>Nombre</th>
-                <th>Tipo</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                foreach ($usuarios as $usuario) {
-                    echo "<tr>";
-                    for ($i = 0; $i < 2; $i++) {
-                        echo "<td>$usuario[$i]</td> ";
-                    }
-                    echo "</tr>";
-                }
-                ?>
-            </tbody>
-        </table>
-        <footer>
-        </footer>
-    </body>
+<table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Tipo</th>
+    </tr>
+  <?php
+	foreach ($usuarios as $usuario) {
+  	echo "<tr><td>$usuario[0]</td><td>$usuario[1]</td> <td>$usuario[2]</td></tr>";
+	}
+  ?>
+	</table>
 </html>
 
 </body>
