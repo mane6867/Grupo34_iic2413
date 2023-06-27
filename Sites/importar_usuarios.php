@@ -10,24 +10,12 @@
     $result -> execute();
     $clientes = $result -> fetchAll();
 
+    crear_admin()
 
     foreach ($clientes as $cliente){
 
-        // Luego construimos las querys con nuestro procedimiento almacenado para ir agregando esas tuplas a nuestra bdd objetivo
-        // Hacemos una verificacion para ver si el pokemon es legendario porque ese parámetro no se comporta muy bien entre php y sql
-        // asi que lo agregamos manualmente al final (por eso los FALSE o TRUE)
+        cliente_usuario($cliente.id_cliente, $cliente.nombre, "C")
 
-        if (! $pokemon['legendary'] == 1){
-            $query = "SELECT mover_pokemon($pokemon[0], '$pokemon[1]'::varchar,'$pokemon[2]'::varchar,$pokemon[3],$pokemon[4],$pokemon[5],$pokemon[6],$pokemon[7],$pokemon[8], $pokemon[9],FALSE);";
-        } else {
-            $query = "SELECT mover_pokemon($pokemon[0], '$pokemon[1]'::varchar,'$pokemon[2]'::varchar,$pokemon[3],$pokemon[4],$pokemon[5],$pokemon[6],$pokemon[7],$pokemon[8], $pokemon[9],TRUE);";
-        }
-
-
-        // Ejecutamos las querys para efectivamente insertar los datos
-        $result = $db -> prepare($query);
-        $result -> execute();
-        $result -> fetchAll();
     }
 
 
