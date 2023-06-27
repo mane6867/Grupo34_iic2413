@@ -70,4 +70,33 @@ tr:nth-child(even) {
     padding: 20px;
     width: 350px;
     margin: 0 auto;
-  }
+    }
+
+.caja-login{
+    background-color: #aaa;
+    max-width: 350px;
+    margin:0 auto;
+    padding: 5% 0 0;
+    margin-top: 5%;
+}
+
+.formulario-login-cabecera{
+    padding-top: 8px;
+    width: 100%;
+}
+
+.formulario-login{
+    box-shadow: 0 0 35px rgba(90,90,90,0.5);
+    width:100%;
+}
+
+.formulario-login-fuente-cabecera{
+    font-size:22px;
+    font-weight: bold;
+}
+
+.login-elements{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width:100%;
+}
