@@ -11,7 +11,7 @@
         </form>
     </div>
   
-    
+
     <div class="form-container">
     <h3 align="center"> Login Usuario</h3>
 
@@ -42,4 +42,12 @@
   <br>
   <br>
 </body>
+<style>
+.form-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 200px;
+    margin: 0 auto;
+  }
+</style>
 </html>
