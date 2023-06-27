@@ -4,7 +4,7 @@ RETURNS void AS $$
 
 BEGIN
     -- verificar si existe o no el admin
-    IF 'A' NOT IN (SELECT tipo FROM usuarios) THEN
+    IF NOT EXISTS (SELECT 1 FROM usuarios WHERE tipo = 'A' AND nombre_usuario = 'admin') THEN
         INSERT INTO usuarios VALUES ( 0, 'ADMIN', 'A', 'admin');
     END IF;
 END
