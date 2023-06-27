@@ -6,7 +6,7 @@ ini_set('display_errors', 1);
     require("config/conexion.php");
 
     // Primero obtenemos todos los pokemons de la tabla que queremos agregar
-    $query = "SELECT * FROM clientes ORDER BY id;";
+    $query = "SELECT * FROM clientes ORDER BY id_cliente;";
     $result = $db34 -> prepare($query);
     $result -> execute();
     $clientes = $result -> fetchAll();
