@@ -24,7 +24,7 @@
     </form>
 
 <?php
-  if ($_POST['nombre']== "ADMIN" && $_POST['contrasena'] = 'admin'){
+  if ($_POST['nombre']== "ADMIN" && $_POST['contrasena'] == 'admin'){
     header('Location: portal_admin.php');
       exit;
   }
