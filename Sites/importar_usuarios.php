@@ -42,13 +42,13 @@ ini_set('display_errors', 1);
             </thead>
             <tbody>
                 <!-?php
-                // foreach ($usuarios as $usuario) {
-                //     echo "<tr>";
-                //     for ($i = 0; $i < 2; $i++) {
-                //         echo "<td>$usuario[$i]</td> ";
-                //     }
-                //     echo "</tr>";
-                // }
+                foreach ($usuarios as $usuario) {
+                    echo "<tr>";
+                    for ($i = 0; $i < 2; $i++) {
+                        echo "<td>$usuario[$i]</td> ";
+                    }
+                    echo "</tr>";
+                }
                 ?>
             </tbody>
         </table>
