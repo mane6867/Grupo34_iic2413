@@ -18,7 +18,9 @@
   
     <h3 align="center"> Login Usuario</h3>
 
-  <form align="center"  method="post">
+
+    <div class='box'>
+    <form align="center"  method="post">
       Nombre:
       <input type="text" name="nombre">
       <br/>
@@ -26,7 +28,8 @@
       <input type="text" name="contrasena">
       <br/>
       <input type="submit" value="Ingresar">
-  </form>
+    </form>
+    </div>
 
 <?php session_start(); ?>
 <?php
