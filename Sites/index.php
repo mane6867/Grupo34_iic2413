@@ -3,20 +3,6 @@
 
 <body>
   <h1 align="center">Muebles3465</h1>
-  <p style="text-align:center;">Aquí podrás encontrar información sobre compras.</p>
-
-  <br>
-
-  <h3 align="center"> Introduzca una fecha</h3>
-
-  <form align="center" action="consultas/consulta_1.php" method="post">
-    Fecha:
-    <input type="text" name="fecha_seleccionada">
-    <br/>
-    <input type="submit" value="Buscar">
-  </form>
-  
-
 
 
     <div class='container'>
