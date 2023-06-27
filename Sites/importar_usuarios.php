@@ -24,14 +24,14 @@ ini_set('display_errors', 1);
 
     }
 
-    // $query = "SELECT * FROM usuarios ORDER BY id;";
-    // $result = $db34 -> prepare($query);
-    // $result -> execute();
-    // $usuarios = $result -> fetchAll();
+    $query = "SELECT * FROM usuarios ORDER BY id;";
+    $result = $db34 -> prepare($query);
+    $result -> execute();
+    $usuarios = $result -> fetchAll();
 
 ?>
 
-    <!-- <body>  
+    <body>  
         <table class='table'>
             <thead>
                 <tr>
@@ -55,6 +55,6 @@ ini_set('display_errors', 1);
         <footer>
         </footer>
     </body>
-</html> -->
+</html>
 
 </body>
