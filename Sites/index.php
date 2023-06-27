@@ -2,12 +2,8 @@
 <?php include('templates/header.html');   ?>
 
 <body>
-  <h1 align="center">Muebles3465</h1>
-
-
   
-
-
+  <h1 align="center">Muebles3465</h1>
 
     <div class='container'>
         <form  action='./importar_usuarios.php' method='GET'>
@@ -17,8 +13,6 @@
 
   
     <h3 align="center"> Login Usuario</h3>
-
-
 
     <form align="center"  method="post">
       Nombre:
@@ -30,6 +24,14 @@
       <input type="submit" value="Ingresar">
     </form>
 
+$nombre_form = $_POST['nombre']
+
+<?php
+  // Condicion de entrada
+  $query = "SELECT clave FROM usuarios WHERE nombre = $nombre_form];";
+  $contrasena = $db34 -> prepare($query);
+  $contrasena -> execute();
+?>
 
 <?php session_start(); ?>
 <?php
@@ -37,7 +39,7 @@
     header('Location: portal_admin.php');
       exit;
   }
-  elseif ($_POST['nombre']!= '') 
+  elseif ($_POST['contrasena'] == $contrasena) 
     {header('Location: portal_usuarios.php');
     exit;}
 ?>
