@@ -23,7 +23,7 @@ ini_set('display_errors', 1);
     WHERE despachos.id_compra = compras.id_compra and compras.id_cliente = clientes.id_cliente 
     and despachos.fecha_entrega = '$fecha_seleccionada';";
 
-	$result = $db -> prepare($query);
+	$result = $db34 -> prepare($query);
 	$result -> execute();
     #var_dump($result->errorInfo());
 	$clientes = $result -> fetchAll();
