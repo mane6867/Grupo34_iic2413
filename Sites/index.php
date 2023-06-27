@@ -21,19 +21,6 @@
   <br>
 
 
-  <form align="center" action="consultas/consulta_tipo.php" method="post">
-    Seleccinar un tipo:
-    <select name="tipo">
-      <?php
-      #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
-      #foreach ($dataCollected as $d) {
-      #  echo "<option value=$d[0]>$d[0]</option>";
-      #}
-      ?>
-    </select>
-    <br><br>
-    <input type="submit" value="Buscar por tipo">
-  </form>
 -->
 
     <div class='container'>
