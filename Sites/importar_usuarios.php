@@ -14,7 +14,7 @@
 
     foreach ($clientes as $cliente){
 
-        echo $cliente;
+        echo $cliente['id_cliente'];
         // cliente_usuario($cliente.id_cliente, $cliente.nombre, "C");
 
     }
