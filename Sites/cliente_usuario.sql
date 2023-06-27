@@ -7,6 +7,7 @@ RETURNS BOOLEAN AS $$
 BEGIN
     
     IF id NOT IN (SELECT id_usuario from usuarios) THEN
+        echo nombre
         INSERT INTO usuarios values(id, nombre, tipo, '1234');
         RETURN TRUE;
     ELSE
