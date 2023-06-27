@@ -2,7 +2,7 @@ CREATE OR REPLACE FUNCTION
 
 importar_cliente (id INT , nombre VARCHAR,  tipo VARCHAR)
 
-RETURN BOOLEAN AS $$
+RETURNS BOOLEAN AS $$
 
 BEGIN
     
