@@ -16,10 +16,11 @@ ini_set('display_errors', 1);
     $result -> execute();
     $usuarios = $result -> fetchAll();
 
-    $admin = FALSE
+    $admin = FALSE;
     foreach ($usuarios as $usuario){
         if($usuario[0] == 0){
-            $admin = TRUE
+            $admin = TRUE;
+            echo $admin;
         }
     }
 
