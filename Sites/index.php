@@ -41,7 +41,7 @@
     header('Location: portal_admin.php');
       exit;
   }
-  elseif ($_POST['contrasena'] == $result) 
+  elseif ($_POST['contrasena'] == $result and $nombre != '') 
     {header('Location: portal_usuarios.php');
     exit;}
 ?>
