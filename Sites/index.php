@@ -31,9 +31,11 @@
 <?php session_start(); ?>
 <?php
   if ($_POST['nombre']== "ADMIN" && $_POST['contrasena'] = 'admin'){
-    header('Location: portal_usuarios.php');
+    header('Location: portal_admin.php');
       exit;
   }
+  else{header('Location: portal_usuarios.php');
+    exit;}
 ?>
 
 
