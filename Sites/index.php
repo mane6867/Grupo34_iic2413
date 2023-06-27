@@ -43,12 +43,4 @@
   <br>
   <br>
 </body>
-<style>
-.form-container {
-    border: 1px solid #ccc;
-    padding: 20px;
-    width: 350px;
-    margin: 0 auto;
-  }
-</style>
 </html>
