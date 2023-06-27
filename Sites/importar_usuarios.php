@@ -1,3 +1,4 @@
+<html>
 <?php include('../templates/header.html');   ?>
 <body>
 <?php
@@ -63,3 +64,4 @@ ini_set('display_errors', 1);
 
 </body>
 <?php include('../templates/footer.html'); ?>
+</html>
