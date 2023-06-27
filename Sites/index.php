@@ -2,7 +2,6 @@
 <?php include('templates/header.html');   ?>
 
 <body>
-<link rel="stylesheet" href="styles/mystyles.css">
   
   <h1 align="center">Muebles3465</h1>
 
@@ -14,6 +13,7 @@
   
 
     <div class="form-container">
+      
     <h3 align="center"> Login Usuario</h3>
 
     <form align="center"  method="POST">
