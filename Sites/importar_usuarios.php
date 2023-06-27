@@ -11,7 +11,7 @@ ini_set('display_errors', 1);
     $result -> execute();
     $clientes = $result -> fetchAll();
 
-    // crear_admin();
+    crear_admin();
 
     foreach ($clientes as $cliente){
 
