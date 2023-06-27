@@ -28,11 +28,17 @@
     </div>
 
 <?php
+  $nombre = $_POST['nombre'];
+  $query = "SELECT clave FROM usuarios ORDER WHERE usuarios.nombre = $nombre";
+  $result = $db34 -> prepare($query);
+  $result -> execute();
+  $clave = $result -> fetchAll();
+
   if ($_POST['nombre']== "ADMIN" && $_POST['contrasena'] == 'admin'){
     header('Location: portal_admin.php');
       exit;
   }
-  elseif ($_POST['contrasena']!= '') 
+  elseif ($_POST['contrasena']== $clave) 
     {header('Location: portal_usuarios.php');
     exit;}
 ?>
