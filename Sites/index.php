@@ -18,7 +18,7 @@
       <input type="text" name="nombre" required>
       <br/>
       Contraseña:
-      <input type="text" name="contrasena" required>
+      <input type="password" name="contrasena" required>
       <br/>
       <input type="submit" value="Ingresar">
     </form>
