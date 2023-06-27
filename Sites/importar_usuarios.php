@@ -4,7 +4,6 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
     #Llama a conexión, crea el objeto PDO y obtiene la variable $db
     require("config/conexion.php");
-    include 'crear_admin.sql';
 
     // Primero obtenemos todos los pokemons de la tabla que queremos agregar
     $query = "SELECT * FROM clientes ORDER BY id_cliente;";
