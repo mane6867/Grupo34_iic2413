@@ -2,7 +2,7 @@ CREATE OR REPLACE FUNCTION
 
 crear_admin ();
 
-RETURNS void AS $$
+RETURN void AS $$
 
 BEGIN
     -- verificar si existe o no el admin 
