@@ -18,11 +18,11 @@ ini_set('display_errors', 1);
     $result -> execute();
 
     foreach ($clientes as $cliente){
-
-        echo $cliente['id_cliente'];
-        // cliente_usuario($cliente.id_cliente, $cliente.nombre, "C");
+        $query = cliente_usuario($cliente[0], $cliente[2], "C");
 
     }
+    $result = $db34 -> prepare($query);
+    $result -> execute();
 
     // $query = "SELECT * FROM usuarios ORDER BY id;";
     // $result = $db34 -> prepare($query);
