@@ -1,6 +1,6 @@
 CREATE OR REPLACE FUNCTION
 
-crear_admin ();
+crear_admin ()
 
 RETURN void AS $$
 
