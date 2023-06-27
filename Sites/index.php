@@ -20,7 +20,14 @@
 
 
 
-    <form align="center"  method="post" class = 'box'>
+    <form align="center"  method="post" class = "box">
+    <form class="box">
+    <div class="field">
+    <label class="label">Nombre:</label>
+    <input type="text" name="nombre">
+    <br/>
+    </div>
+    
       Nombre:
       <input type="text" name="nombre">
       <br/>
