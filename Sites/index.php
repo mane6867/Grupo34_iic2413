@@ -24,16 +24,16 @@
       <input type="submit" value="Ingresar">
     </form>
 
-$nombre_form = $_POST['nombre']
+<?php $nombre_form = $_POST['nombre']; ?>
 
 <?php
   // Condicion de entrada
-  $query = "SELECT clave FROM usuarios WHERE nombre = $nombre_form];";
+  $query = "SELECT clave FROM usuarios WHERE nombre = $nombre_form;";
   $contrasena = $db34 -> prepare($query);
   $contrasena -> execute();
 ?>
 
-<?php session_start(); ?>
+<?php // session_start(); ?>
 <?php
   if ($_POST['nombre']== "ADMIN" && $_POST['contrasena'] = 'admin'){
     header('Location: portal_admin.php');
