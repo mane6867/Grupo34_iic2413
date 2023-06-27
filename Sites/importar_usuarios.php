@@ -10,44 +10,44 @@
     $result -> execute();
     $clientes = $result -> fetchAll();
 
-    crear_admin()
+    crear_admin();
 
     foreach ($clientes as $cliente){
 
-        echo $cliente.nombre
-        cliente_usuario($cliente.id_cliente, $cliente.nombre, "C")
+        echo $cliente
+        cliente_usuario($cliente.id_cliente, $cliente.nombre, "C");
 
     }
 
-//     $query = "SELECT * FROM usuarios ORDER BY id;";
-//     $result = $db34 -> prepare($query);
-//     $result -> execute();
-//     $usuarios = $result -> fetchAll();
+    // $query = "SELECT * FROM usuarios ORDER BY id;";
+    // $result = $db34 -> prepare($query);
+    // $result -> execute();
+    // $usuarios = $result -> fetchAll();
 
-// ?>
+?>
 
-//     <body>  
-//         <table class='table'>
-//             <thead>
-//                 <tr>
-//                 <th>Id</th>
-//                 <th>Nombre</th>
-//                 <th>Tipo</th>
-//                 </tr>
-//             </thead>
-//             <tbody>
-//                 <?php
-//                 foreach ($usuarios as $usuario) {
-//                     echo "<tr>";
-//                     for ($i = 0; $i < 2; $i++) {
-//                         echo "<td>$usuario[$i]</td> ";
-//                     }
-//                     echo "</tr>";
-//                 }
-//                 ?>
-//             </tbody>
-//         </table>
-//         <footer>
-//         </footer>
-//     </body>
-// </html>
+    <!-- <body>  
+        <table class='table'>
+            <thead>
+                <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-?php
+                // foreach ($usuarios as $usuario) {
+                //     echo "<tr>";
+                //     for ($i = 0; $i < 2; $i++) {
+                //         echo "<td>$usuario[$i]</td> ";
+                //     }
+                //     echo "</tr>";
+                // }
+                ?>
+            </tbody>
+        </table>
+        <footer>
+        </footer>
+    </body>
+</html> -->
