@@ -24,7 +24,7 @@ ini_set('display_errors', 1);
 
     }
 
-    $query = "SELECT * FROM usuarios ORDER BY id;";
+    $query = "SELECT * FROM usuarios ORDER BY id_usuario;";
     $result = $db34 -> prepare($query);
     $result -> execute();
     $usuarios = $result -> fetchAll();
