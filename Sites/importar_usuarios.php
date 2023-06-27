@@ -10,12 +10,12 @@
     $result -> execute();
     $clientes = $result -> fetchAll();
 
-    crear_admin();
+    // crear_admin();
 
     foreach ($clientes as $cliente){
 
         echo $cliente
-        cliente_usuario($cliente.id_cliente, $cliente.nombre, "C");
+        // cliente_usuario($cliente.id_cliente, $cliente.nombre, "C");
 
     }
 
