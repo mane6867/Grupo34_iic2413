@@ -24,24 +24,11 @@
     </form>
 
 <?php
-  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-      // Procesar los datos del formulario aquí
-      $nombre = $_POST['nombre'];
-      $contrasena = $_POST['contrasena'];
-      // Realizar las operaciones necesarias con los datos recibidos
-      $query = "SELECT clave FROM usuarios WHERE nombre = $nombre;";
-      $result = $db34 -> prepare($query);
-      $result -> execute();
-      // Mostrar un mensaje de éxito
-      echo "¡Los datos se han enviado correctamente!";
-  }
-?>
-<?php
   if ($_POST['nombre']== "ADMIN" && $_POST['contrasena'] = 'admin'){
     header('Location: portal_admin.php');
       exit;
   }
-  elseif ($_POST['contrasena'] == $result and $nombre != '') 
+  elseif ($_POST['contrasena']!= '') 
     {header('Location: portal_usuarios.php');
     exit;}
 ?>
