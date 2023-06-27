@@ -2,6 +2,7 @@
 <?php include('templates/header.html');   ?>
 
 <body>
+<link rel="stylesheet" href="styles/mystyles.css">
   
   <h1 align="center">Muebles3465</h1>
 
