@@ -3,6 +3,9 @@
     // Nos conectamos a las bdds
     require("../config/conexion.php");
     include('../templates/header.html');
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
 
     // Primero obtenemos todos los pokemons de la tabla que queremos agregar
     $query = "SELECT * FROM clientes ORDER BY id;";
