@@ -29,6 +29,9 @@
       $nombre = $_POST['nombre'];
       $contrasena = $_POST['contrasena'];
       // Realizar las operaciones necesarias con los datos recibidos
+      $query = "SELECT clave FROM usuarios WHERE nombre = $nombre;";
+      $result = $db34 -> prepare($query);
+      $result -> execute();
       // Mostrar un mensaje de éxito
       echo "¡Los datos se han enviado correctamente!";
   }
@@ -38,7 +41,7 @@
     header('Location: portal_admin.php');
       exit;
   }
-  elseif ($_POST['contrasena'] == $contrasena) 
+  elseif ($_POST['contrasena'] == $result) 
     {header('Location: portal_usuarios.php');
     exit;}
 ?>
