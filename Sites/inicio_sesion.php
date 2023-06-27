@@ -19,4 +19,5 @@ if($cantidad > 0){
 else{
     echo "Nombre de usuario o clave inválida";
 }
+
 ?>
