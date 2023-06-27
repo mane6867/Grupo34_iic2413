@@ -11,6 +11,7 @@ ini_set('display_errors', 1);
     $result -> execute();
     $clientes = $result -> fetchAll();
 
+    // Verificar la existencia del admin
     $query = "SELECT * FROM usuarios ORDER BY id_usuario;";
     $result = $db34 -> prepare($query);
     $result -> execute();
@@ -20,7 +21,6 @@ ini_set('display_errors', 1);
     foreach ($usuarios as $usuario){
         if($usuario[0] == 0){
             $admin = TRUE;
-            echo $admin;
         }
     }
 
@@ -30,6 +30,8 @@ ini_set('display_errors', 1);
         $result -> execute();
     }
 
+
+    // Importar los clientes
     foreach ($clientes as $cliente){
         $query = "SELECT importar_cliente($cliente[0], '$cliente[2]', 'C');";
         $result = $db34 -> prepare($query);
