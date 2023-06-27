@@ -76,7 +76,7 @@ tr:nth-child(even) {
     background-color: #aaa;
     max-width: 350px;
     margin:0 auto;
-    padding: 5% 0 0;
+    padding: 2% 0 0;
     margin-top: 5%;
 }
 
@@ -100,3 +100,12 @@ tr:nth-child(even) {
     padding-bottom: 16px;
     width:100%;
 }
+
+.formulario-login-fuente-cabecera span{
+    color:#007C9B;
+}
+
+
+
+
+
