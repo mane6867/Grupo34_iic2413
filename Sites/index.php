@@ -16,12 +16,8 @@
     <input type="submit" value="Buscar">
   </form>
   
-  <br>
-  <br>
-  <br>
 
 
--->
 
     <div class='container'>
         <form  action='./importar_usuarios.php' method='GET'>
