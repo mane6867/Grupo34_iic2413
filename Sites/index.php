@@ -10,30 +10,29 @@
             <input class='btn' type='submit' value='Importar Usuarios'>
         </form>
     </div>
-
   
     <h3 align="center"> Login Usuario</h3>
 
-    <form align="center"  method="post">
+    <form align="center"  method="POST">
       Nombre:
-      <input type="text" name="nombre">
+      <input type="text" name="nombre" required>
       <br/>
       Contraseña:
-      <input type="text" name="contrasena">
+      <input type="text" name="contrasena" required>
       <br/>
       <input type="submit" value="Ingresar">
     </form>
 
-<?php $nombre_form = $_POST['nombre']; ?>
-
 <?php
-  // Condicion de entrada
-  $query = "SELECT clave FROM usuarios WHERE nombre = $nombre_form;";
-  $contrasena = $db34 -> prepare($query);
-  $contrasena -> execute();
+  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+      // Procesar los datos del formulario aquí
+      $nombre = $_POST['nombre'];
+      $contrasena = $_POST['contrasena'];
+      // Realizar las operaciones necesarias con los datos recibidos
+      // Mostrar un mensaje de éxito
+      echo "¡Los datos se han enviado correctamente!";
+  }
 ?>
-
-<?php // session_start(); ?>
 <?php
   if ($_POST['nombre']== "ADMIN" && $_POST['contrasena'] = 'admin'){
     header('Location: portal_admin.php');
