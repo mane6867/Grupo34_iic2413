@@ -25,6 +25,14 @@ ini_set('display_errors', 1);
     $result -> execute();
     $datos2 = $result -> fetchAll();
 
+
+    $query = "SELECT * FROM stock, productos WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda AND 
+    stock.id_producto = productos.id_producto;";
+    $result = $db65 -> prepare($query);
+    $result -> execute();
+    $datos_stock_productos = $result -> fetchAll();
+    print_r($datos_stock_productos );
+
 ?>
 
 
