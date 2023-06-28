@@ -5,14 +5,6 @@ ini_set('display_errors', 1);
     require("../config/conexion.php");
 
 
-//guardar categoria
-session_start();
-$categoria = $_POST['categoria'];
-$_SESSION['categoria_producto'] = $categoria;
-$id_tienda = $_SESSION['id_tienda'];
-print_r($_SESSION['categoria_producto']);
-print_r($_SESSION['id_tienda']);
-
 ?>
 <html lang="en">
 <body>
@@ -22,7 +14,7 @@ print_r($_SESSION['id_tienda']);
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
     crossorigin="anonymous">
-    <link href="styles/mystyles.css" rel="stylesheet" type="text/css">
+    <link href="../styles/mystyles.css" rel="stylesheet" type="text/css">
     <title>Muebles3465</title>
 </head>
 
