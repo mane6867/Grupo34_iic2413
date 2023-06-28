@@ -16,7 +16,17 @@ ini_set('display_errors', 1);
     $result -> execute();
     $datos = $result -> fetchAll();
 
-    $query = "SELECT actualizar_descuento($id_tienda, $id_producto, $nuevo_descuento);";
+    $query = "SELECT * FROM productos, stock WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda AND 
+    stock.id_producto = productos.id_producto;";
+    $result = $db65 -> prepare($query);
+    $result -> execute();
+    $datos_producto_stock = $result -> fetchAll();
+    print_r($datos_producto_stock);
+    $precio = $datos_producto_stock[0][1];
+
+
+
+    $query = "SELECT actualizar_descuento($id_tienda, $id_producto, $nuevo_descuento, $precio);";
     $result = $db65 -> prepare($query);
     $result -> execute();
 
@@ -26,14 +36,7 @@ ini_set('display_errors', 1);
     $datos2 = $result -> fetchAll();
 
 
-    $query = "SELECT * FROM productos, stock WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda AND 
-    stock.id_producto = productos.id_producto;";
-    $result = $db65 -> prepare($query);
-    $result -> execute();
-    $datos_producto_stock = $result -> fetchAll();
-    print_r($datos_producto_stock);
-    print_r($datos_producto_stock[0][1]);
-    print_r($datos_producto_stock[0][2]);
+
 
 ?>
 
