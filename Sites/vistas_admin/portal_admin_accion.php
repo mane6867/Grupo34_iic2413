@@ -4,6 +4,9 @@ ini_set('display_errors', 1);
     #Llama a conexión, crea el objeto PDO y obtiene la variable $db
     require("../config/conexion.php");
 
+session_start();
+$id_producto = $_POST['producto'];
+$_SESSION['id_producto'] = $id_producto;
 
 ?>
 <html lang="en">
@@ -22,12 +25,12 @@ ini_set('display_errors', 1);
     <div class="text-center" style="background-color: #aaa;">
         <p class="formulario-login-fuente-cabecera">Opciones</p>
         <div class="formulario-login">
-            <form action="inicio_sesion.php" method="POST">
+            <form action="portal_admin_stock.php" method="POST">
                 <div class="formulario-login-cabecera">
                     <p class="formulario-login-fuente-cabecera">Actualizar stock</p>
                 </div>
                 <div class="login-elements">
-                    <input type="text" name="stock"placeholder="Nuevo stock">
+                    <input type="text" name="stock"placeholder="Nuevo stock" required>
                 </div>
                 <div class="login-elements">
                     <input type="submit" name="Actualizar" class="btn btn-success">
@@ -41,7 +44,7 @@ ini_set('display_errors', 1);
     <div class="text-center" style="background-color: #aaa;">
             <p class="formulario-login-fuente-cabecera">Opciones</p>
             <div class="formulario-login">
-                <form action="inicio_sesion.php" method="POST">
+                <form action="portal_admin_oferta.php" method="POST">
                     <div class="formulario-login-cabecera">
                         <p class="formulario-login-fuente-cabecera">Armar oferta</p>
                     </div>
