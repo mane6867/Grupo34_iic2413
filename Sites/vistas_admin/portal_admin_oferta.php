@@ -26,12 +26,14 @@ ini_set('display_errors', 1);
     $datos2 = $result -> fetchAll();
 
 
-    $query = "SELECT * FROM stock, productos WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda AND 
+    $query = "SELECT * FROM productos, stock WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda AND 
     stock.id_producto = productos.id_producto;";
     $result = $db65 -> prepare($query);
     $result -> execute();
-    $datos_stock_productos = $result -> fetchAll();
-    print_r($datos_stock_productos );
+    $datos_producto_stock = $result -> fetchAll();
+    print_r($datos_producto_stock);
+    print_r($datos_producto_stock[2]);
+    print_r($datos_producto_stock[3]);
 
 ?>
 
