@@ -21,8 +21,8 @@ ini_set('display_errors', 1);
     $result = $db65 -> prepare($query);
     $result -> execute();
     $datos_producto_stock = $result -> fetchAll();
-    print_r($datos_producto_stock[0][1]);
-    $precio = $datos_producto_stock[0][1];
+    print_r($datos_producto_stock[0][2]);
+    $precio = $datos_producto_stock[0][2];
 
 
 
