@@ -14,7 +14,7 @@ ini_set('display_errors', 1);
     $result = $db65 -> prepare($query);
     $result -> execute();
     $stock_a = $result -> fetchAll();
-    $stock_antiguo = $stock_a[0];
+    $stock_antiguo = $stock_a[0][cantidad];
     print_r($stock_antiguo);
     print_r($stock_a);
 
