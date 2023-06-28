@@ -8,7 +8,7 @@ ini_set('display_errors', 1);
 //guardar categoria
 $categoria = $_POST['categoria'];
 $_SESSION['categoria_producto'] = $categoria;
-$id_tienda = $_SESSION['id_tienda']
+$id_tienda = $_SESSION['id_tienda'];
 print_r($_SESSION['categoria_producto']);
 
 
