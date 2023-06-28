@@ -1,15 +1,14 @@
-CREATE OR REPLACE FUNCTION
-
-actualizar_stock (id_tienda INT, id_producto INT, nuevo_stock INT)
-
+CREATE OR REPLACE FUNCTION actualizar_stock(id_tienda INT, id_producto INT, nuevo_stock INT)
 RETURNS BOOLEAN AS $$
-
 BEGIN
-
-    UPDATE stock SET nuevo_stock 
-    WHERE (SELECT id_stock FROM stock WHERE stock.id_tienda = id.tienda 
-            AND stock.id_producto = id_producto) = stock.id_stock
-
+    UPDATE stock
+    SET stock = nuevo_stock
+    WHERE id_tienda = id_tienda AND id_producto = id_producto;
+    
+    IF FOUND THEN
+        RETURN TRUE;
+    ELSE
+        RETURN FALSE;
+    END IF;
 END
-
-$$ language plpgsql
+$$ LANGUAGE plpgsql;
