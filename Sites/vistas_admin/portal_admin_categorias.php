@@ -6,7 +6,7 @@ ini_set('display_errors', 1);
 // Obtener las regiones
 
 
-$query = "SELECT *  FROM productos GROUP BY categoria;";
+$query = "SELECT DISTINCT categoria FROM productos;";
 $result = $db65 -> prepare($query);
 $result -> execute();
 $categorias = $result -> fetchAll();
