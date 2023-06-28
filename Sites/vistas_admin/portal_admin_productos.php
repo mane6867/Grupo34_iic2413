@@ -6,6 +6,7 @@ ini_set('display_errors', 1);
 
 
 //guardar categoria
+start_session();
 $categoria = $_POST['categoria'];
 $_SESSION['categoria_producto'] = $categoria;
 $id_tienda = $_SESSION['id_tienda'];
