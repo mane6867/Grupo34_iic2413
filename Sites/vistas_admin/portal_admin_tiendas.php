@@ -8,7 +8,7 @@ $nombre_region = $_POST["region"];
 
 
 
-$query = "SELECT * FROM  tiendas WHERE region ='$nombre_region';";
+$query = "SELECT * FROM  tiendas WHERE region ='$nombre_region' ORDER BY ASC;";
 $result = $db65 -> prepare($query);
 $result -> execute();
 $tiendas = $result -> fetchAll();
@@ -18,6 +18,7 @@ $tiendas = $result -> fetchAll();
 <form align="center" method="POST" action="portal_admin_categorias.php">
     Seleccione una tienda:
     <select name="tienda">
+    <option value="">-> Seleccione una región</option>
     <?php foreach ($tiendas as $tienda): ?>
         <option value="<?php echo $tienda[0]; ?>"><?php echo $tienda[0]; ?></option>
     <?php endforeach; ?>
