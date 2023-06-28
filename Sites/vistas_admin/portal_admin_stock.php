@@ -10,6 +10,12 @@ ini_set('display_errors', 1);
     $id_producto = $_SESSION['id_producto'];
     $nuevo_stock = $_POST['stock'];
     $id_tienda = $_SESSION['id_tienda'];
+    $query = "SELECT cantidad FROM stock WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda;";
+    $result = $db65 -> prepare($query);
+    $result -> execute();
+    $stock_antiguo = $result -> fetchAll();
+    $stock_antiguo = $stock_antiguo[0];
+    print_r($stock_antiguo);
 
 
     $query = "SELECT * FROM stock WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda;";
@@ -17,6 +23,8 @@ ini_set('display_errors', 1);
     $result -> execute();
     $datos = $result -> fetchAll();
 
-    print_r($datos)
+    $query = "SELECT actualizar_stock($id_tienda, $id_producto, $nuevo_stock);";
+    $result = $db65 -> prepare($query);
+    $result -> execute();
 
 ?>
