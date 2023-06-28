@@ -8,7 +8,7 @@ $nombre_region = $_POST["region"];
 
 
 
-$query = "SELECT * FROM  tiendas WHERE region ='$nombre_region' ORDER BY ASC;";
+$query = "SELECT * FROM tiendas WHERE region ='$nombre_region' ORDER BY id_tienda ASC;";
 $result = $db65 -> prepare($query);
 $result -> execute();
 $tiendas = $result -> fetchAll();
