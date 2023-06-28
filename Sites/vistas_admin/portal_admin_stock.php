@@ -16,6 +16,7 @@ ini_set('display_errors', 1);
     $stock_a = $result -> fetchAll();
     $stock_antiguo = $stock_a[0];
     print_r($stock_antiguo);
+    print_r($stock_a);
 
 
     $query = "SELECT * FROM stock WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda;";
