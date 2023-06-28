@@ -2,7 +2,7 @@ CREATE OR REPLACE FUNCTION actualizar_stock(id_tienda INT, id_producto INT, nuev
 RETURNS BOOLEAN AS $$
 BEGIN
     UPDATE stock
-    SET stock = nuevo_stock
+    SET cantidad = nuevo_stock
     WHERE id_tienda = id_tienda AND id_producto = id_producto;
     
     IF FOUND THEN
