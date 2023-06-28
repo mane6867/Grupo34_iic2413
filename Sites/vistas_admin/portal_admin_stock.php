@@ -28,6 +28,11 @@ ini_set('display_errors', 1);
     $result = $db65 -> prepare($query);
     $result -> execute();
 
+    $query = "SELECT * FROM stock WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda;";
+    $result = $db65 -> prepare($query);
+    $result -> execute();
+    $datos2 = $result -> fetchAll();
+
 ?>
 
 <html>
@@ -40,6 +45,9 @@ ini_set('display_errors', 1);
     </tr>
     <?php
         foreach ($datos as $dato) {
+            echo "<tr><td>$dato[1]</td><td>$dato[2]</td> <td>$dato[3]</td></tr>";
+        }
+        foreach ($datos2 as $dato) {
             echo "<tr><td>$dato[1]</td><td>$dato[2]</td> <td>$dato[3]</td></tr>";
         }
     ?>
