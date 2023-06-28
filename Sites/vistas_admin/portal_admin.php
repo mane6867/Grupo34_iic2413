@@ -51,16 +51,5 @@ $regiones = $result -> fetchAll();
     </select>
 </form>
 
-<style>
 
-select {
-    padding: 10px;
-    font-size: 16px;
-    border: 10px solid #961e1e;
-    border-radius: 4px;
-}
-option {
-    padding: 5px;
-}
-</style>
 </html>
