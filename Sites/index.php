@@ -55,7 +55,7 @@
   
   <?php
   if ($_POST['nombre']== "ADMIN" && $_POST['contrasena'] == 'admin'){
-    header('Location: portal_admin.php');
+    header('Location: vistas_admin/portal_admin.php');
       exit;
   }
   elseif ($_POST['contrasena']!= '') 
