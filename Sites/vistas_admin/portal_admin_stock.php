@@ -13,8 +13,8 @@ ini_set('display_errors', 1);
     $query = "SELECT cantidad FROM stock WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda;";
     $result = $db65 -> prepare($query);
     $result -> execute();
-    $stock_antiguo = $result -> fetchAll();
-    $stock_antiguo = $stock_antiguo[0];
+    $stock_a = $result -> fetchAll();
+    $stock_antiguo = $stock_a[0];
     print_r($stock_antiguo);
 
 
