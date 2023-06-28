@@ -20,4 +20,3 @@ print_r($productos)
 // Obtener las regiones
 
 ?>
-?>
