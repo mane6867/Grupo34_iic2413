@@ -17,6 +17,6 @@ ini_set('display_errors', 1);
     $result -> execute();
     $datos = $result -> fetchAll();
 
-    print($datos)
+    print('$datos')
 
 ?>
