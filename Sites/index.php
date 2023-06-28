@@ -25,7 +25,7 @@
             <input type="password" name="contrasena"placeholder="Contraseña" required>
           </div>
           <div class="login-elements">
-            <input type="submit" name="Ingresar" class="btn btn-success">
+            <input type="submit" name="Ingresar" value="Ingresar" class="btn btn-success">
           </div>
         </form>
         <form align="center"  action='./importar_usuarios.php' method='GET'>
@@ -45,12 +45,6 @@
     {header('Location: portal_usuarios.php');
     exit;}
 ?>
-
-<div class='container'>
-  <form align="center"  action='./importar_usuarios.php' method='GET'>
-      <input type='submit' value='Importar Usuarios'>
-  </form>
-</div>
 
 </body>
 </html>
