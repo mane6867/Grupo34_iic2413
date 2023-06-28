@@ -11,7 +11,7 @@ $regiones = $result -> fetchAll();
 ?>
 
 <html>
-<form align="center" method="POST" action="portal_admin_tienda.php">
+<form align="center" method="POST" action="portal_admin_tiendas.php">
     Seleccione una región:
     <select name="region">
     <option value="">-> Seleccione una región</option>
