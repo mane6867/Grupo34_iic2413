@@ -13,7 +13,7 @@ $categorias = $result -> fetchAll();
 
 
 $id_tienda = $_POST['tienda'];
-$_SESSION['id_tienda'] = $id_tienda
+$_SESSION['id_tienda'] = $id_tienda;
 ?>
 
 <html>
