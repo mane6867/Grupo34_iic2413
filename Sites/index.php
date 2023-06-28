@@ -28,6 +28,9 @@
             <input type="submit" name="Ingresar" class="btn btn-success">
           </div>
         </form>
+        <form align="center"  action='./importar_usuarios.php' method='GET'>
+            <input type='submit' value='Importar Usuarios'>
+        </form>
       </div>
       <div class='formulario-login'>
         <form align="center"  action='./importar_usuarios.php' method='GET'>
