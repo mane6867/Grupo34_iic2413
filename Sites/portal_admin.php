@@ -13,7 +13,7 @@ $regiones = $result -> fetchAll();
 <html>
 <select name="region">
     <?php foreach ($regiones as $region): ?>
-        <option value="<?php echo $region; ?>"><?php echo $region; ?></option>
+        <option value="<?php echo '$region'; ?>"><?php echo '$region'; ?></option>
     <?php endforeach; ?>
 </select>
 </html>
