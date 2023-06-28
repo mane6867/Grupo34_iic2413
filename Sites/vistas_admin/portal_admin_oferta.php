@@ -11,7 +11,7 @@ ini_set('display_errors', 1);
     $nuevo_descuento = $_POST['descuento'];
     $id_tienda = $_SESSION['id_tienda'];
 
-    $query = "SELECT * FROM descuento WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda;";
+    $query = "SELECT * FROM stock WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda;";
     $result = $db65 -> prepare($query);
     $result -> execute();
     $datos = $result -> fetchAll();
@@ -20,7 +20,7 @@ ini_set('display_errors', 1);
     $result = $db65 -> prepare($query);
     $result -> execute();
 
-    $query = "SELECT * FROM descuento WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda;";
+    $query = "SELECT * FROM stock WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda;";
     $result = $db65 -> prepare($query);
     $result -> execute();
     $datos2 = $result -> fetchAll();
