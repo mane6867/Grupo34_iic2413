@@ -26,7 +26,7 @@ ini_set('display_errors', 1);
 
 
 
-    $query = "SELECT actualizar_descuento($id_tienda, $id_producto, $nuevo_descuento, $precio);";
+    $query = "SELECT actualizar_descuento($id_tienda, $id_producto, $nuevo_descuento);";
     $result = $db65 -> prepare($query);
     $result -> execute();
 
