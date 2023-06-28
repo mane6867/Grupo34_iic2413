@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
     #Llama a conexión, crea el objeto PDO y obtiene la variable $db
     require("../config/conexion.php");
 // Obtener las regiones
-$nombre_region = $_POST["nombre"];
+$nombre_region = $_POST["region"];
 
 
 
