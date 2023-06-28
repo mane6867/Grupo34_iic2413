@@ -3,7 +3,7 @@ RETURNS BOOLEAN AS $$
 BEGIN
     UPDATE stock
     SET cantidad = nuevo_stock
-    WHERE id_tienda = id_tienda AND id_producto = id_producto;
+    WHERE stock.id_tienda = id_tienda AND stock.id_producto = id_producto;
     
     IF FOUND THEN
         RETURN TRUE;
