@@ -49,7 +49,7 @@ $_SESSION['id_producto'] = $id_producto;
                         <p class="formulario-login-fuente-cabecera">Armar oferta</p>
                     </div>
                     <div class="login-elements">
-                        <input type="text" name="stock"placeholder="Precio oferta" required>
+                        <input type="text" name="descuento"placeholder="Precio oferta" required>
                     </div>
                     <div class="login-elements">
                         <input type="submit" name="Crear" class="btn btn-success">
