@@ -1,15 +1,3 @@
-<?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-    #Llama a conexión, crea el objeto PDO y obtiene la variable $db
-    require("../config/conexion.php");
-// Obtener las regiones
-$query = "SELECT * FROM region;";
-$result = $db34 -> prepare($query);
-$result -> execute();
-$regiones = $result -> fetchAll();
-?>
-
 <html>
 <head>
     <meta charset="UTF-8">
@@ -21,20 +9,17 @@ $regiones = $result -> fetchAll();
     <title>Muebles3465</title>
 </head>
 
-<form align="center" method="POST" action="portal_admin_tiendas.php">
-    Seleccione una región:
-    <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Región
-    </button>
-    <ul class="dropdown-menu">
-    <?php foreach ($regiones as $region): ?>
-        <li><option class="dropdown-item" type="button"><?php echo $region[1]; ?></option></li>
-    <?php endforeach; ?>
-    </ul>
-    </div>
-    <input type="submit" value="Enviar">
-</form>
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+    #Llama a conexión, crea el objeto PDO y obtiene la variable $db
+    require("../config/conexion.php");
+// Obtener las regiones
+$query = "SELECT * FROM region;";
+$result = $db34 -> prepare($query);
+$result -> execute();
+$regiones = $result -> fetchAll();
+?>
 
 <form align="center" method="POST" action="portal_admin_tiendas.php">
     Seleccione una región:
