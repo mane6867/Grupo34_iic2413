@@ -14,7 +14,7 @@
     <div class="text-center" style="background-color: #aaa;">
       <p class="formulario-login-fuente-cabecera">Muebles<span>3465</span></p>
       <div class="formulario-login">
-        <form action="inicio_sesion.php" method="POST">
+        <form method="POST">
           <div class="formulario-login-cabecera">
             <p class="formulario-login-fuente-cabecera">Iniciar Sesión</p>
           </div>
@@ -31,6 +31,17 @@
       </div>
     </div>
 </div>
+
+<?php
+  if ($_POST['nombre']== "ADMIN" && $_POST['contrasena'] == 'admin'){
+    session_start();
+    header('Location: vistas_admin/portal_admin.php');
+      exit;
+  }
+  elseif ($_POST['contrasena']!= '') 
+    {header('Location: portal_usuarios.php');
+    exit;}
+?>
 
 <div class='container'>
   <form align="center"  action='./importar_usuarios.php' method='GET'>
