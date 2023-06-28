@@ -18,8 +18,22 @@ $query = "SELECT * FROM productos, stock WHERE productos.categoria = '$categoria
 $result = $db65 -> prepare($query);
 $result -> execute();
 $productos = $result -> fetchAll();
-print_r($productos);
-
-// Obtener las regiones
 
 ?>
+
+<html>
+
+<form align="center" method="POST" action="portal_admin_accion.php">
+    Seleccione un producto:
+    <select name="producto">
+    <option value="">Producto</option>
+    <?php foreach ($productos as $producto): ?>
+        <option value="<?php echo $producto[0]; ?>"><?php echo $producto[1]; ?></option>
+    <?php endforeach; ?>
+    </select>
+    <br>
+    <input type="submit" value="Enviar">
+</select>
+</form>
+
+</html>
