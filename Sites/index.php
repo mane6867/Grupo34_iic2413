@@ -29,7 +29,7 @@
           </div>
         </form>
       </div>
-      <div class='container'>
+      <div class='formulario-login'>
         <form align="center"  action='./importar_usuarios.php' method='GET'>
             <input type='submit' value='Importar Usuarios'>
         </form>
