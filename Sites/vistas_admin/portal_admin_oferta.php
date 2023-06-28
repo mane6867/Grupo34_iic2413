@@ -32,8 +32,8 @@ ini_set('display_errors', 1);
     $result -> execute();
     $datos_producto_stock = $result -> fetchAll();
     print_r($datos_producto_stock);
-    print_r($datos_producto_stock[2]);
-    print_r($datos_producto_stock[3]);
+    print_r($datos_producto_stock[0][1]);
+    print_r($datos_producto_stock[0][2]);
 
 ?>
 
