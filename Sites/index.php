@@ -49,30 +49,5 @@
   </form>
 </div>
 
-    <div class="form-container">
-      
-    <h3 align="center"> Login Usuario</h3>
-
-    <form align="center"  method="POST">
-      Nombre:
-      <input type="text" name="nombre" required>
-      <br/>
-      Contraseña:
-      <input type="password" name="contrasena" required>
-      <br/>
-      <input type="submit" value="Ingresar">
-    </form>
-    </div>
-  
-  <?php
-  if ($_POST['nombre']== "ADMIN" && $_POST['contrasena'] == 'admin'){
-    session_start();
-    header('Location: vistas_admin/portal_admin.php');
-      exit;
-  }
-  elseif ($_POST['contrasena']!= '') 
-    {header('Location: portal_usuarios.php');
-    exit;}
-?>
 </body>
 </html>
