@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
     #Llama a conexión, crea el objeto PDO y obtiene la variable $db
     require("../config/conexion.php");
 // Obtener las regiones
-$nombre_region = $_POST["region"];
+$nombre_region = $_POST['region'];
 
 
 
@@ -18,7 +18,7 @@ $tiendas = $result -> fetchAll();
 <form align="center" method="POST" action="portal_admin_categorias.php">
     Seleccione una tienda:
     <select name="tienda">
-    <option value="">-> Seleccione una región</option>
+    <option value="">-> Seleccione una tienda</option>
     <?php foreach ($tiendas as $tienda): ?>
         <option value="<?php echo $tienda[0]; ?>"><?php echo $tienda[0]; ?></option>
     <?php endforeach; ?>
