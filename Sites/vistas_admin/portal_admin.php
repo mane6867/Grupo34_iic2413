@@ -30,7 +30,7 @@ $regiones = $result -> fetchAll();
     </button>
     <ul class="dropdown-menu">
     <?php foreach ($regiones as $region): ?>
-        <li><button class="dropdown-item" type="button"><?php echo $region[1]; ?></button></li>
+        <li><option class="dropdown-item" type="button"><?php echo $region[1]; ?></option></li>
     <?php endforeach; ?>
     </ul>
     </div>
@@ -49,16 +49,4 @@ $regiones = $result -> fetchAll();
     <input type="submit" value="Enviar">
     </select>
 </form>
-
-<div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Región
-    </button>
-    <ul class="dropdown-menu">
-    <?php foreach ($regiones as $region): ?>
-        <li><button class="dropdown-item" type="button"><?php echo $region[1]; ?></button></li>
-    <?php endforeach; ?>
-    </ul>
-</div>
-
 </html>
