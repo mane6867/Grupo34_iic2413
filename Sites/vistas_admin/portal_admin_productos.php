@@ -14,7 +14,8 @@ print_r($_SESSION['categoria_producto']);
 print_r($_SESSION['id_tienda']);
 
 
-$query = "SELECT * FROM productos, stock WHERE productos.categoria = '$categoria' and stock.id_tienda = $id_tienda;";
+$query = "SELECT * FROM productos, stock WHERE productos.categoria = '$categoria' AND stock.id_tienda = $id_tienda 
+        AND stock.id_producto = productos.id_producto;";
 $result = $db65 -> prepare($query);
 $result -> execute();
 $productos = $result -> fetchAll();
