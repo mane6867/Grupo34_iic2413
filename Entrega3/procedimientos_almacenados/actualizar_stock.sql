@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION actualizar_stock(id_tienda INT, id_producto INT, nuevo_stock INT)
+CREATE OR REPLACE FUNCTION actualizar_stock(tienda INT, producto INT, nuevo_stock INT)
 RETURNS BOOLEAN AS $$
 BEGIN
     UPDATE stock
