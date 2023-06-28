@@ -31,6 +31,7 @@ $regiones = $result -> fetchAll();
     </select>
     <br>
     <input type="submit" value="Enviar">
+    </br>
     </select>
 </form>
 
