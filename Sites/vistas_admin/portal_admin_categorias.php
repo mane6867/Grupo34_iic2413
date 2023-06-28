@@ -6,7 +6,7 @@ ini_set('display_errors', 1);
 // Obtener las regiones
 
 
-$query = "SELECT DISTINCT categoria  FROM productos;";
+$query = "SELECT *  FROM productos GROUP BY categoria;";
 $result = $db65 -> prepare($query);
 $result -> execute();
 $categorias = $result -> fetchAll();
@@ -18,7 +18,7 @@ $categorias = $result -> fetchAll();
     <select name="categoria">
     <option value=""> Categorías</option>
     <?php foreach ($categorias as $categoria): ?>
-        <option value="<?php echo $categoria; ?>"><?php echo $categoria; ?></option>
+        <option value="<?php echo $categoria[0]; ?>"><?php echo $categoria[0]; ?></option>
     <?php endforeach; ?>
     </select>
     <br>
