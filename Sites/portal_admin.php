@@ -11,9 +11,16 @@ $regiones = $result -> fetchAll();
 ?>
 
 <html>
-<select name="region">
+<form align="center" method="POST" action="portal_admin_tiendas.php">
+    Seleccione una región:
+    <select name="region">
     <?php foreach ($regiones as $region): ?>
         <option value="<?php echo $region[0]; ?>"><?php echo $region[1]; ?></option>
     <?php endforeach; ?>
+    </select>
+    <br>
+    <input type="submit" value="Enviar">
 </select>
+</form>
+
 </html>
