@@ -52,5 +52,15 @@
       <input type="submit" value="Ingresar">
     </form>
     </div>
+  
+  <?php
+  if ($_POST['nombre']== "ADMIN" && $_POST['contrasena'] == 'admin'){
+    header('Location: portal_admin.php');
+      exit;
+  }
+  elseif ($_POST['contrasena']!= '') 
+    {header('Location: portal_usuarios.php');
+    exit;}
+?>
 </body>
 </html>
