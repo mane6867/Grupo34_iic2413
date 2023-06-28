@@ -10,6 +10,10 @@ $query = "SELECT DISTINCT categoria FROM productos;";
 $result = $db65 -> prepare($query);
 $result -> execute();
 $categorias = $result -> fetchAll();
+
+
+$id_tienda = $_POST['tienda'];
+$_SESSION['id_tienda'] = $id_tienda
 ?>
 
 <html>

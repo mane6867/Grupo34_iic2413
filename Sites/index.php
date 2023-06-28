@@ -55,6 +55,7 @@
   
   <?php
   if ($_POST['nombre']== "ADMIN" && $_POST['contrasena'] == 'admin'){
+    session_start();
     header('Location: vistas_admin/portal_admin.php');
       exit;
   }
