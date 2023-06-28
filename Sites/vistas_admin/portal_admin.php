@@ -10,7 +10,7 @@ $result -> execute();
 $regiones = $result -> fetchAll();
 ?>
 
-<?php include('templates/header.html');   ?>
+<?php include('../templates/header.html'); ?>
 
 <html>
 <head>
