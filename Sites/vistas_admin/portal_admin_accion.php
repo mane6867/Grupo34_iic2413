@@ -27,12 +27,20 @@ ini_set('display_errors', 1);
                     <p class="formulario-login-fuente-cabecera">Actualizar stock</p>
                 </div>
                 <div class="login-elements">
-                    <input type="text" name="stock"placeholder="Nuevo stock" required>
+                    <input type="text" name="stock"placeholder="Nuevo stock">
                 </div>
                 <div class="login-elements">
                     <input type="submit" name="Actualizar" class="btn btn-success">
                 </div>
+            </form>
+        </div>
+    </div>
+</div>
 
+<div class="text-center" style="background-color: #aaa;">
+        <p class="formulario-login-fuente-cabecera">Opciones</p>
+        <div class="formulario-login">
+            <form action="inicio_sesion.php" method="POST">
                 <div class="formulario-login-cabecera">
                     <p class="formulario-login-fuente-cabecera">Armar oferta</p>
                 </div>
@@ -46,6 +54,8 @@ ini_set('display_errors', 1);
         </div>
     </div>
 </div>
+
+
 </body>
 
 </html>
