@@ -29,12 +29,7 @@
           </div>
         </form>
         <form align="center"  action='./importar_usuarios.php' method='GET'>
-            <input type='submit' value='Importar Usuarios'>
-        </form>
-      </div>
-      <div class='formulario-login'>
-        <form align="center"  action='./importar_usuarios.php' method='GET'>
-            <input type='submit' value='Importar Usuarios'>
+            <input type='submit' value='Importar Usuarios' class="btn btn-success">
         </form>
       </div>
     </div>
