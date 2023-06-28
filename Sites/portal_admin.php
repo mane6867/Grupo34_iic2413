@@ -1,6 +1,6 @@
 <?php
 // Obtener las regiones
-$query = "SELECT id_region, nombre FROM region ORDER BY ASC;";
+$query = "SELECT nombre FROM region;";
 $result = $db34 -> prepare($query);
 $result -> execute();
 $regiones = $result -> fetchAll();
@@ -9,7 +9,7 @@ $regiones = $result -> fetchAll();
 <html>
 <select name="region">
     <?php foreach ($regiones as $region): ?>
-        <option value="<?php echo $region[0]; ?>"><?php echo $region[1]; ?></option>
+        <option value="<?php echo $region; ?>"><?php echo $region; ?></option>
     <?php endforeach; ?>
 </select>
 </html>
