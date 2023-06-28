@@ -37,20 +37,22 @@ ini_set('display_errors', 1);
     </div>
 </div>
 
-<div class="text-center" style="background-color: #aaa;">
-        <p class="formulario-login-fuente-cabecera">Opciones</p>
-        <div class="formulario-login">
-            <form action="inicio_sesion.php" method="POST">
-                <div class="formulario-login-cabecera">
-                    <p class="formulario-login-fuente-cabecera">Armar oferta</p>
-                </div>
-                <div class="login-elements">
-                    <input type="text" name="stock"placeholder="Precio oferta" required>
-                </div>
-                <div class="login-elements">
-                    <input type="submit" name="Crear" class="btn btn-success">
-                </div>
-            </form>
+<div class="container">
+    <div class="text-center" style="background-color: #aaa;">
+            <p class="formulario-login-fuente-cabecera">Opciones</p>
+            <div class="formulario-login">
+                <form action="inicio_sesion.php" method="POST">
+                    <div class="formulario-login-cabecera">
+                        <p class="formulario-login-fuente-cabecera">Armar oferta</p>
+                    </div>
+                    <div class="login-elements">
+                        <input type="text" name="stock"placeholder="Precio oferta" required>
+                    </div>
+                    <div class="login-elements">
+                        <input type="submit" name="Crear" class="btn btn-success">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
