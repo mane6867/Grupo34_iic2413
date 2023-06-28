@@ -112,7 +112,7 @@ tr:nth-child(even) {
 select {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #961e1e;
     border-radius: 4px;
 }
 option {
