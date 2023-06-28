@@ -24,6 +24,20 @@ $regiones = $result -> fetchAll();
 
 <form align="center" method="POST" action="portal_admin_tiendas.php">
     Seleccione una región:
+    <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Región
+    </button>
+    <ul class="dropdown-menu">
+    <?php foreach ($regiones as $region): ?>
+        <li><button class="dropdown-item" type="button"><?php echo $region[1]; ?></button></li>
+    <?php endforeach; ?>
+    </ul>
+    </div>
+</form>
+
+<form align="center" method="POST" action="portal_admin_tiendas.php">
+    Seleccione una región:
     <select name="region">
     <option value="">-> Seleccione una región</option>
     <?php foreach ($regiones as $region): ?>
@@ -32,7 +46,7 @@ $regiones = $result -> fetchAll();
     </select>
     <br>
     <input type="submit" value="Enviar">
-</select>
+    </select>
 </form>
 <?php print_r($regiones) ?>
 <div class="dropdown">
