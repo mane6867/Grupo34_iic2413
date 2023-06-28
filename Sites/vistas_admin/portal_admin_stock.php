@@ -29,3 +29,20 @@ ini_set('display_errors', 1);
     $result -> execute();
 
 ?>
+
+<html>
+
+<table>
+    <tr>
+        <th>Producto</th>
+        <th>Tienda</th>
+        <th>Cantidad</th>
+    </tr>
+    <?php
+        foreach ($datos as $dato) {
+            echo "<tr><td>$dato[1]</td><td>$dato[2]</td> <td>$dato[3]</td></tr>";
+        }
+    ?>
+</table>
+
+</html>
