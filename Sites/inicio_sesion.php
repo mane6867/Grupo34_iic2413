@@ -14,7 +14,7 @@ $cantidad = pg_num_rows($consulta);
 
 if($cantidad > 0){
     $_SESSION['nombre_usuario'] = $nombre_login;
-    header('Location:portal_uusarios.php');
+    header('Location:portal_usuarios.php');
 }
 else{
     echo "Nombre de usuario o clave inválida";
