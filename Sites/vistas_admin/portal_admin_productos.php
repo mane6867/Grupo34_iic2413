@@ -15,7 +15,7 @@ $query = "SELECT * FROM productos, stock WHERE stock.id_tienda = $_SESSION['id_t
 $result = $db65 -> prepare($query);
 $result -> execute();
 $productos = $result -> fetchAll();
-print_r($productos)
+print_r($productos);
 
 // Obtener las regiones
 
