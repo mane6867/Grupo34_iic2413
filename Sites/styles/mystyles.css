@@ -109,6 +109,16 @@ tr:nth-child(even) {
     padding-top: 16px;
 }
 
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+option {
+    padding: 5px;
+}
+
 
 
 
