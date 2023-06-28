@@ -11,11 +11,11 @@ $regiones = $result -> fetchAll();
 ?>
 
 <html>
-<form align="center" method="POST" action="portal_admin_tiendas.php">
+<form align="center" method="POST" action="portal_admin_tienda.php">
     Seleccione una región:
     <select name="region">
     <?php foreach ($regiones as $region): ?>
-        <option value="<?php echo $region[0]; ?>"><?php echo $region[1]; ?></option>
+        <option value="<?php echo $region[1]; ?>"><?php echo $region[1]; ?></option>
     <?php endforeach; ?>
     </select>
     <br>
