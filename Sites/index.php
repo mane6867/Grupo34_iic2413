@@ -11,7 +11,7 @@
 </head>
 
 <div class="container">
-    <div class="text-center" style="background-color: #aaa;">
+    <div class="text-center" style="background-color: #eee;">
       <p class="formulario-login-fuente-cabecera">Muebles<span>3465</span></p>
       <div class="formulario-login">
         <form method="POST">
