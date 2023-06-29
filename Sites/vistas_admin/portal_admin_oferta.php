@@ -23,6 +23,11 @@ ini_set('display_errors', 1);
     $result = $db65 -> prepare($query);
     $result -> execute();
 
+    $query = "SELECT * FROM stock WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda;";
+    $result = $db65 -> prepare($query);
+    $result -> execute();
+    $datos2 = $result -> fetchAll();
+
 
 
 
@@ -54,6 +59,8 @@ ini_set('display_errors', 1);
 <div class="box">
   <h2> La oferta ha sido recibida</h2>
   <p> Precio sin descuento: <?php $precio_sin_descuento; ?></p>
+  <p> Descuento: <?php $descuento_nuevo; ?></p>
+  <p> Precio con descuento: <?php $precio_descuento_nuevo; ?></p>
 </div>
 
 <table>
