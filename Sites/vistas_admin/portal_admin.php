@@ -60,7 +60,7 @@ $regiones = $result -> fetchAll();
     <?php endforeach; ?>
     </select>
     <br>
-    <input class="button is-light" type="submit" value="Enviar">
+    <input class="button is-black" type="submit" value="Enviar">
     </br>
     </select>
     </div>
