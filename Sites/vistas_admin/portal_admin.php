@@ -21,12 +21,12 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 50px;
+      margin-top: 100px;
     }
     .portal-title {
       font-size: 24px;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
   </style>
 
