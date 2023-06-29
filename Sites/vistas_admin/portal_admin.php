@@ -16,7 +16,7 @@
       padding: 20px;
       width: 400px;
       border: 2px solid #ccc;
-      height: 400px;
+      height: 200px;
     }
   </style>
 
