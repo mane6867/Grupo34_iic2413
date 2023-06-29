@@ -12,12 +12,12 @@
       height: 50vh;
     }
     .form-container {
-    display: flex;
-     /* justify-content: center;Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    height: 130vh; /* Ajusta la altura según tus necesidades */
-    flex-direction: column; /* Muestra los elementos en una columna */
- 
+      background-color: #eee;
+      padding: 20px;
+      max-width: 400px;
+      margin-top: 50px;
+    
+      
     }
   </style>
 
