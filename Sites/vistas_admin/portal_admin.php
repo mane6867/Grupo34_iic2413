@@ -9,13 +9,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      height: 50vh;
     }
     .form-container {
-      background-color: #eee;
-      padding: 20px;
-      max-width: 400px;
-      margin-top: 50px;
+    display: flex;
+     /* justify-content: center;Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 130vh; /* Ajusta la altura según tus necesidades */
+    flex-direction: column; /* Muestra los elementos en una columna */
+ 
     }
   </style>
 
