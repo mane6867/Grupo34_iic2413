@@ -41,7 +41,6 @@ ini_set('display_errors', 1);
 
 
     $precio_sin_descuento = $datos_producto_stock[0][2];
-    print_r($precio_sin_descuento);
 
 
     $descuento_antiguo = $datos[0][4];
@@ -49,7 +48,6 @@ ini_set('display_errors', 1);
 
     $descuento_nuevo = $datos_producto_stock[0][9];
     $precio_descuento_nuevo = $precio_sin_descuento * $descuento_nuevo/100;
-    print_r($precio_descuento_nuevo);
 
 
 
@@ -70,15 +68,13 @@ ini_set('display_errors', 1);
 
 <div class="container">
     <div class="text-center" style="background-color: #eee;">
+        <p class="formulario-login-fuente-cabecera">La oferta ha sido realizada</p>
         <div class="formulario-login">
             <form action="portal_admin.php" method="GET">
-                <div class="formulario-login-cabecera">
-                    <p class="formulario-login-fuente-cabecera">La oferta ha sido realizada</p>
-                </div>
 
                 <div class="login-elements">
                 <p> <strong>Precio sin descuento: </strong><?php echo $precio_sin_descuento; ?></p>
-                <p> <strong> Descuento: </strong> <?php echo $descuento_nuevo; ?></p>
+                <p> <strong>Descuento: </strong> <?php echo $descuento_nuevo; ?></p>
                 <p><strong> Precio con descuento: </strong> <?php echo $precio_descuento_nuevo; ?></p>
                 </div>
                 <div class="login-elements">
