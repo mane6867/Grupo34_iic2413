@@ -23,7 +23,9 @@ $regiones = $result -> fetchAll();
 
 
 <form align="center" method="POST" action="portal_admin_tiendas.php">
+    <div>
     Seleccione una región:
+    </div>
     <div class="select is-info">
     <select name="region">
     <?php foreach ($regiones as $region): ?>
@@ -31,7 +33,7 @@ $regiones = $result -> fetchAll();
     <?php endforeach; ?>
     </select>
     <br>
-    <input type="submit" value="Enviar">
+    <input class="button" type="submit" value="Enviar">
     </br>
     </select>
     </div>
@@ -49,9 +51,9 @@ $regiones = $result -> fetchAll();
                 <div class="login-elements">
                 <div class="select">
                     <select name="region">
-                        <?php foreach ($regiones as $region): ?>
-                            <option value="<?php echo $region[1]; ?>"><?php echo $region[1]; ?></option>
-                        <?php endforeach; ?>
+                        <?php //foreach ($regiones as $region): ?>
+                            <option value="<?php //echo $region[1]; ?>"><?php //echo $region[1]; ?></option>
+                        <?php //endforeach; ?>
                     </select>
                 </div>
                 <div class="login-elements">
