@@ -41,6 +41,7 @@ ini_set('display_errors', 1);
 
 
     $precio_sin_descuento = $datos_producto_stock[0][2];
+    print_r($precio_sin_descuento)
 
 
     $descuento_antiguo = $datos[0][4];
@@ -48,6 +49,7 @@ ini_set('display_errors', 1);
 
     $descuento_nuevo = $datos_producto_stock[0][9];
     $precio_descuento_nuevo = $precio_sin_descuento * $descuento_nuevo/100;
+    print_r($precio_descuento_nuevo)
 
 
 
@@ -56,11 +58,23 @@ ini_set('display_errors', 1);
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="box">
-  <h2> La oferta ha sido recibida</h2>
-  <p> Precio sin descuento: <?php $precio_sin_descuento; ?></p>
-  <p> Descuento: <?php $descuento_nuevo; ?></p>
-  <p> Precio con descuento: <?php $precio_descuento_nuevo; ?></p>
+
+<div class="columns">
+  <div class="column">
+  </div>
+
+  <div class="column">
+    <div class="box">
+        <h2> La oferta ha sido recibida</h2>
+        <p> Precio sin descuento: <?php echo $precio_sin_descuento; ?></p>
+        <p> Descuento: <?php echo $descuento_nuevo; ?></p>
+        <p> Precio con descuento: <?php echo $precio_descuento_nuevo; ?></p>
+    </div>
+  </div>
+
+  <div class="column">
+  </div>
+  
 </div>
 
 <table>
