@@ -16,12 +16,12 @@
       padding: 20px;
       width: 400px;
       border: 2px solid #ccc;
-      height: 300px; /* Ajusta la altura según tus necesidades */
+      height: 260px; /* Ajusta la altura según tus necesidades */
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 100px;
+      margin-top: 120px;
     }
     .portal-title {
       font-size: 24px;
@@ -60,7 +60,7 @@ $regiones = $result -> fetchAll();
     <?php endforeach; ?>
     </select>
     <br>
-    <input class="button" type="submit" value="Enviar">
+    <input class="button is-light" type="submit" value="Enviar">
     </br>
     </select>
     </div>
