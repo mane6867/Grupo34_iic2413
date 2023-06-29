@@ -52,8 +52,10 @@ $regiones = $result -> fetchAll();
         <p class="formulario-login-fuente-cabecera">Portal Administrador</p>
         <div class="formulario-login">
             <form action="portal_admin_tiendas.php" method="POST">
+            <div class="formulario-login-cabecera">
+            <p class="formulario-login-fuente-cabecera">Seleccione una región:</p>
+          </div>
                 <div class="login-elements">
-                Seleccione una región:
                 <div class="select">
                     <select name="region">
                         <?php foreach ($regiones as $region): ?>
@@ -68,5 +70,6 @@ $regiones = $result -> fetchAll();
         </div>
     </div>
 </div>
+
 
 </html>
