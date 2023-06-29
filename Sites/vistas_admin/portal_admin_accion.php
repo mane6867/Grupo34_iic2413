@@ -64,6 +64,9 @@ $id_tienda = $_SESSION['id_tienda'];
                         <p>Porcentaje de descuento actual del producto: <?php echo $descuento; ?></p>
                         <p>Porcentaje de descuento actual del producto: <?php echo $datos_producto_stock[0][6]; ?></p>
                         <p>Porcentaje de descuento actual del producto: <?php echo $datos_producto_stock[0][7]; ?></p>
+                        <p>Porcentaje de descuento actual del producto: <?php echo $datos_producto_stock[0][8]; ?></p>
+                        <p>Porcentaje de descuento actual del producto: <?php echo $datos_producto_stock[0][9]; ?></p>
+                        <p>Porcentaje de descuento actual del producto: <?php echo $datos_producto_stock[0][10]; ?></p>
                         <input type="text" name="descuento"placeholder="Indique porcentaje de descuento" required>
                     </div>
                     <div class="login-elements">
