@@ -34,7 +34,7 @@ $id_tienda = $_SESSION['id_tienda'];
 
 <div class="container">
     <div class="text-center" style="background-color: #aaa;">
-        <p class="formulario-login-fuente-cabecera">Opciones</p>
+        <p class="formulario-login-fuente-cabecera">Stock</p>
         <div class="formulario-login">
             <form action="portal_admin_stock.php" method="POST">
                 <div class="formulario-login-cabecera">
@@ -53,7 +53,7 @@ $id_tienda = $_SESSION['id_tienda'];
 
 <div class="container">
     <div class="text-center" style="background-color: #aaa;">
-            <p class="formulario-login-fuente-cabecera">Opciones</p>
+            <p class="formulario-login-fuente-cabecera">Oferta</p>
             <div class="formulario-login">
                 <form action="portal_admin_oferta.php" method="POST">
                     <div class="formulario-login-cabecera">

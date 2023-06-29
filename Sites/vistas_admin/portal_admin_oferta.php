@@ -23,16 +23,38 @@ ini_set('display_errors', 1);
     $result = $db65 -> prepare($query);
     $result -> execute();
 
-    $query = "SELECT * FROM stock WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda;";
+
+
+
+    $query = "SELECT * FROM productos, stock WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda AND 
+    stock.id_producto = productos.id_producto;";
     $result = $db65 -> prepare($query);
     $result -> execute();
-    $datos2 = $result -> fetchAll();
+    $datos_producto_stock = $result -> fetchAll();
+
+
+
+
+    $precio_sin_descuento = $datos_producto_stock[0][2];
+
+
+    $descuento_antiguo = $datos[0][4]
+    $precio_descuento_antiguo = $precio_sin_descuento * $descuento_antiguo/100
+
+    $descuento_nuevo = $datos_producto_stock[0][9];
+    $precio_descuento_nuevo = $precio_sin_descuento * $descuento_nuevo/100
 
 
 
 
 ?>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
+<div class="box">
+  <h2> La oferta ha sido recibida</h2>
+  <p> Precio sin descuento: <?php $precio_sin_descuento?></p>
+</div>
 
 <table>
     <tr>
