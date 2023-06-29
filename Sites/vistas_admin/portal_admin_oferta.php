@@ -69,8 +69,7 @@ ini_set('display_errors', 1);
 
 
 <div class="container">
-    <div class="text-center" style="background-color: #aaa;">
-        <p class="formulario-login-fuente-cabecera">Oferta</p>
+    <div class="text-center" style="background-color: #eee;">
         <div class="formulario-login">
             <form action="portal_admin.php" method="GET">
                 <div class="formulario-login-cabecera">
@@ -83,7 +82,7 @@ ini_set('display_errors', 1);
                 <p><strong> Precio con descuento: </strong> <?php echo $precio_descuento_nuevo; ?></p>
                 </div>
                 <div class="login-elements">
-                    <input type="submit" name="Volver" class="btn btn-success">
+                    <input type="submit" value="Volver" class="btn btn-success">
                 </div>
             </form>
         </div>
@@ -91,13 +90,8 @@ ini_set('display_errors', 1);
 </div>
 
 
-        <h2> La oferta ha sido recibida</h2>
-        <p> Precio sin descuento: <?php echo $precio_sin_descuento; ?></p>
-        <p> Descuento: <?php echo $descuento_nuevo; ?></p>
-        <p> Precio con descuento: <?php echo $precio_descuento_nuevo; ?></p>
 
-
-
+<!-- Este es un comentario en HTML 
 <table>
     <tr>
         <th>Producto</th>
@@ -105,13 +99,13 @@ ini_set('display_errors', 1);
         <th>Descuento</th>
     </tr>
     <?php
-        foreach ($datos as $dato) {
-            echo "<tr><td>$dato[1]</td><td>$dato[2]</td> <td>$dato[4]</td></tr>";
-        }
-        foreach ($datos2 as $dato) {
-            echo "<tr><td>$dato[1]</td><td>$dato[2]</td> <td>$dato[4]</td></tr>";
-        }
+        //foreach ($datos as $dato) {
+        //    echo "<tr><td>$dato[1]</td><td>$dato[2]</td> <td>$dato[4]</td></tr>";
+        //}
+        //foreach ($datos2 as $dato) {
+        //    echo "<tr><td>$dato[1]</td><td>$dato[2]</td> <td>$dato[4]</td></tr>";
+        //}
     ?>
 </table>
-
+-->
 </html>
