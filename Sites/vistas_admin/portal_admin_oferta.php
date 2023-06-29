@@ -38,11 +38,11 @@ ini_set('display_errors', 1);
     $precio_sin_descuento = $datos_producto_stock[0][2];
 
 
-    $descuento_antiguo = $datos[0][4]
-    $precio_descuento_antiguo = $precio_sin_descuento * $descuento_antiguo/100
+    $descuento_antiguo = $datos[0][4];
+    $precio_descuento_antiguo = $precio_sin_descuento * $descuento_antiguo/100;
 
     $descuento_nuevo = $datos_producto_stock[0][9];
-    $precio_descuento_nuevo = $precio_sin_descuento * $descuento_nuevo/100
+    $precio_descuento_nuevo = $precio_sin_descuento * $descuento_nuevo/100;
 
 
 
@@ -53,7 +53,7 @@ ini_set('display_errors', 1);
 
 <div class="box">
   <h2> La oferta ha sido recibida</h2>
-  <p> Precio sin descuento: <?php $precio_sin_descuento?></p>
+  <p> Precio sin descuento: <?php $precio_sin_descuento; ?></p>
 </div>
 
 <table>
