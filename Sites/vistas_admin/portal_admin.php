@@ -14,9 +14,8 @@
     .form-container {
       background-color: #eee;
       padding: 20px;
-      max-width: 400px;
-      margin-top: 50px;
-    
+      width: 400px;
+      border: 2px solid #ccc;
       
     }
   </style>
