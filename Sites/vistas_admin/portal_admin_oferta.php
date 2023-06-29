@@ -41,7 +41,7 @@ ini_set('display_errors', 1);
 
 
     $precio_sin_descuento = $datos_producto_stock[0][2];
-    print_r($precio_sin_descuento)
+    print_r($precio_sin_descuento);
 
 
     $descuento_antiguo = $datos[0][4];
@@ -49,7 +49,7 @@ ini_set('display_errors', 1);
 
     $descuento_nuevo = $datos_producto_stock[0][9];
     $precio_descuento_nuevo = $precio_sin_descuento * $descuento_nuevo/100;
-    print_r($precio_descuento_nuevo)
+    print_r($precio_descuento_nuevo);
 
 
 
@@ -74,7 +74,7 @@ ini_set('display_errors', 1);
 
   <div class="column">
   </div>
-  
+
 </div>
 
 <table>
