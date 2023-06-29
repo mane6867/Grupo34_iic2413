@@ -46,4 +46,27 @@ $regiones = $result -> fetchAll();
 </div>
 
 
+<div class="container">
+    <div class="text-center" style="background-color: #eee;">
+        <p class="formulario-login-fuente-cabecera">Portal Administrador</p>
+        <div class="formulario-login">
+            <form action="portal_admin_tiendas.php" method="POST">
+                <div class="login-elements">
+                Seleccione una región:
+                <div class="select is-info">
+                    <select name="region">
+                        <option value="">Región</option>
+                        <?php foreach ($regiones as $region): ?>
+                            <option value="<?php echo $region[1]; ?>"><?php echo $region[1]; ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+                <div class="login-elements">
+                    <input type="submit" value="Enviar" class="btn btn-success">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 </html>
