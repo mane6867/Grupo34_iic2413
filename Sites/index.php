@@ -43,7 +43,9 @@
       exit;
   }
   elseif ($_POST['contrasena']!= '') 
-    {header('Location: portal_usuarios.php');
+    {include('inicio_sesion.php');  
+      
+      //header('Location: portal_usuarios.php');
     exit;}
 ?>
 
