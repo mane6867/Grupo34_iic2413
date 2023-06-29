@@ -7,6 +7,17 @@ ini_set('display_errors', 1);
 session_start();
 $id_producto = $_POST['producto'];
 $_SESSION['id_producto'] = $id_producto;
+$id_tienda = $_SESSION['id_tienda'];
+
+
+$query = "SELECT * FROM productos, stock WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda AND 
+    stock.id_producto = productos.id_producto;";
+    $result = $db65 -> prepare($query);
+    $result -> execute();
+    $datos_producto_stock = $result -> fetchAll();
+    $precio = $datos_producto_stock[0][2];
+    $descuento = $datos_producto_stock[0][5];
+
 
 ?>
 <html lang="en">
@@ -49,7 +60,9 @@ $_SESSION['id_producto'] = $id_producto;
                         <p class="formulario-login-fuente-cabecera">Armar oferta</p>
                     </div>
                     <div class="login-elements">
-                        <input type="text" name="descuento"placeholder="Precio oferta" required>
+                        <p>Precio actual del producto: <?php echo $precio; ?></p>
+                        <p>Porcentaje de descuento actual del producto: <?php echo $descuento; ?></p>
+                        <input type="text" name="descuento"placeholder="Indique porcentaje de descuento" required>
                     </div>
                     <div class="login-elements">
                         <input type="submit" name="Crear" class="btn btn-success">
