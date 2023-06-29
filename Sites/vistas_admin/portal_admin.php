@@ -16,7 +16,16 @@
       padding: 20px;
       width: 400px;
       border: 2px solid #ccc;
-      height: 200px;
+      height: 200px; /* Ajusta la altura según tus necesidades */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .portal-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
     }
   </style>
 
@@ -38,6 +47,7 @@ $regiones = $result -> fetchAll();
 
 <div class = "container">
     <div class = "form-container">
+    <div class="portal-title">Portal Administrador</div>
 <form align="center" method="POST" action="portal_admin_tiendas.php">
     <div>
     Seleccione una región:
