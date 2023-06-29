@@ -87,21 +87,4 @@ ini_set('display_errors', 1);
 
 
 
-<!-- Este es un comentario en HTML 
-<table>
-    <tr>
-        <th>Producto</th>
-        <th>Tienda</th>
-        <th>Descuento</th>
-    </tr>
-    <?php
-        //foreach ($datos as $dato) {
-        //    echo "<tr><td>$dato[1]</td><td>$dato[2]</td> <td>$dato[4]</td></tr>";
-        //}
-        //foreach ($datos2 as $dato) {
-        //    echo "<tr><td>$dato[1]</td><td>$dato[2]</td> <td>$dato[4]</td></tr>";
-        //}
-    ?>
-</table>
--->
 </html>

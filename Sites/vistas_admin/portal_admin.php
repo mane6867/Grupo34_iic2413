@@ -7,6 +7,9 @@
   crossorigin="anonymous">
   <link href="styles/mystyles.css" rel="stylesheet" type="text/css">
   <title>Muebles3465</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 
@@ -22,8 +25,12 @@ $result -> execute();
 $regiones = $result -> fetchAll();
 ?>
 
+
+
+<div class = 'container'>
 <form align="center" method="POST" action="portal_admin_tiendas.php">
     Seleccione una región:
+    <div class="select is-info">
     <select name="region">
     <option value="">Región</option>
     <?php foreach ($regiones as $region): ?>
@@ -34,7 +41,9 @@ $regiones = $result -> fetchAll();
     <input type="submit" value="Enviar">
     </br>
     </select>
+    </div>
 </form>
+</div>
 
 
 </html>
