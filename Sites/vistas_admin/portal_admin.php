@@ -16,7 +16,7 @@
       padding: 20px;
       width: 400px;
       border: 2px solid #ccc;
-      height: 260px; /* Ajusta la altura según tus necesidades */
+      height: 280px; /* Ajusta la altura según tus necesidades */
       display: flex;
       flex-direction: column;
       justify-content: center;
