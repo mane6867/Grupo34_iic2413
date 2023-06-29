@@ -33,7 +33,7 @@ $id_tienda = $_SESSION['id_tienda'];
 </head>
 
 <div class="container">
-    <div class="text-center" style="background-color: #aaa;">
+    <div class="text-center" style="background-color: #eee;">
         <p class="formulario-login-fuente-cabecera">Stock</p>
         <div class="formulario-login">
             <form action="portal_admin_stock.php" method="POST">
@@ -52,7 +52,7 @@ $id_tienda = $_SESSION['id_tienda'];
 </div>
 
 <div class="container">
-    <div class="text-center" style="background-color: #aaa;">
+    <div class="text-center" style="background-color: #eee;">
             <p class="formulario-login-fuente-cabecera">Oferta</p>
             <div class="formulario-login">
                 <form action="portal_admin_oferta.php" method="POST">
