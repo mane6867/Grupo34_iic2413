@@ -4,6 +4,20 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .form-container {
+      background-color: #eee;
+      padding: 20px;
+      max-width: 400px;
+      margin-top: 50px;
+    }
+  </style>
 
 </head>
 
@@ -21,7 +35,8 @@ $regiones = $result -> fetchAll();
 ?>
 
 
-
+<div class = "container">
+    <div class = "form-container">
 <form align="center" method="POST" action="portal_admin_tiendas.php">
     <div>
     Seleccione una región:
@@ -38,6 +53,8 @@ $regiones = $result -> fetchAll();
     </select>
     </div>
 </form>
+</div>
+</div>
 
 <!--
 <div class="container">
