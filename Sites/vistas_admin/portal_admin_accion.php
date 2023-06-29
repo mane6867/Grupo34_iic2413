@@ -10,13 +10,13 @@ $_SESSION['id_producto'] = $id_producto;
 $id_tienda = $_SESSION['id_tienda'];
 
 
-$query = "SELECT * FROM productos, stock WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda AND 
+    $query = "SELECT * FROM productos, stock WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda AND 
     stock.id_producto = productos.id_producto;";
     $result = $db65 -> prepare($query);
     $result -> execute();
     $datos_producto_stock = $result -> fetchAll();
     $precio = $datos_producto_stock[0][2];
-    $descuento = $datos_producto_stock[0][5];
+    $descuento = $datos_producto_stock[0][4];
 
 
 ?>
