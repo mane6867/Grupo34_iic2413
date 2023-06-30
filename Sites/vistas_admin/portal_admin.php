@@ -96,7 +96,7 @@ $regiones = $result -> fetchAll();
 
 <br>
 <br>
-<form action="../index.php" method="get">
+<form  align="center" action="../index.php" method="get">
     <input type="submit" value="Volver">
 </form>
 </body>
