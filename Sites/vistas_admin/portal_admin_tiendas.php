@@ -69,6 +69,15 @@ $tiendas = $result -> fetchAll();
 </form>
 </div>
 </div>
+
+<br>
+<br>
+<form action="portal_admin.php" method="get">
+    <input type="submit" value="Volver">
+</form>
+</body>
+
+</html>
 </html>
 
 
