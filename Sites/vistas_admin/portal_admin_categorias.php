@@ -14,7 +14,6 @@ $categorias = $result -> fetchAll();
 session_start();
 $id_tienda = $_POST['tienda'];
 $_SESSION['id_tienda'] = $id_tienda;
-print_r($_SESSION['id_tienda']);
 ?>
 
 <html>
