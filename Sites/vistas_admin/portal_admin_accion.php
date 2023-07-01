@@ -47,7 +47,7 @@ $id_tienda = $_SESSION['id_tienda'];
                     <input type="number" name="stock" placeholder="Nuevo stock" min = 0 required>
                 </div>
                 <div class="login-elements">
-                    <input type="submit" name="Actualizar" class="btn btn-success">
+                    <input type="submit" name="Actualizar" value = "Actualizar" class = "button is-success">
                 </div>
             </form>
         </div>
@@ -69,7 +69,7 @@ $id_tienda = $_SESSION['id_tienda'];
                         <input type="number" name="descuento" placeholder="Indique nuevo porcentaje de descuento" min = 0 max = 100 required>
                     </div>
                     <div class="login-elements">
-                        <input type="submit" name="Crear" class="btn btn-success">
+                        <input type="submit" name="Actualizar" value = "Actualizar" class = "button is-success">
                     </div>
                 </form>
             </div>
