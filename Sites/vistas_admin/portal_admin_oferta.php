@@ -9,7 +9,6 @@ ini_set('display_errors', 1);
     session_start();
     $id_producto = $_SESSION['id_producto'];
     $nuevo_descuento = $_POST['descuento'];
-    $nuevo_descuento = 100- $nuevo_descuento;
     $id_tienda = $_SESSION['id_tienda'];
 
     $query = "SELECT * FROM stock WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda;";
@@ -45,10 +44,10 @@ ini_set('display_errors', 1);
 
 
     $descuento_antiguo = $datos[0][4];
-    $precio_descuento_antiguo = $precio_sin_descuento * $descuento_antiguo/100;
+    $precio_descuento_antiguo = $precio_sin_descuento * (100-$descuento_antiguo)/100;
 
     $descuento_nuevo = $datos_producto_stock[0][9];
-    $precio_descuento_nuevo = $precio_sin_descuento * $descuento_nuevo/100;
+    $precio_descuento_nuevo = $precio_sin_descuento * (100 -$descuento_nuevo)/100;
 
 
 
@@ -75,7 +74,7 @@ ini_set('display_errors', 1);
 
                 <div class="login-elements">
                 <p> <strong>Precio sin oferta: </strong><?php echo $precio_sin_descuento; ?></p>
-                <p> <strong>Descuento: </strong> <?php echo 100 - $descuento_nuevo; ?></p>
+                <p> <strong>Descuento: </strong> <?php echo $descuento_nuevo; ?></p>
                 <p><strong> Precio con oferta: </strong> <?php echo $precio_descuento_nuevo; ?></p>
                 </div>
                 <div class="login-elements">
