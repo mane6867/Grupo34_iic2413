@@ -1,6 +1,30 @@
 /* Este archivo no es necesario. Solo es para cambiar las propiedades de los objetos HTML
 Es mucho más fácil implementar una plantilla de Bootstrap que cambiar estas cosas a mano */
 
+input {
+    width: 40%;
+    height: 30px;
+}
+
+input[type=text] {
+    font-size: 20px;
+}
+
+input[type=submit] {
+    width: 10em;
+    height: 2em;
+    font-size: 20px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 5px;
+    size: 20px;
+}
 
 h1 {
     color: green;
@@ -81,30 +105,8 @@ tr:nth-child(even) {
     color:#007C9B;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-}
-
-.form-container {
-    background-color: #eee;
-    padding: 20px;
-    width: 400px;
-    border: 2px solid #ccc;
-    height: 370px; /* Ajusta la altura según tus necesidades */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 190px;
-}
-
-.portal-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 30px;
+.container{
+    padding-top: 16px;
 }
 
 select {
