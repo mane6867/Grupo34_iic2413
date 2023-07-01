@@ -3,8 +3,8 @@
 require("config/conexion.php");
 
 session_start();
-$usuario = pg_escape_string($db34, $_POST['nombre']);
-$clave = pg_escape_string($db34, $_POST['contrasena']);
+$usuario = $_POST['nombre'];
+$clave = $_POST['contrasena'];
 
 echo "Bienvendio $usuario $clave";
 
