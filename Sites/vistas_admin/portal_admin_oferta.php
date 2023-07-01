@@ -9,6 +9,7 @@ ini_set('display_errors', 1);
     session_start();
     $id_producto = $_SESSION['id_producto'];
     $nuevo_descuento = $_POST['descuento'];
+    $nuevo_descuento = 100- $nuevo_descuento
     $id_tienda = $_SESSION['id_tienda'];
 
     $query = "SELECT * FROM stock WHERE stock.id_producto = $id_producto AND stock.id_tienda = $id_tienda;";

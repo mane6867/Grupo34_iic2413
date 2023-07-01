@@ -64,8 +64,8 @@ $id_tienda = $_SESSION['id_tienda'];
                     <div class="login-elements">
                         <p> <strong>Precio sin oferta:</strong> <?php echo $precio; ?></p>
                         <p> <strong>Porcentaje de descuento actual: </strong> <?php echo $descuento; ?></p>
-                        <p> <strong>Precio con oferta:</strong> <?php echo $precio*$descuento/100; ?></p>
-                        <input type="text" name="descuento"placeholder="Indique nuevo porcentaje de descuento" required>
+                        <p> <strong>Precio con oferta:</strong> <?php echo $precio*(100-$descuento)/100; ?></p>
+                        <input type="text" name="descuento"placeholder="Indique nuevo porcentaje de descuento" min = 1 max = 100 required>
                     </div>
                     <div class="login-elements">
                         <input type="submit" name="Crear" class="btn btn-success">
