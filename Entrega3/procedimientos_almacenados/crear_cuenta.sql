@@ -15,11 +15,11 @@ BEGIN
 
     -- agregar la direccion  
     INSERT INTO direccion VALUES (idmax_direccion + 1, 
-    (SELECT id_ubicacion FROM region_comuna WHERE id_region = region AND id_comuna = comuna), 
-    calle, numero)
+    (SELECT id_ubicacion FROM region_comuna WHERE id_region = region AND id_comuna = comuna;), 
+    calle, numero);
 
     -- agregar el cliente
-    INSERT INTO clientes VALUES (idmax_cliente + 1, idmax_direccion + 1, nombre, rut)
+    INSERT INTO clientes VALUES (idmax_cliente + 1, idmax_direccion + 1, nombre, rut);
 
 END
 
