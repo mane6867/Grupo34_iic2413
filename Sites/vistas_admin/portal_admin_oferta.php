@@ -73,9 +73,9 @@ ini_set('display_errors', 1);
             <form action="portal_admin.php" method="GET">
 
                 <div class="login-elements">
-                <p> <strong>Precio sin descuento: </strong><?php echo $precio_sin_descuento; ?></p>
+                <p> <strong>Precio sin oferta: </strong><?php echo $precio_sin_descuento; ?></p>
                 <p> <strong>Descuento: </strong> <?php echo $descuento_nuevo; ?></p>
-                <p><strong> Precio con descuento: </strong> <?php echo $precio_descuento_nuevo; ?></p>
+                <p><strong> Precio con oferta: </strong> <?php echo $precio_descuento_nuevo; ?></p>
                 </div>
                 <div class="login-elements">
                     <input type="submit" value="Volver" class="btn btn-success">
