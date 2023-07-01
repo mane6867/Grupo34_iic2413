@@ -2,8 +2,8 @@
 
 require("config/conexion.php");
 session_start();
-$usuario = $_POST['nombre'];
-$clave = $_POST['contrasena'];
+$usuario = pg_escape_string($db34, $_POST['nombre']);
+$clave = pg_escape_string($db34, $_POST['contrasena']);
 
 $query = "SELECT * FROM usuarios 
     WHERE usuarios.nombre = '$usuario'
