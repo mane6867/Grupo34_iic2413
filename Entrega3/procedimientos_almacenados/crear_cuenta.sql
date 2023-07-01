@@ -4,6 +4,7 @@ crear_cliente (nombre VARCHAR, rut VARCHAR, region INT, comuna INT, calle VARCHA
 
 RETURNS BOOLEAN AS $$
 
+DECLARE
 idmax_direccion INT;
 idmax_cliente INT;
 
