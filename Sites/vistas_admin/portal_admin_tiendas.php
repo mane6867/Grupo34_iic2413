@@ -50,45 +50,31 @@ $tiendas = $result -> fetchAll();
 
 
 <div class = "container">
-    <div class = "form-container">
+  <div class = "form-container">
     <div class="portal-title">Portal Administrador</div>
-<form align="center" method="POST" action = "portal_admin_categorias.php">
-    <div>
-    Seleccione una tienda:
-    </div>
-    <div class="select is-success">
-    <select name="tienda">
-    <?php foreach ($tiendas as $tienda): ?>
-        <option value="<?php echo $tienda[0]; ?>"><?php echo $tienda[0]; ?></option>
-    <?php endforeach; ?>
-    </select>
+    <form align="center" method="POST" action = "portal_admin_categorias.php">
+        <div>
+          Seleccione una tienda:
+        </div>
+        <div class="select is-success">
+          <select name="tienda">
+            <?php foreach ($tiendas as $tienda): ?>
+                <option value="<?php echo $tienda[0]; ?>"><?php echo $tienda[0]; ?></option>
+            <?php endforeach; ?>
+          </select>
+        <br>
+        <input class="button is-success" type="submit" value="Enviar">
+        </select>
+        </div>
+    </form>
     <br>
-    <input class="button is-success" type="submit" value="Enviar">
-    </br>
-    </select>
-    </div>
-</form>
+    <br>
+    <br>
+    <form  align="center" action="../index.php" method="get">
+        <input type="submit" value="Volver" class="button is-success">
+    </form>
+  </div>
 </div>
-</div>
-
-<br>
-<br>
-<br>
-
-<form  align="center" action="portal_admin.php" method="get">
-    <input type="submit" value="Volver" class="button is-success">
-</form>
-
-<?php
-  //if (! $_POST['tienda']== ''){
-  //  header('Location: vistas_admin/portal_admin_categorias.php');
-  //  session_start();
-  //  $id_tienda = $_POST['tienda'];
-  //  $_SESSION['id_tienda'] = $id_tienda;
-  //  exit;
-  //}
-
-?>
 
 </html>
 
