@@ -14,7 +14,7 @@ $categorias = $result -> fetchAll();
 
 $id_tienda = $_POST['tienda'];
 $_SESSION['id_tienda'] = $id_tienda;
-$region = $_SESSION['region']
+$region = $_SESSION['region'];
 ?>
 
 <html>

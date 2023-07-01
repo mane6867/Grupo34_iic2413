@@ -73,6 +73,7 @@ $tiendas = $result -> fetchAll();
     <br>
     <form  align="center" action="portal_admin.php" method="get">
         <input type="submit" value="Volver" class="button is-success">
+
     </form>
   </div>
 </div>
