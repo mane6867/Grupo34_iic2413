@@ -64,8 +64,8 @@ $comunas = $result -> fetchAll();
                 <?php endforeach; ?>
             </select>
             </div>
-            <br>
             <div>
+            <br>
             Calle:
             <input type="text" name="calle" placeholder = "Calle" required>
             </div>
