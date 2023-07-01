@@ -9,8 +9,8 @@ session_start();
 $comuna = $_POST['comuna'];
 $calle = $_POST['calle'];
 $numero_calle = $_POST['numero'];
-$nombre = $_SESSION['nombre'];
-$rut = $_SESSION['rut'];
+$nombre_cliente = $_SESSION['nombre'];
+$rut_cliente = $_SESSION['rut'];
 $region = $_SESSION['region'];
 
 
@@ -19,7 +19,7 @@ $query = "SELECT crear_cuenta($nombre, $rut, $region, $comuna, $calle, $numero_c
 $consulta = $db34 -> prepare($query);
 $consulta -> execute();
 
-$query = "SELECT id_cliente FROM clientes WHERE nombre = $nombre AND rut = $rut;";
+$query = "SELECT id_cliente FROM clientes WHERE nombre = $nombre_cliente AND rut = $rut_cliente;";
 $consulta = $db34 -> prepare($query);
 $consulta -> execute();
 $resultado = $consulta -> fetchAll();
