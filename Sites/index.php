@@ -25,14 +25,10 @@
           <div class="login-elements">
             <input type="password" name="contrasena"placeholder="Contraseña" required>
           </div>
-          <div class="login-elements">
-            <input type="submit" name="Ingresar" value="Ingresar" class="button is-success">
-          </div>
+          <input type="submit" name="Ingresar" value="Ingresar" class="button is-success">
         </form>
         <form align="center"  action='./importar_usuarios.php' method='GET'>
-          <div class="login-elements">
-            <input type='submit' value='Importar Usuarios' class="button is-success">
-            </div>
+          <input type='submit' value='Importar Usuarios' class="button is-success">
         </form>
       </div>
     </div>
