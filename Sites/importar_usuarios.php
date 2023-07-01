@@ -48,8 +48,9 @@ ini_set('display_errors', 1);
 
 ?>
 
+<div style="text-align: center;">
 <div class="tabla-centrada">
-  <table>
+  <table  style="margin: 0 auto;">
     <tr>
       <th>ID</th>
       <th>Nombre</th>
@@ -61,6 +62,7 @@ ini_set('display_errors', 1);
     }
     ?>
   </table>
+</div>
 </div>
 
 
