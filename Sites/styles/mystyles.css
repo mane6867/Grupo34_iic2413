@@ -110,9 +110,13 @@ tr:nth-child(even) {
     padding-top: 16px;
 }
 
-.tabla-centrada {
-    margin: auto;
-}  
+.tabla-centrada table,
+.tabla-centrada th,
+.tabla-centrada td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
 
 select {
     padding: 10px;
