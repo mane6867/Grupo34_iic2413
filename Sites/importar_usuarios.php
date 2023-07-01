@@ -48,18 +48,20 @@ ini_set('display_errors', 1);
 
 ?>
 
-<table>
+<div class="tabla-centrada">
+  <table>
     <tr>
       <th>ID</th>
       <th>Nombre</th>
       <th>Tipo</th>
     </tr>
-  <?php
-	foreach ($usuarios as $usuario) {
-  	echo "<tr><td>$usuario[0]</td><td>$usuario[1]</td> <td>$usuario[2]</td></tr>";
-	}
-  ?>
-	</table>
+    <?php
+      foreach ($usuarios as $usuario) {
+        echo "<tr><td>$usuario[0]</td><td>$usuario[1]</td> <td>$usuario[2]</td></tr>";
+    }
+    ?>
+  </table>
+</div>
 
 
 </body>
