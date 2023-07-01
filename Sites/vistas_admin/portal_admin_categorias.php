@@ -58,6 +58,7 @@ $region = $_SESSION['region']
         <div>
           Seleccione una categoría de producto:
         </div>
+        <br>
         <div class="select is-success">
           <select name="categoria">
             <?php foreach ($categorias as $categoria): ?>

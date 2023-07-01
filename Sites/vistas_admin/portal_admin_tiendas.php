@@ -56,6 +56,7 @@ $tiendas = $result -> fetchAll();
         <div>
           Seleccione una tienda:
         </div>
+        <br>
         <div class="select is-success">
           <select name="tienda">
             <?php foreach ($tiendas as $tienda): ?>
