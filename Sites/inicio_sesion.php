@@ -14,6 +14,7 @@ $query = "SELECT * FROM usuarios
 $consulta = pg_query($db34, $query);
 $cantidad = pg_num_rows($consulta);
 
+echo "$cantidad";
 
 if($cantidad > 0){
     $_SESSION['nombre_usuario'] = $usuario;
