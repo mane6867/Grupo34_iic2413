@@ -76,4 +76,5 @@ $id_tienda = $_SESSION['id_tienda'];
 
 </body>
 
+
 </html>

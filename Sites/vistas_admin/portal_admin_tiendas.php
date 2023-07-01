@@ -78,7 +78,7 @@ $tiendas = $result -> fetchAll();
     <input type="submit" value="Volver" class="button is-success">
 </form>
 
-</html>
+
 </html>
 
 
