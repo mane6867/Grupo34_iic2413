@@ -22,12 +22,12 @@
           <div class="login-elements">
             <input type="text" name="nombre"placeholder="Usuario" required>
           </div>
-          <div class="login-elements">
-            <input type="password" name="contrasena"placeholder="Contraseña" required>
-          </div>
-          <div class="login-elements">
-            <input type="submit" name="Ingresar" value="Ingresar" class="btn btn-success">
-          </div>
+          <br>
+          <input type="password" name="contrasena"placeholder="Contraseña" required>
+          <br>
+          <br>
+          <br>
+          <input type="submit" name="Ingresar" value="Ingresar" class="button is-success">
         </form>
         <form align="center"  action='./importar_usuarios.php' method='GET'>
           <div class="login-elements">
