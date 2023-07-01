@@ -1,7 +1,5 @@
 <?php
 
-require("config/conexion.php");
-
 session_start();
 
 $nombre_login = $_POST['nombre'];
