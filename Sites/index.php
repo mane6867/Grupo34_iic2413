@@ -2,7 +2,7 @@
 <body>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
   crossorigin="anonymous">
@@ -25,10 +25,14 @@
           <div class="login-elements">
             <input type="password" name="contrasena"placeholder="Contraseña" required>
           </div>
-          <input type="submit" name="Ingresar" value="Ingresar" class="button is-success">
+          <div class="login-elements">
+            <input type="submit" name="Ingresar" value="Ingresar" class="button is-success">
+          </div>
         </form>
         <form align="center"  action='./importar_usuarios.php' method='GET'>
-          <input type='submit' value='Importar Usuarios' class="button is-success">
+          <div class="login-elements">
+            <input type='submit' value='Importar Usuarios' class="button is-success">
+          </div>
         </form>
       </div>
     </div>
