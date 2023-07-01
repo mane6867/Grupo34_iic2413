@@ -52,31 +52,31 @@ $region = $_SESSION['region']
 
 
 <div class = "container">
-    <div class = "form-container">
-      <div class="portal-title">Portal Administrador</div>
-      <form align="center" method="POST" action="portal_admin_productos.php">
+  <div class = "form-container">
+    <div class="portal-title">Portal Administrador</div>
+    <form align="center" method="POST" action="portal_admin_productos.php">
         <div>
           Seleccione una categoría de producto:
         </div>
-        <br>
         <div class="select is-success">
           <select name="categoria">
             <?php foreach ($categorias as $categoria): ?>
                 <option value="<?php echo $categoria[0]; ?>"><?php echo $categoria[0]; ?></option>
             <?php endforeach; ?>
-            </select>
-            <br>
-            <input class="button is-success" type="submit" value="Enviar">
+          </select>
+          <br>
+          <input class="button is-success" type="submit" value="Enviar">
           </select>
         </div>
-      </form>
-      <br>
-      <br>
-      <br>
-      <form  align="center" action="portal_admin_tiendas.php" method="get">
-          <input type="submit" value="Volver" class="button is-success">
-      </form>
-    </div>
+    </form>
+    <br>
+    <br>
+    <br>
+    <form  align="center" action="portal_admin_tiendas.php" method="post">
+      <input type="hidden" name="region" value= "<?php echo $region; ?>">
+      <input type="submit" value="Volver" class="button is-success">
+    </form>
+  </div>
 </div>
 
 </html>
