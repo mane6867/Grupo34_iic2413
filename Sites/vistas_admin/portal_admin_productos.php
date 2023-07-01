@@ -54,33 +54,30 @@ $productos = $result -> fetchAll();
 
 
 <div class = "container">
-    <div class = "form-container">
+  <div class = "form-container">
     <div class="portal-title">Portal Administrador</div>
-<form align="center" method="POST" action="portal_admin_accion.php">
-    <div>
-    Seleccione un producto:
-    </div>
-    <div class="select is-success">
-    <select name="producto">
-    <?php foreach ($productos as $producto): ?>
-        <option value="<?php echo $producto[0]; ?>"><?php echo $producto[1]; ?></option>
-    <?php endforeach; ?>
-    </select>
+    <form align="center" method="POST" action="portal_admin_accion.php">
+      <div>
+        Seleccione un producto:
+      </div>
+      <div class="select is-success">
+        <select name="producto">
+          <?php foreach ($productos as $producto): ?>
+              <option value="<?php echo $producto[0]; ?>"><?php echo $producto[1]; ?></option>
+          <?php endforeach; ?>
+        </select>
+        <br>
+        <input class="button is-success" type="submit" value="Enviar">
+        </select>
+      </div>
+    </form>
     <br>
-    <input class="button is-success" type="submit" value="Enviar">
-    </br>
-    </select>
-    </div>
-</form>
+    <br>
+    <br>
+    <form  align="center" action="portal_admin_categorias.php" method="post">
+      <input type="hidden" name="tienda" value= "<?php echo $_SESSION['id_tienda']; ?>">
+      <input type="submit" value="Volver" class="button is-success">
+    </form>
+  </div>
 </div>
-</div>
-
-<br>
-<br>
-<br>
-
-<form  align="center" action="portal_admin_categorias.php" method="post">
-  <input type="hidden" name="tienda" value= "<?php echo $_SESSION['id_tienda']; ?>">
-    <input type="submit" value="Volver" class="button is-success">
-</form>
 </html>
