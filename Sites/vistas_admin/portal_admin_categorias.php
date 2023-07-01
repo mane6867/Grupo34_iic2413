@@ -73,7 +73,7 @@ $region = $_SESSION['region']
       <br>
       <br>
       <br>
-      <form  align="center" action="../index.php" method="get">
+      <form  align="center" action="portal_admin_tiendas" method="get">
           <input type="submit" value="Volver" class="button is-success">
       </form>
     </div>
