@@ -104,10 +104,10 @@ $regiones = $result -> fetchAll();
 
 
 <?php
-  if (! $_POST['region']== ''){
+  if (! $_POST["region"]== ''){
     header('Location: index.php');
     session_start();
-    $_SESSION['region'] =  $_POST['region'];
+    $_SESSION["region"] =  $_POST["region"];
     exit;
   }
 
