@@ -43,7 +43,7 @@ $id_tienda = $_SESSION['id_tienda'];
                 </div>
                 <div class="login-elements">
                     <p> <strong>Stock actual: </strong><?php echo $stock;?> </p>
-                    <input type="text" name="stock"placeholder="Nuevo stock" required>
+                    <input type="number" name="stock"placeholder="Nuevo stock" required>
                 </div>
                 <div class="login-elements">
                     <input type="submit" name="Actualizar" class="btn btn-success">
@@ -65,7 +65,7 @@ $id_tienda = $_SESSION['id_tienda'];
                         <p> <strong>Precio sin oferta:</strong> <?php echo $precio; ?></p>
                         <p> <strong>Porcentaje de descuento actual: </strong> <?php echo $descuento; ?></p>
                         <p> <strong>Precio con oferta:</strong> <?php echo $precio*(100-$descuento)/100; ?></p>
-                        <input type="text" name="descuento"placeholder="Indique nuevo porcentaje de descuento" min = 1 max = 100 required>
+                        <input type="number" name="descuento" placeholder="Indique nuevo porcentaje de descuento" min = 1 max = 100 required>
                     </div>
                     <div class="login-elements">
                         <input type="submit" name="Crear" class="btn btn-success">
