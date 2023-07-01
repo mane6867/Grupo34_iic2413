@@ -16,12 +16,12 @@
       padding: 20px;
       width: 400px;
       border: 2px solid #ccc;
-      height: 320px; /* Ajusta la altura según tus necesidades */
+      height: 350px; /* Ajusta la altura según tus necesidades */
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 150px;
+      margin-top: 130px;
     }
     .portal-title {
       font-size: 24px;
