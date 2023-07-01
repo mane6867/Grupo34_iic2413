@@ -41,6 +41,12 @@ $nombre = $_POST['nombre'];
 $rut = $_POST['rut'];
 $id_region = $_POST['region'];
 
+session_start();
+
+$_SESSION['nombre'] = $nombre;
+$_SESSION['rut'] = $rut;
+$_SESSION['region'] = $region;
+
 
 $query = "SELECT comuna.nombre, comuna.id_comuna FROM region_comuna, comuna where comuna.id_comuna = region_comuna.id_comuna AND region_comuna.id_region = $id_region;";
 $result = $db34 -> prepare($query);
