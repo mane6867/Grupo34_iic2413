@@ -14,7 +14,7 @@
     <div class="text-center" style="background-color: #eee;">
       <p class="formulario-login-fuente-cabecera">Muebles<span>3465</span></p>
       <div class="formulario-login">
-        <form method="POST">
+        <form method="POST" action="inicio_sesion.php">
           <div class="formulario-login-cabecera">
             <p class="formulario-login-fuente-cabecera">Iniciar Sesión</p>
           </div>
