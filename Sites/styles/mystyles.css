@@ -16,16 +16,6 @@ input[type=submit] {
     font-size: 25px;
 }
 
-button {
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 25px;
-    padding: 5px;
-    size: 20px;
-}
-
 h1 {
     color: green;
 }
