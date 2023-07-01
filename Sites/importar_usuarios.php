@@ -69,7 +69,6 @@ ini_set('display_errors', 1);
 
 <br>
 <br>
-<br>
 </body>
 <form  align="center" action="index.php" method="get">
     <input type="submit" value="Volver" class="button is-success">

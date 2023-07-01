@@ -128,6 +128,53 @@ option {
     padding: 5px;
 }
 
+.button.is-success{background-color:#48c78e;border-color:transparent;color:#fff}
+.button.is-success.is-hovered,
+.button.is-success:hover{background-color:#3ec487;border-color:transparent;color:#fff}
+.button.is-success.is-focused,
+.button.is-success:focus{border-color:transparent;color:#fff}
+.button.is-success.is-focused:not(:active),
+.button.is-success:focus:not(:active){box-shadow:0 0 0 .125em rgba(72,199,142,.25)}
+.button.is-success.is-active,
+.button.is-success:active{background-color:#3abb81;border-color:transparent;color:#fff}
+.button.is-success[disabled],
+fieldset[disabled] 
+.button.is-success{background-color:#48c78e;border-color:#48c78e;box-shadow:none}
+.button.is-success.is-inverted{background-color:#fff;color:#48c78e}
+.button.is-success.is-inverted.is-hovered,
+.button.is-success.is-inverted:hover{background-color:#f2f2f2}
+.button.is-success.is-inverted[disabled],fieldset[disabled] 
+.button.is-success.is-inverted{background-color:#fff;border-color:transparent;box-shadow:none;color:#48c78e}
+.button.is-success.is-loading::after{border-color:transparent transparent #fff #fff!important}
+.button.is-success.is-outlined{background-color:transparent;border-color:#48c78e;color:#48c78e}
+.button.is-success.is-outlined.is-focused,
+.button.is-success.is-outlined.is-hovered,
+.button.is-success.is-outlined:focus,
+.button.is-success.is-outlined:hover{background-color:#48c78e;border-color:#48c78e;color:#fff}
+.button.is-success.is-outlined.is-loading::after{border-color:transparent transparent #48c78e #48c78e!important}
+.button.is-success.is-outlined.is-loading.is-focused::after,
+.button.is-success.is-outlined.is-loading.is-hovered::after,
+.button.is-success.is-outlined.is-loading:focus::after,
+.button.is-success.is-outlined.is-loading:hover::after{border-color:transparent transparent #fff #fff!important}
+.button.is-success.is-outlined[disabled],fieldset[disabled] 
+.button.is-success.is-outlined{background-color:transparent;border-color:#48c78e;box-shadow:none;color:#48c78e}
+.button.is-success.is-inverted.is-outlined{background-color:transparent;border-color:#fff;color:#fff}
+.button.is-success.is-inverted.is-outlined.is-focused,
+.button.is-success.is-inverted.is-outlined.is-hovered,
+.button.is-success.is-inverted.is-outlined:focus,
+.button.is-success.is-inverted.is-outlined:hover{background-color:#fff;color:#48c78e}
+.button.is-success.is-inverted.is-outlined.is-loading.is-focused::after,
+.button.is-success.is-inverted.is-outlined.is-loading.is-hovered::after,
+.button.is-success.is-inverted.is-outlined.is-loading:focus::after,
+.button.is-success.is-inverted.is-outlined.is-loading:hover::after{border-color:transparent transparent #48c78e #48c78e!important}
+.button.is-success.is-inverted.is-outlined[disabled],fieldset[disabled] 
+.button.is-success.is-inverted.is-outlined{background-color:transparent;border-color:#fff;box-shadow:none;color:#fff}
+.button.is-success.is-light{background-color:#effaf5;color:#257953}.button.is-success.is-light.is-hovered,
+.button.is-success.is-light:hover{background-color:#e6f7ef;border-color:transparent;color:#257953}
+.button.is-success.is-light.is-active,
+.button.is-success.is-light:active{background-color:#dcf4e9;border-color:transparent;color:#257953}
+.button.is-warning{background-color:#ffe08a;border-color:transparent;color:rgba(0,0,0,.7)}
+
 
 
 
