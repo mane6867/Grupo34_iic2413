@@ -57,7 +57,6 @@ $comunas = $result -> fetchAll();
             <div>
                 Seleccione una comuna:
             </div>
-            <br>
             <div class="select is-success">
             <select name="comuna">
                 <?php foreach ($comunas as $comuna): ?>
@@ -65,10 +64,12 @@ $comunas = $result -> fetchAll();
                 <?php endforeach; ?>
             </select>
             </div>
+            <br>
             <div>
             Calle:
             <input type="text" name="calle" placeholder = "Calle" required>
             </div>
+            <br>
             <div>
             Número:
             <input type="number" name="numero" placeholder = "Número" required>
