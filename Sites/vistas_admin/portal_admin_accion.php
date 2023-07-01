@@ -17,6 +17,7 @@ $id_tienda = $_SESSION['id_tienda'];
     $datos_producto_stock = $result -> fetchAll();
     $precio = $datos_producto_stock[0][2];
     $descuento = $datos_producto_stock[0][9];
+    $stock = $datos_producto_stock[0][8];
 
 
 ?>
@@ -41,6 +42,7 @@ $id_tienda = $_SESSION['id_tienda'];
                     <p class="formulario-login-fuente-cabecera">Actualizar stock</p>
                 </div>
                 <div class="login-elements">
+                    <p> Stock actual: <?php echo $stock;?>
                     <input type="text" name="stock"placeholder="Nuevo stock" required>
                 </div>
                 <div class="login-elements">
@@ -60,7 +62,7 @@ $id_tienda = $_SESSION['id_tienda'];
                         <p class="formulario-login-fuente-cabecera">Armar oferta</p>
                     </div>
                     <div class="login-elements">
-                        <p>Precio actual del producto: <?php echo $precio; ?></p>
+                        <p>Precio sin oferta: <?php echo $precio; ?></p>
                         <p>Porcentaje de descuento actual del producto: <?php echo $descuento; ?></p>
                         <input type="text" name="descuento"placeholder="Indique nuevo porcentaje de descuento" required>
                     </div>
