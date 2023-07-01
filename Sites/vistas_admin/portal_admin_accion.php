@@ -76,6 +76,11 @@ $id_tienda = $_SESSION['id_tienda'];
     </div>
 </div>
 
+<form  align="center" action="portal_admin_categorias.php" method="post">
+    <input type="hidden" name="tienda" value= "<?php echo $_SESSION['categoria_producto']; ?>">
+    <input type="submit" value="Volver" class="button is-success">
+</form>
+
 
 </body>
 
