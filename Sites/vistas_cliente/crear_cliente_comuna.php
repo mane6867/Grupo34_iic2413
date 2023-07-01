@@ -77,7 +77,6 @@ $comunas = $result -> fetchAll();
             <br>
             <input class="button is-success" type="submit" value="Enviar">
             </select>
-            </div>
         </form>
         <br>
         <br>
@@ -87,6 +86,3 @@ $comunas = $result -> fetchAll();
         </form>
     </div>
 </div>
-
-
-
