@@ -16,7 +16,7 @@
       padding: 20px;
       width: 400px;
       border: 2px solid #ccc;
-      height: 280px; /* Ajusta la altura según tus necesidades */
+      height: 320px; /* Ajusta la altura según tus necesidades */
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -94,7 +94,6 @@ $regiones = $result -> fetchAll();
 </div>
 -->
 
-<br>
 <br>
 <br>
 <form  align="center" action="../index.php" method="get">
