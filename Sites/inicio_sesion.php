@@ -18,7 +18,7 @@ if($cantidad[0] > 0){
     header('Location:portal_usuarios.php');
 }
 else{
-    echo "Datos incorrectos :(";
+    header('Location:index.php');
 }
 
 ?>
