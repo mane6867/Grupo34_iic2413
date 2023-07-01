@@ -68,6 +68,10 @@ $regiones = $result -> fetchAll();
     </div>
 </div>
 
+<br>
+<br>
+<br>
+
 <form  align="center" action="../index.php" method="get">
     <input type="submit" value="Volver" class="button is-success">
 </form>
