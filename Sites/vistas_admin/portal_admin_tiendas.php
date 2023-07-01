@@ -31,12 +31,12 @@ $tiendas = $result -> fetchAll();
       padding: 20px;
       width: 400px;
       border: 2px solid #ccc;
-      height: 280px; /* Ajusta la altura según tus necesidades */
+      height: 370px; /* Ajusta la altura según tus necesidades */
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 120px;
+      margin-top: 190px;
     }
     .portal-title {
       font-size: 24px;
@@ -72,10 +72,11 @@ $tiendas = $result -> fetchAll();
 
 <br>
 <br>
-<form align="center" action="portal_admin.php" method="get">
-    <input type="submit" value="Volver">
+<br>
+
+<form  align="center" action="portal_admin.php" method="get">
+    <input type="submit" value="Volver" class="button is-success">
 </form>
-</body>
 
 </html>
 </html>
