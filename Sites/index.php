@@ -30,14 +30,22 @@
             <input type="submit" name="Ingresar" value="Ingresar" class="button is-success">
           </div>
         </form>
-        <form align="center"  action='./importar_usuarios.php' method='GET'>
-          <div class="login-elements">
-            <input type='submit' value='Importar Usuarios' class="button is-success">
-          </div>
-        </form>
       </div>
     </div>
 </div>
+
+<form align="center"  action='./importar_usuarios.php' method='GET'>
+          <div class="login-elements">
+            <input type='submit' value='Importar Usuarios' class="button is-success">
+          </div>
+</form>
+
+<form align="center"  action='vistas_cliente/crear_cliente_nombre.php' method='GET'>
+  <div class="login-elements">
+    <input type='submit' value='Crear cuenta' class="button is-success">
+  </div>
+</form>
+
 
 <?php
   if ($_POST['nombre']== "ADMIN" && $_POST['contrasena'] == 'admin'){
