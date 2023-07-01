@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-$usuario = $_SESSION['nombre_usuario'];
+$usuario = $_POST['nombre'];
 echo "<h2>Bienvenido $usuario </h2>";
 
 ?>
