@@ -40,7 +40,7 @@
           </div>
 </form>
 
-<form align="center"  action='vistas_cliente/crear_cliente_nombre.php' method='GET'>
+<form align="center"  action='vistas_cliente/crear_cliente_inicio.php' method='GET'>
   <div class="login-elements">
     <input type='submit' value='Crear cuenta' class="button is-success">
   </div>
