@@ -12,13 +12,6 @@ $query = "SELECT * FROM usuarios
 $consulta = $db34 -> prepare($query);
 $consulta -> execute();
 $cantidad = $consulta -> fetchAll();
-
-if($cantidad > 0){
-    $_SESSION['nombre_usuario'] = $usuario;
-    header('Location:portal_usuarios.php');
-}
-else{
-    echo "Datos incorrectos :(";
-}
+print_r($canitdad);
 
 ?>
