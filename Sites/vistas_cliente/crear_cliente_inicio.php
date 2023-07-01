@@ -59,7 +59,7 @@ $regiones = $result -> fetchAll();
             <div class="select is-success">
             <select name="region">
             <?php foreach ($regiones as $region): ?>
-                <option value="<?php echo $region[1]; ?>"><?php echo $region[1]; ?></option>
+                <option value="<?php echo $region[0]; ?>"><?php echo $region[1]; ?></option>
             <?php endforeach; ?>
             </select>
 
@@ -75,6 +75,4 @@ $regiones = $result -> fetchAll();
         </form>
     </div>
 </div>
-
-<?php echo 'hola'; ?>
 </html>
