@@ -49,7 +49,7 @@ $regiones = $result -> fetchAll();
 <div class = "container">
     <div class = "form-container">
     <div class="portal-title">Portal Administrador</div>
-<form align="center" method="POST" action="portal_admin_tiendas.php">
+<form align="center" method="POST">
     <div>
     Seleccione una región:
     </div>
@@ -102,4 +102,14 @@ $regiones = $result -> fetchAll();
     <input type="submit" value="Volver" class="button is-success">
 </form>
 
+
+<?php
+  if (! $_POST['region']== ''){
+    header('Location: index.php');
+    session_start();
+    $_SESSION['region'] =  $_POST['region'];
+    exit;
+  }
+
+?>
 </html>
