@@ -1,0 +1,611 @@
+\c grupo34eN
+\c <grupo34eN>
+\c grupo34
+\dt
+ALTER USER <grupo34> ENCRYPTED PASSWORD ‘maneisa7’;
+ALTER USER grupo34 ENCRYPTED PASSWORD 'maneisa7';
+\c grupo34
+\db
+\c grupo34
+\dt
+\d clientes
+INSERT INTO clientes (219264824, 'Jaime F.', 'los pinos 2114, la florida')
+;
+INSERT INTO clientes ('219264824', 'Jaime F.', 'los pinos 2114, la florida');
+INSERT INTO clientes('219264824', 'Jaime F.', 'los pinos 2114, la florida');
+INSERT INTO clientes (rut, nombre, direccion) VALUES (219264824, 'Jaime F.', 'los pinos 2114, la florida');
+\d clientes
+INSERT INTO clientes (rut, nombre, direccion) VALUES (219264824, 'Jaime F.', 'los pinos 2114, la florida');
+\d clientes
+\dt
+SELECT * FROM clientes
+\q
+\dt Clientes
+Select * From Clientes
+1
+2
+q
+\q
+\c grupo34
+\dt Clientes
+SELECT * FROM Clientes
+\q
+\d
+SELECT * From Clientes;
+INSERT INTO clientes (rut, nombre, direccion) VALUES (117259459, ‘Maria Paz’, ‘Rodriguez N° 669, Copiapo’);
+INSERT INTO Clientes (rut, nombre, direccion) VALUES (117259459, 'Maria Paz', 'Rodriguez N° 669, Copiapó');
+1
+\q
+\c grupo34
+\d
+SELECT * FROM Clientes;
+INSERT INTO Clientes (rut, nombre, direccion) VALUES (95628533, 'Manuela', 'San Marcos Nº 531, Arica');
+INSERT INTO Clientes (rut, nombre, direccion) VALUES (102618245, 'Agustin', 'Benavente N° 342, Puerto Montt');
+SELECT * FROM Clientes;
+INSERT INTO Clientes (rut, nombre, direccion) VALUES (206718257, 'Angelica', 'Camilo Henríquez Nº 281, Valdivia');
+INSERT INTO Clientes (rut, nombre, direccion) VALUES (227369263, 'Martin', 'Avenida Principal Capitán Ignacio Carrera Pinto 690');
+INSERT INTO Clientes (rut, nombre, direccion) VALUES (105437230, 'Pablo', 'Calle Monseñor Fagnano 675');
+INSERT INTO Clientes (rut, nombre, direccion) VALUES (238268106, 'Dante', 'Avenida Américo Vespucio Norte 970');
+INSERT INTO Clientes (rut, nombre, direccion) VALUES (147392687, 'Sergio',   'Calle Riquelme 776, Iquique');
+INSERT INTO Clientes (rut, nombre, direccion) VALUES (163729261, 'Gabriela', 'Avenida Padre Hurtado 12106, el bosque');
+SELECT * FROM Clientes;
+CREATE TABLE Vehiculos (patente VARCHAR(6) PRIMARY KEY, cap_carga INT NOT NULL, cap_personas INT NOT NULL);
+SELECT * FROM Vehiculos;
+INSERT INTO Vehiculos (patente , cap_carga , cap_personas) VALUES ('GDUO69', 400000,4);
+INSERT INTO Vehiculos (patente, cap_carga, cap_personas) VALUES('PDH648', 200000, 5);
+INSERT INTO Vehiculos (patente , cap_carga , cap_personas) VALUES ('HEMG26', 150000,3);
+INSERT INTO Vehiculos (patente , cap_carga , cap_personas) VALUES ('JDYU77', 300000,3);
+SELECT * FROM Vehiculos;
+CREATE TABLE Productos (id_producto INT PRIMARY KEY, nombre VARCHAR(30) NOT NULL, precio INT NOT NULL, tipo_mueble VARCHAR(30) NOT NULL, n_cajas INT NOT NULL )
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (1, 'Sofa', 250000, 'mueble de sala', 3);
+SELECT * FROM Productos;
+CREATE TABLE Productos (id_producto INT PRIMARY KEY, nombre VARCHAR(30) NOT NULL, precio INT NOT NULL, tipo_mueble VARCHAR(30) NOT NULL, n_cajas INT NOT NULL );
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (1, 'Sofa', 250000, 'mueble de sala', 3);
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (2, 'Mesa', 150000, 'mueble de comedor', 2);
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (3, 'Silla', 75000, 'mueble de comedor', 4);
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (4, 'Cama', 35000, 'mueble de dormitorio', 2);
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (5, 'Escritorio', 200000, 'escritorio', 1);
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (6, 'Estante', 100000, 'mueble de sala', 2);
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (7, 'Armario', 300000, 'mueble de dormitorio', 3);
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (8, 'Cama dos plazas', 225000.00, 'cama', 2);
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (9, 'Mueble para TV', 175000, 'mueble de sala', 1);
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (10, 'Mueble de cocina', 125000, 'mueble de cocina', 2);
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (11, 'Sofá cama', 300000, 'mueble de sala', 4);
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (12, 'Sillón reclinable', 175000, 'mueble de sala', 2);
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (13, 'Mesa de centro', 100000, 'mueble de sala', 1);
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (14, 'Mueble zapatero', 125000, 'mueble de entrada', 2);
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (15, 'Banqueta', 50000, 'mueble de sala', 1);
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (16, 'Mueble para baño', 100000, 'mueble de baño', 1);
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (17, 'Silla de escritorio', 75000, 'mueble de oficina', 1);
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (18, 'Sofá modular', 350000, 'mueble de sala', 2);
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (19, 'Mueble de TV flotante', 200000, 'mueble de sala', 2);
+INSERT INTO Productos (id_producto,nombre, precio, tipo_mueble, n_cajas) VALUES (20, 'Cómoda alta', 275000, 'mueble de dormitorio', 3);
+SELECT * FROM Productos
+q
+\q
+\c grupo34
+\d
+\d clientes
+select * from clientes
+;
+CREATE TABLE repartidores (rut_repartidor INT PRIMART KEY, nombre VARCHAR (15) NOT NULL, edad INT, oficio VARCHAR (12) NOT NULL, genero VARCHAR(10) NOT NULL, licencia VARCHAR(2) NOT NULL, patente_vehiculo VARCHAR (6) NOT NULL);
+\dt
+CREATE TABLE repartidores (rut_repartidor INT PRIMARY KEY, nombre VARCHAR (15) NOT NULL, edad INT, oficio VARCHAR (12) NOT NULL, genero VARCHAR(10) NOT NULL, licencia VARCHAR(2) NOT NULL, patente_vehiculo VARCHAR (6) NOT NULL);
+\dt
+\d repartidores
+INSERT INTO repartidores (rut_repartidor, nombre, edad, oficio, genero, licencia, patente_vehiculo) VALUES (158268850,  ‘Antonella’ ,33, ‘conductor’, ‘femenino’, ‘SI’, ‘GDUO69’)
+;
+INSERT INTO  repartidores (rut_repartidor, nombre, edad, oficio, genero, licencia, patente_vehiculo) VALUES (158268850, ‘Antonella’, 33, ‘conductor’, ‘femenino’, ‘SI’, ‘GDUO69’);
+INSERT INTO  repartidores (rut_repartidor, nombre, edad, oficio, genero, licencia, patente_vehiculo) VALUES (158268850, 'Antonella', 33, 'conductor', 'femenino', 'SI', 'GDUO69');
+INSERT INTO  repartidores (rut_repartidor, nombre, edad, oficio, genero, licencia, patente_vehiculo) VALUES (112482235, Diego, 50, ayudante, masculino, SI, PDH648)
+;
+INSERT INTO  repartidores (rut_repartidor, nombre, edad, oficio, genero, licencia, patente_vehiculo) VALUES (112482235, 'Diego', 50, 'ayudante', 'masculino', 'SI', 'PDH648');
+ INSERT INTO  repartidores (rut_repartidor, nombre, edad, oficio, genero, licencia, patente_vehiculo) VALUES (219368276, 'Carla', 20, 'ayudante', 'femenino', 'NO', 'HEMG26');
+INSERT INTO  repartidores (rut_repartidor, nombre, edad, oficio, genero, licencia, patente_vehiculo) VALUES (106684775, 'Jose', 'conductor', 20, 'masculino', 'SI', 'JDYU77');
+INSERT INTO  repartidores (rut_repartidor, nombre, edad, oficio, genero, licencia, patente_vehiculo) VALUES (106684775, 'Jose','conductor', 20, 'masculino', 'SI', 'JDYU77');
+INSERT INTO  repartidores (rut_repartidor, nombre, edad, oficio, genero, licencia, patente_vehiculo) VALUES (106684775, 'Jose', 20, 'conductor', 'masculino', 'SI', 'JDYU77');
+INSERT INTO  repartidores (rut_repartidor, nombre, edad, oficio, genero, licencia, patente_vehiculo) VALUES ('173567669', 'Franco', '30', 'ayudante', 'masculino', 'NO', 'GDUO69');
+ INSERT INTO  repartidores (rut_repartidor, nombre, edad, oficio, genero, licencia, patente_vehiculo) VALUES (121264547, 'Martin', 'conductor', '45', 'masculino', 'SI', 'PDH648');
+121264547, Martin, conductor, 45, masculino, SI, PDH648
+;
+ INSERT INTO  repartidores (rut_repartidor, nombre, edad, oficio, genero, licencia, patente_vehiculo) VALUES (121264547, 'Martin', 45, 'conductor', 'masculino', 'SI', 'PDH648');
+INSERT INTO  repartidores (rut_repartidor, nombre, edad, oficio, genero, licencia, patente_vehiculo) VALUES (94563663, 'Will', 75, 'conductor', 'masculino', 'SI', 'HEMG26');
+CREATE TABLE cajas (id_caja INT PRIMARY KEY, id_producto INT NOT NULL, peso INT NOT NULL, descripcion VARCHAR (100) NOTNULL)
+;
+CREATE TABLE cajas (id_caja INT PRIMARY KEY, id_producto INT NOT NULL, peso INT NOT NULL, descripcion VARCHAR (100) NOT NULL);
+INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (1, 1, 200, 'Caja de cartón mediana');
+INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (2, 1, 100, 'Caja de cartón pequeña');
+INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (3, 1, 500, 'Caja de madera grande');
+INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (4, 2, 300, 'Caja de plástico mediana');
+INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (5, 2, 150, 'Caja de cartón pequeña');
+INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (6, 3, 400, 'Caja de madera mediana');
+INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (7, 3, 250, 'Caja de plástico pequeña');
+ INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (8, 3, 600, 'Caja de madera grande');
+ INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (9, 3, 350, 'Caja de cartón mediana');
+ INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (10,4, 450, 'Caja de madera mediana');
+ INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (11, 4, 175, 'Caja de cartón pequeña');
+INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (12, 5, 250, 'Caja de plástico mediana');
+INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (13, 6, 550, 'Caja de madera grande');
+ INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (14, 6, 225, 'Caja de cartón mediana');
+ INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (15, 7, 300, 'Caja de plástico mediana');
+ INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (16, 7, 350, 'Caja de madera mediana')
+;
+ INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (17, 7, 100, 'Caja de cartón pequeña');
+INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (18, 8, 400, 'Caja de madera mediana');
+ INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (19, 8, 150, 'Caja de plástico pequeña');
+ INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (20, 9, 500, 'Caja de madera grande');
+ INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (21, 10, 300, 'Caja de cartón mediana');
+ INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (22, 10, 450, 'Caja de madera mediana');
+ INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (23, 11,175, 'Caja de cartón pequeña');
+ INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (24, 11,250, 'Caja de plástico mediana');
+ INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (25, 11,550, 'Caja de madera grande');
+ INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (26, 11,225, 'Caja de cartón mediana');
+ INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (27, 12,300, 'Caja de plástico mediana');
+ INSERT INTO cajas (id_caja,id_producto, peso, descripcion) VALUES (28, 12,350, 'Caja de madera mediana');
+\c grupo 34
+\c grupo34
+CREATE TABLE Clientes (id_cliente INT PRIMARY KEY, nombre VARCHAR(15) NOT NULL, direccion VARCHAR(80))
+\l
+\dt
+CREATE TABLE Clientes (id_cliente INT PRIMARY KEY, nombre VARCHAR(15) NOT NULL, direccion VARCHAR(80) NOT NULL);
+CREATE TABLE Clientes(rut INT PRIMARY KEY, nombre VARCHAR(15) NOT NULL, direccion VARCHAR(80) NOT NULL);
+\dt
+INSERT INTO Clientes (rut, nombre, direccion) VALUES (219264824, ‘Jaime’, ‘los pinos 2114, la florida’);
+INSERT INTO Clientes (rut, nombre, direccion) VALUES (163729261, ‘Gabriela’, ‘Avenida Padre Hurtado 12106, el bosque’);
+INSERT INTO Clientes (rut, nombre, direccion) VALUES (163729261, "Gabriela", "Avenida Padre Hurtado 12106, el bosque");
+INSERT INTO Clientes (rut, nombre, direccion) VALUES (163729261, "Gabriela", "Avenida Padre Hurtado 12106 el bosque");
+INSERT INTO Clientes (rut, nombre, direccion) VALUES (163729261, ‘Gabriela’, ‘Avenida Padre Hurtado 12106 el bosque’);
+\dt
+\dt
+INSERT INTO Clientes (rut, nombre, direccion) VALUES (163729261, ‘Gabriela’, ‘Avenida Padre Hurtado 12106 el b
+osque’);
+INSERT INTO Clientes (rut, nombre, direccion) VALUES (1, 'a', 'b')
+SELECT * FROM Clientes
+\dt
+\d Clientes
+SELECT rut From Clientes
+\dt
+\c grupo34
+SELECT * FROM Productos;
+
+CREATE TABLE Compras (id_compra INT PRIMARY KEY, fecha_compra INT NOT NULL, valor INT NOT NULL, id_cliente INT NOT NULL);
+INSERT INTO Compras (id_compra, fecha_compra, valor, id_cliente) VALUES (1, 20220102, 400000, 219264824);
+INSERT INTO Compras (id_compra, fecha_compra, valor, id_cliente) VALUES (2, 20200507, 275000,  105437230);
+INSERT INTO Compras (id_compra, fecha_compra, valor, id_cliente) VALUES (3, 20230320, 550000,163729261);
+INSERT INTO Compras (id_compra, fecha_compra, valor, id_cliente) VALUES (4, 20230105, 200000, 117259459);
+INSERT INTO Compras (id_compra, fecha_compra, valor, id_cliente) VALUES (5, 20200613, 425000, 105437230);
+INSERT INTO Compras (id_compra, fecha_compra, valor, id_cliente) VALUES (6, 20230120,700000 ,227369263);
+INSERT INTO Compras (id_compra, fecha_compra, valor, id_cliente) VALUES (7, 20190708, 100000, 102618245);
+INSERT INTO Compras (id_compra, fecha_compra, valor, id_cliente) VALUES (8, 20230221, 625000, 238268106);
+INSERT INTO Compras (id_compra, fecha_compra, valor, id_cliente) VALUES (9, 20221003,75000, 163729261);
+INSERT INTO Compras (id_compra, fecha_compra, valor, id_cliente) VALUES (10, 20200714, 50000, 95628533);
+SELECT * From Compras;
+CREATE TABLE Despachos (id_despacho INT PRIMARY KEY, fecha_entrega INT NOT NULL, id_compra INT NOT NULL, rut_conductor INT NOT NULL);
+INSERT INTO Despachos (id_despacho, fecha_entrega, id_compra, rut_conductor) VALUES (1, 20220105, 1, 158268850);
+INSERT INTO Despachos (id_despacho, fecha_entrega, id_compra, rut_conductor) VALUES (2, 20230325, 3, 106684775);
+INSERT INTO Despachos (id_despacho, fecha_entrega, id_compra, rut_conductor) VALUES (3, 20200510,2, 106684775);
+INSERT INTO Despachos (id_despacho, fecha_entrega, id_compra, rut_conductor) VALUES (4, 20230110, 4, 94563663);
+INSERT INTO Despachos (id_despacho, fecha_entrega, id_compra, rut_conductor) VALUES (5, 20200620, 5, 106684775);
+INSERT INTO Despachos (id_despacho, fecha_entrega, id_compra, rut_conductor) VALUES (6, 20230123, 6, 121264547);
+INSERT INTO Despachos (id_despacho, fecha_entrega, id_compra, rut_conductor) VALUES (7, 20190715, 7, 94563663);
+INSERT INTO Despachos (id_despacho, fecha_entrega, id_compra, rut_conductor) VALUES (8, 20230226, 8, 158268850);
+INSERT INTO Despachos (id_despacho, fecha_entrega, id_compra, rut_conductor) VALUES (9, 20221009, 9,158268850);
+INSERT INTO Despachos (id_despacho, fecha_entrega, id_compra, rut_conductor) VALUES (10, 20200717, 10, 94563663);
+SELECT * FROM Despachos;
+CREATE TABLE DetalleCompra (id_compra INT, id_producto INT, cantidad INT , PRIMARY KEY(id_compra, id_producto));
+INSERT INTO detalle_compra (id_compra, id_producto, cantidad) VALUES (1, 1, 1);
+INSERT INTO DetalleCompra (id_compra, id_producto, cantidad) VALUES (1, 1, 1);
+INSERT INTO DetalleCompra (id_compra, id_producto, cantidad) VALUES (1, 2, 1);
+INSERT INTO DetalleCompra(id_compra, id_producto, cantidad) VALUES (2, 6, 1);
+INSERT INTO DetalleCompra (id_compra, id_producto, cantidad) VALUES (2, 9, 1);
+INSERT INTO DetalleCompra (id_compra, id_producto, cantidad) VALUES (3, 13, 1);
+INSERT INTO DetalleCompra (id_compra, id_producto, cantidad) VALUES (3, 20, 1);
+INSERT INTO DetalleCompra (id_compra, id_producto, cantidad) VALUES (3, 9, 1);
+INSERT INTO DetalleCompra (id_compra, id_producto, cantidad) VALUES (4, 5, 1);
+INSERT INTO DetalleCompra (id_compra, id_producto, cantidad) VALUES (5, 8, 1);
+INSERT INTO DetalleCompra (id_compra, id_producto, cantidad) VALUES (5, 5, 1);
+INSERT INTO DetalleCompra (id_compra, id_producto, cantidad) VALUES (6, 5, 1);
+INSERT INTO DetalleCompra (id_compra, id_producto, cantidad) VALUES (6, 15, 1);
+INSERT INTO DetalleCompra (id_compra, id_producto, cantidad) VALUES (7, 16, 1);
+INSERT INTO DetalleCompra (id_compra, id_producto, cantidad) VALUES (8, 5, 1);
+INSERT INTO DetalleCompra (id_compra, id_producto, cantidad) VALUES (8, 8, 1);
+INSERT INTO DetalleCompra (id_compra, id_producto, cantidad) VALUES (8, 19, 1);
+INSERT INTO DetalleCompra (id_compra, id_producto, cantidad) VALUES (9, 3, 1);
+INSERT INTO DetalleCompra (id_compra, id_producto, cantidad) VALUES (10, 15, 1);
+SELECT * From DetalleCompra
+\q
+\c grupo34
+SELECT Clientes.nombre, Productos.nombre FROM Clientes as c, Productos, Compras, DetalleCompra WHERE c.rut = Compras.id_cliente AND Compras.id_compra = DetalleCompra.id_compra AND DetalleCompra.id_producto = Productos.id_producto;
+SELECT c.nombre, Productos.nombre FROM Clientes as c, Productos, Compras, DetalleCompra WHERE c.rut = Compras.id_cliente AND Compras.id_compra = DetalleCompra.id_compra AND DetalleCompra.id_producto = Productos.id_producto AND Productos.tipo = 'cama' AND EXISTS (SELECT 1 FROM Clientes, Productos, Compras, DetalleCompra WHERE c.rut = Clientes.rut AND Productos.tipo = 'escritorio');
+SELECT c.nombre, Productos.nombre FROM Clientes as c, Productos, Compras, DetalleCompra WHERE c.rut = Compras.id_cliente AND Compras.id_compra = DetalleCompra.id_compra AND DetalleCompra.id_producto = Productos.id_producto AND Productos.tipo_mueble = 'cama' AND EXISTS (SELECT 1 FROM Clientes, Productos, Compras, DetalleCompra WHERE c.rut = Clientes.rut AND Productos.tipo_mueble = 'escritorio');
+SELECT c.nombre FROM Clientes as c, Productos, Compras, DetalleCompra WHERE c.rut = Compras.id_cliente AND Compras.id_compra = DetalleCompra.id_compra AND DetalleCompra.id_producto = Productos.id_producto AND Productos.tipo_mueble = 'cama' AND EXISTS (SELECT 1 FROM Clientes, Productos, Compras, DetalleCompra WHERE c.rut = Clientes.rut AND Productos.tipo_mueble = 'escritorio');
+\c grupo34e2
+CREATE TABLE personal_repartidor (id_personal INT, id_repartidor) ADD CONSTRAINT fk_personal FOREIGN KEY (id_personal) REFERENCES personal (id_personal), ADD CONSTRAINT fk_repartidores FOREIGN KEY (id_repartidores) REFERENCES repartidores (id_repartidor);
+CREATE TABLE personal_repartidor (id_personal INT, id_repartidor), ADD CONSTRAINT fk_personal FOREIGN KEY (id_personal) REFERENCES personal (id_personal), ADD CONSTRAINT fk_repartidores FOREIGN KEY (id_repartidores) REFERENCES repartidores (id_repartidor);
+CREATE TABLE personal_repartidor (id_personal INT, id_repartidor INT), ADD CONSTRAINT fk_personal FOREIGN KEY (id_personal) REFERENCES personal (id_personal) ADD CONSTRAINT fk_repartidores FOREIGN KEY (id_repartidores) REFERENCES repartidores (id_repartidor);
+CREATE TABLE personal_repartidor (id_personal INT, id_repartidor INT) ADD CONSTRAINT fk_personal FOREIGN KEY (id_personal) REFERENCES personal (id_personal) ADD CONSTRAINT fk_repartidores FOREIGN KEY (id_repartidores) REFERENCES repartidores (id_repartidor);
+CREATE TABLE personal_repartidor (id_personal INT, id_repartidor INT ADD CONSTRAINT fk_personal FOREIGN KEY (id_personal) REFERENCES personal (id_personal) ADD CONSTRAINT fk_repartidores FOREIGN KEY (id_repartidores) REFERENCES repartidores (id_repartidor));
+CREATE TABLE personal_repartidor (id_personal INT, id_repartidor INT, ADD CONSTRAINT fk_personal FOREIGN KEY (id_personal) REFERENCES personal (id_personal), ADD CONSTRAINT fk_repartidores FOREIGN KEY (id_repartidores) REFERENCES repartidores (id_repartidor));
+CREATE TABLE personal_repartidor (id_personal INT, id_repartidor INT, CONSTRAINT fk_personal FOREIGN KEY (id_personal) REFERENCES personal (id_personal), CONSTRAINT fk_repartidores FOREIGN KEY (id_repartidores) REFERENCES repartidores (id_repartidor));
+\c grupo34e2
+CREATE TABLE personal_repartidor (id_personal INT, id_repartidor INT, CONSTRAINT fk_personal FOREIGN KEY (id_personal) REFERENCES personal (id_personal), CONSTRAINT fk_repartidores FOREIGN KEY (id_repartidores) REFERENCES repartidores (id_repartidor));
+CREATE TABLE personal_repartidor (id_personal INT, id_repartidor INT, CONSTRAINT fk_personal FOREIGN KEY (id_personal) REFERENCES personal (id_personal), CONSTRAINT fk_repartidores FOREIGN KEY (id_repartidor) REFERENCES repartidores (id_repartidor));
+CREATE TABLE detalle_despacho (id_despacho INT, id_vehiculo INT, id_repartidor INT, CONSTRAINT fk_despacho FOREIGN KEY (id_despacho) REFERENCES despachos (id_despacho), CONSTRAINT fk_vehiculos FOREIGN KEY (id_vehiculo) REFERENCES vehiculos (id_vehiculo), CONSTRAINT fk_repartidores FOREIGN KEY (id_repartidor) REFERENCES repartidores (id_repartidor));
+CREATE TABLE detalle_despacho (id_despacho INT, id_vehiculo INT, id_repartidor INT, CONSTRAINT fk_despacho FOREIGN KEY (id_despacho) REFERENCES despachos (id_despachos), CONSTRAINT fk_vehiculos FOREIGN KEY (id_vehiculo) REFERENCES vehiculos (id_vehiculo), CONSTRAINT fk_repartidores FOREIGN KEY (id_repartidor) REFERENCES repartidores (id_repartidor));
+FROM clientes SELECT *
+;
+\l
+\dt
+SELECT * FROM clientes
+;
+SELECT clientes.nombre, calle, numero_domicilio, comuna, region, fecha
+_entrega
+FROM clientes, despachos, comuna_region, compras
+SELECT * FROM clientes
+;\q
+\c grupo34e2
+SELECT clientes.nombre, clientes.calle, clientes.numero_domicilio, clientes.comuna, comuna_region.region
+FROM clientes, comuna_region, compras, despachos
+WHERE clientes.id_cliente = compras.id_cliente
+AND despachos.id_compra = compras.id_compra
+;
+SELECT tiendas.id_tienda, tiendas.calle, tiendas.numero,
+    tiendas.comuna, comuna_region.region
+    FROM tiendas, comuna_region
+    WHERE tiendas.comuna = '$comuna_seleccionada'
+    AND comuna_region.comuna = '$comuna_seleccionada$';
+SELECT tiendas.id_tienda, tiendas.calle, tiendas.numero,
+    tiendas.comuna, comuna_region.region
+    FROM tiendas, comuna_region
+    WHERE tiendas.comuna = '$comuna_seleccionada'
+;
+SELECT clientes.nombre,  clientes.calle, clientes.numero_domicilio,
+    clientes.comuna, comuna_region.region, consulta.valor_compra
+    FROM compras, clientes, productos,
+        (SELECT id_compra, SUM(valor_producto) as valor_compra
+        FROM (
+            SELECT id_producto, id_compra, cantidad, precio, cantidad*precio as valor_producto
+            FROM productos
+                WHERE productos.id_producto = id_producto
+                AND id_compra = '$id_elegido') as subconsulta
+            GROUP BY subconsulta.id_compra) as consulta
+    WHERE clientes.id_cliente = compras.id_cliente
+    AND compras.id_producto = productos.id_productos
+    AND compras.id_compra = '$id_seleccionado'
+;
+    SELECT clientes.nombre,  clientes.calle, clientes.numero_domicilio,
+    clientes.comuna, comuna_region.region, consulta.valor_compra
+    FROM compras, clientes, productos,
+        (SELECT id_compras, SUM(valor_producto) as valor_compra
+        FROM (
+            SELECT id_producto, id_compras, cantidad, precio, cantidad*precio as valor_producto
+            FROM productos
+                WHERE productos.id_producto = id_producto
+                AND id_compras = '$id_elegido') as subconsulta
+            GROUP BY subconsulta.id_compras) as consulta
+    WHERE clientes.id_cliente = compras.id_cliente
+    AND compras.id_producto = productos.id_productos
+;
+    SELECT clientes.nombre,  clientes.calle, clientes.numero_domicilio,
+    clientes.comuna, comuna_region.region, consulta.valor_compra
+    FROM compras, clientes, productos,
+        (SELECT compras.id_compra, SUM(valor_producto) as valor_compra
+        FROM (
+            SELECT id_producto, id_compra, cantidad, precio, cantidad*precio as valor_producto
+            FROM productos
+                WHERE productos.id_producto = id_producto
+                AND id_compra = '$id_elegido') as subconsulta
+            GROUP BY subconsulta.id_compra) as consulta
+    WHERE clientes.id_cliente = compras.id_cliente
+    AND compras.id_producto = productos.id_productos
+    AND compras.id_compra = '$id_seleccionado';
+    SELECT clientes.nombre,  clientes.calle, clientes.numero_domicilio,
+    clientes.comuna, comuna_region.region, consulta.valor_compra
+    FROM compras, clientes, productos,
+        (SELECT compras.id_compra, SUM(valor_producto) as valor_compra
+        FROM (
+            SELECT id_producto, compras.id_compra, cantidad, precio,
+            cantidad*precio as valor_producto
+            FROM productos
+                WHERE productos.id_producto = id_producto
+                AND id_compra = '$id_elegido') as subconsulta
+            GROUP BY subconsulta.id_compra) as consulta
+    WHERE clientes.id_cliente = compras.id_cliente
+    AND compras.id_producto = productos.id_productos;
+    SELECT clientes.nombre,  clientes.calle, clientes.numero_domicilio,
+    clientes.comuna, comuna_region.region, consulta.valor_compra
+    FROM compras, clientes, productos,
+        (SELECT compras.id_compra, SUM(valor_producto) as valor_compra
+        FROM (
+            SELECT id_producto, compras.id_compra, cantidad, precio,
+            cantidad*precio as valor_producto
+            FROM productos, compras
+                WHERE productos.id_producto = id_producto
+                AND id_compra = '$id_elegido') as subconsulta
+            GROUP BY subconsulta.id_compra) as consulta
+    WHERE clientes.id_cliente = compras.id_cliente
+    AND compras.id_producto = productos.id_productos
+;
+    SELECT clientes.nombre,  clientes.calle, clientes.numero_domicilio,
+    clientes.comuna, comuna_region.region, consulta.valor_compra
+    FROM compras, clientes, productos,
+        (SELECT compras.id_compra, SUM(valor_producto) as valor_compra
+        FROM (
+            SELECT productos.id_producto, compras.id_compra,
+            compras.cantidad as cantidad, 
+            producto.precio as precio,
+            cantidad*precio as valor_producto
+            FROM productos, compras
+                WHERE productos.id_producto = compras.id_producto
+                AND compras.id_compra = '$id_elegido') as subconsulta
+            GROUP BY subconsulta.id_compra) as consulta
+    WHERE clientes.id_cliente = compras.id_cliente
+    AND compras.id_producto = productos.id_productos
+    AND compras.id_compra = '$id_seleccionado';
+    SELECT clientes.nombre,  clientes.calle, clientes.numero_domicilio,
+    clientes.comuna, comuna_region.region, consulta.valor_compra
+    FROM compras, clientes, productos,
+        (SELECT compras.id_compra, SUM(valor_producto) as valor_compra
+        FROM (
+            SELECT productos.id_producto, compras.id_compra,
+            compras.cantidad as cantidad, 
+            productos.precio as precio,
+            cantidad*precio as valor_producto
+            FROM productos, compras
+                WHERE productos.id_producto = compras.id_producto
+                AND compras.id_compra = '$id_elegido') as subconsulta
+            GROUP BY subconsulta.id_compra) as consulta
+    WHERE clientes.id_cliente = compras.id_cliente
+    AND compras.id_producto = productos.id_productos;
+    SELECT clientes.nombre,  clientes.calle, clientes.numero_domicilio,
+    clientes.comuna, comuna_region.region, consulta.valor_compra
+    FROM compras, clientes, productos,
+        (SELECT compras.id_compra, SUM(valor_producto) as valor_compra
+        FROM (
+            SELECT productos.id_producto, compras.id_compra,
+            compras.cantidad as cantidad, 
+            productos.precio as precio,
+            cantidad*precio as valor_producto
+            FROM productos, compras
+                WHERE productos.id_producto = compras.id_producto
+                ) as subconsulta
+            GROUP BY subconsulta.id_compra) as consulta
+    WHERE clientes.id_cliente = compras.id_cliente
+    AND compras.id_producto = productos.id_productos;
+    SELECT clientes.nombre,  clientes.calle, clientes.numero_domicilio,
+    clientes.comuna, comuna_region.region, consulta.valor_compra
+    FROM compras, clientes, productos,
+        (SELECT id_compra, SUM(valor_producto) as valor_compra
+        FROM (
+            SELECT productos.id_producto, compras.id_compra,
+            compras.cantidad as cantidad, 
+            productos.precio as precio,
+            cantidad*precio as valor_producto
+            FROM productos, compras
+                WHERE productos.id_producto = compras.id_producto
+                ) as subconsulta
+            GROUP BY subconsulta.id_compra) as consulta
+    WHERE clientes.id_cliente = compras.id_cliente
+    AND compras.id_producto = productos.id_productos;
+    SELECT clientes.nombre,  clientes.calle, clientes.numero_domicilio,
+    clientes.comuna, comuna_region.region, consulta.valor_compra
+    FROM compras, clientes, productos, comuna_region
+        (SELECT id_compra, SUM(valor_producto) as valor_compra
+        FROM (
+            SELECT productos.id_producto, compras.id_compra,
+            compras.cantidad as cantidad, 
+            productos.precio as precio,
+            cantidad*precio as valor_producto
+            FROM productos, compras
+                WHERE productos.id_producto = compras.id_producto
+                ) as subconsulta
+            GROUP BY subconsulta.id_compra) as consulta
+    WHERE clientes.id_cliente = compras.id_cliente
+    AND compras.id_producto = productos.id_productos;
+    SELECT clientes.nombre,  clientes.calle, clientes.numero_domicilio,
+    clientes.comuna, comuna_region.region, consulta.valor_compra
+    FROM compras, clientes, productos, comuna_region,
+        (SELECT id_compra, SUM(valor_producto) as valor_compra
+        FROM (
+            SELECT productos.id_producto, compras.id_compra,
+            compras.cantidad as cantidad, 
+            productos.precio as precio,
+            cantidad*precio as valor_producto
+            FROM productos, compras
+                WHERE productos.id_producto = compras.id_producto
+                ) as subconsulta
+            GROUP BY subconsulta.id_compra) as consulta
+    WHERE clientes.id_cliente = compras.id_cliente
+    AND compras.id_producto = productos.id_productos;
+    SELECT clientes.nombre,  clientes.calle, clientes.numero_domicilio,
+    clientes.comuna, comuna_region.region, consulta.valor_compra
+    FROM compras, clientes, productos, comuna_region,
+        (SELECT id_compra, SUM(valor_producto) as valor_compra
+        FROM (
+            SELECT productos.id_producto, compras.id_compra,
+            compras.cantidad as cantidad, 
+            productos.precio as precio,
+            cantidad*precio as valor_producto
+            FROM productos, compras
+                WHERE productos.id_producto = compras.id_producto
+                ) as subconsulta
+            GROUP BY subconsulta.id_compra) as consulta
+    WHERE clientes.id_cliente = compras.id_cliente
+    AND compras.id_producto = productos.id_producto;
+    SELECT clientes.nombre,  clientes.calle, clientes.numero_domicilio,
+    clientes.comuna, comuna_region.region, consulta.valor_compra
+    FROM compras, clientes, productos, comuna_region,
+        (SELECT id_compra, SUM(valor_producto) as valor_compra
+        FROM (
+            SELECT productos.id_producto, compras.id_compra,
+            compras.cantidad as cantidad, 
+            productos.precio as precio,
+            cantidad*precio as valor_producto
+            FROM productos, compras
+                WHERE productos.id_producto = compras.id_producto
+                ) as subconsulta
+            GROUP BY subconsulta.id_compra) as consulta
+    WHERE clientes.id_cliente = compras.id_cliente
+    AND compras.id_producto = productos.id_producto;
+    SELECT compras.id_compra as id, productos.numero_cajas * compras.cantidad 
+    as cajas_totales
+    FROM compras, productos
+    WHERE compras.id_producto = productos.id_producto;
+ALTER TABLE repartidores ADD COLUMN id_vehiculo INT
+
+;
+ALTER TABLE repartidores ADD CONSTRAINT fk_vehiculos FOREIGN KEY id_vehiculo REFERENCES vehiculos (id_vehiculo);
+ALTER TABLE repartidores ADD CONSTRAINT fk_vehiculos FOREIGN KEY (id_vehiculo) REFERENCES vehiculos (id_vehiculo);
+\db
+\dt
+\d detalle_despacho
+ALTER TABLE detalle_despacho DROP COLUMN id_repartidor;
+\d detalle_despacho
+\dt
+\d personal_repartidor
+\c grupo 34e2
+\c grupo34e2
+l
+\l
+\dt
+Select * From Cajas;
+SELECT * FROM Cajas;
+SELECT *FROM cajas;
+\c grupo34e2
+SELECT * FROM cajas;
+\q
+SELECT * FROM licencias;
+\dt
+\c grupo34e2
+SELECT * FROM licencias;
+SELECT * FROM licencias WHERE licencias.id_licencia = 8;
+SELECT * FROM licencias WHERE licencias.id_licencia = 145;
+SELECT * FROM licencias;
+SELECT * FROM personal;
+SELECT * FROM productos;
+select * from repartidores;
+select * from stock;
+select * from tiendas;
+select * from vehiculos;
+\dt
+\q
+select * from despachos;
+\c grupo34e2
+select * from despachos;
+select * from productos_compra
+q
+\q
+q
+q
+\q
+\c grupo34e2
+select * from productos_compra;
+select * from personal_repartidor;
+\cd
+\dt
+select * from productos_compra;
+select * from detalle_despacho;
+\dt
+\c grupo34e2
+\dt
+select * from compras;
+DROP TABLE Compras;
+DROP TABLE Productos_compra;
+DROP TABLE Compras;
+\dt
+CREATE TABLE Compras(id_compra int PRIMARY KEY, fecha DATE, id_tienda int, id_cliente int, FOREING KEY (id_tienda) REFERENCES Tienda(id_tienda), FOREING KEY (id_cliente) REFERENCES Clientes (id_cliente));
+CREATE TABLE Compras(id_compra int, fecha DATE, id_tienda int, id_cliente int, FOREING KEY (id_tienda) REFERENCES Tienda(id_tienda), FOREING KEY (id_cliente) REFERENCES Clientes (id_cliente), PRIMARY KEY (id_compra));
+CREATE TABLE Compras(id_compra int, fecha DATE, id_tienda int, id_cliente int, FOREIGN KEY (id_tienda) REFERENCES Tienda(id_tienda), FOREIGN KEY (id_cliente) REFERENCES Clientes (id_cliente), PRIMARY KEY (id_compra));
+CREATE TABLE Compras(id_compra int, fecha DATE, id_tienda int, id_cliente int, FOREIGN KEY (id_tienda) REFERENCES Tiendas(id_tienda), FOREIGN KEY (id_cliente) REFERENCES Clientes (id_cliente), PRIMARY KEY (id_compra));
+git status
+;
+\q
+\c grupo34e2
+\COPY Compras from datos/mcompras.csv DELIMETER ';' CSV HEADER;
+\COPY Compras from 'datos/mcompras.csv' DELIMETER ';' CSV HEADER;
+\COPY Compras from 'datos/mcompras.csv' DELIMITER ';' CSV HEADER;
+\q
+\c grupoe2
+\cgrupo34e2
+\c grupo34e2
+\COPY Compras from 'datos/mcompras.csv' DELIMITER ';' CSV HEADER;
+select * from compras;
+select * from detalle_despacho;
+select * from despacho;
+\dt
+select * from despachos;
+\COPY Despachos from 'datos/despachos.csv' DELIMITER';' CSV HEADER;
+select * from despachos;
+select * from detalle_despacho;
+\COPY Detalle_despacho from 'datos/detalle_despacho.csv' DELIMITER ';' CSV HEADER;
+select * from detalle_despacho;
+select * from personal_repartidor;
+\q
+\c grupo34e2
+\COPY Detalle_compra from 'datos/detalle_compra.csv' DELIMITER ';' CSV HEADER;
+\COPY Detalle_compra from 'datos/detalle_compra.csv' DELIMITER ';' CSV HEADER;
+\COPY Productos_compra from 'datos/productos_compra.csv' DELIMITER ';' CSV HEADER;
+\dt
+CREATE TABLE Compras(id_producto int, id_compra int, cantidad int, FOREIGN KEY (id_compra) REFERENCES Compras(id_compra), FOREIGN KEY (id_producto) REFERENCES Productos (id_productos));
+CREATE TABLE Productos_compra(id_producto int, id_compra int, cantidad int, FOREIGN KEY (id_compra) REFERENCES Compras(id_compra), FOREIGN KEY (id_producto) REFERENCES Productos (id_productos));
+CREATE TABLE Productos_compra(id_producto int, id_compra int, cantidad int, FOREIGN KEY (id_compra) REFERENCES Compras(id_compra), FOREIGN KEY (id_producto) REFERENCES Productos (id_producto));
+\COPY Productos_compra from 'datos/productos_compra' DELIMITER ';' CSV HEADER;
+\COPY Productos_compra from 'datos/productos_compra.csv' DELIMITER ';' CSV HEADER;
+\q
+\c grupo34e2
+\COPY Productos_compra from 'datos/productos_compra.csv' DELIMITER ';' CSV HEADER;
+\dt
+select * from comuna_region;
+\q
+\c grupo34e2
+SELECT clientes.nombre, clientes.calle, clientes.numero_domicilio,
+clientes.comuna, comuna_region.region
+FROM clientes, comuna_region, compras, despachos
+WHERE clientes.id_cliente = compras.id_cliente
+AND despachos.id_compra = compras.id_compra
+AND despachos.fecha_entrega = '$fecha_seleccionada$'
+q
+q
+\q
+\c grupo34e2
+SELECT clientes.nombre, clientes.calle, clientes.numero_domicilio,
+clientes.comuna, comuna_region.region
+FROM clientes, comuna_region, compras, despachos
+WHERE clientes.id_cliente = compras.id_cliente
+AND despachos.id_compra = compras.id_compra
+AND despachos.fecha_entrega = '$fecha_seleccionada$';
+SELECT clientes.nombre, clientes.calle, clientes.numero_domicilio,
+clientes.comuna, comuna_region.region
+FROM clientes, comuna_region, compras, despachos
+WHERE clientes.id_cliente = compras.id_cliente
+AND despachos.id_compra = compras.id_compra
+AND despachos.fecha_entrega = '2018-12-13';
+select * from despachos;
+SELECT clientes.nombre, clientes.calle, clientes.numero_domicilio,
+clientes.comuna, comuna_region.region
+FROM clientes, comuna_region, compras, despachos
+WHERE clientes.id_cliente = compras.id_cliente
+AND despachos.id_compra = compras.id_compra
+AND despachos.fecha_entrega = '2012-01-07';
+select * from compras where id_compra = 211;
+SELECT clientes.nombre, clientes.calle FROM despachos, compras, clientes WHERE despachos.id_compra = compras.id_compra and compras.id_cliente = clientes.id_cliente and despachos.fecha_entrega = '2012-01-07'
+;
+\q
+\c grupo34e2
+\dt
+select * from clientes;
+\q
+\c grupo34e2
+select * from despachos;
+\q
+\c grupo34e2
+select * from despachos;
+\q
+\c grupo34e2
+select * from clientes;
+\q
+\c grupo34e2
+\dt compras
+EXEC sp_fkeys 'Compras'
+;
+\s grupo34e2

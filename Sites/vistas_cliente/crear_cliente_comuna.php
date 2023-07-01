@@ -55,22 +55,24 @@ $comunas = $result -> fetchAll();
         <div class="portal-title">Crear cuenta</div>
         <form align="center" method="POST" action = "../crear_sesion.php">
             <div>
-            Seleccione una comuna:
+                Seleccione una comuna:
             </div>
             <br>
             <div class="select is-success">
             <select name="comuna">
-            <?php foreach ($comunas as $comuna): ?>
-                <option value="<?php echo $comuna[1]; ?>"><?php echo $comuna[0]; ?></option>
-            <?php endforeach; ?>
+                <?php foreach ($comunas as $comuna): ?>
+                    <option value="<?php echo $comuna[1]; ?>"><?php echo $comuna[0]; ?></option>
+                <?php endforeach; ?>
             </select>
-            Calle:
             </div>
+            <div>
+            Calle:
             <input type="text" name="calle" placeholder = "Calle" required>
+            </div>
             <div>
             Número:
-            </div>
             <input type="number" name="numero" placeholder = "Número" required>
+            </div>
             <br>
             <input class="button is-success" type="submit" value="Enviar">
             </select>
