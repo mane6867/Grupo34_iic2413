@@ -1,4 +1,5 @@
 <?php
+session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
     #Llama a conexión, crea el objeto PDO y obtiene la variable $db
@@ -11,7 +12,6 @@ $result = $db65 -> prepare($query);
 $result -> execute();
 $categorias = $result -> fetchAll();
 
-session_start();
 $id_tienda = $_POST['tienda'];
 $_SESSION['id_tienda'] = $id_tienda;
 ?>
