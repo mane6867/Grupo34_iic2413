@@ -3,6 +3,7 @@
 require("config/conexion.php");
 session_start();
 $usuario = $_POST['nombre'];
-echo "<h2>Bienvenido $usuario </h2>";
+$clave = $_POST['contrasena'];
+echo "<h2>Bienvenido $usuario $clave </h2>";
 
 ?>
