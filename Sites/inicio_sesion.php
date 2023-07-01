@@ -12,6 +12,6 @@ $query = "SELECT * FROM usuarios
 $consulta = $db34 -> prepare($query);
 $consulta -> execute();
 $cantidad = $consulta -> fetchAll();
-print_r($cantidad);
+print_r($cantidad[1]);
 
 ?>
