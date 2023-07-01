@@ -6,7 +6,9 @@ ini_set('display_errors', 1);
 // Obtener las regiones
 $nombre_region = $_POST['region'];
 
-
+session_start();
+$_SESSION['region'] = $nombre_region;
+$nombre_region = $_SESSION['region']
 
 $query = "SELECT * FROM tiendas WHERE region ='$nombre_region' ORDER BY id_tienda ASC;";
 $result = $db65 -> prepare($query);
