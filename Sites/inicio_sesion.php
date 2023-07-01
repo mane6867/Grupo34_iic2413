@@ -4,7 +4,6 @@ require("config/conexion.php");
 session_start();
 $usuario = $_POST['nombre'];
 $clave = $_POST['contrasena'];
-echo "<h2>Bienvenido $usuario $clave </h2>";
 
 $query = "SELECT * FROM usuarios 
     WHERE '$usuario' = usuarios.nombre
@@ -15,6 +14,9 @@ $cantidad = pg_num_rows($consulta);
 if($cantidad > 0){
     $_SESSION['nombre_usuario'] = $usuario;
     header('Location:portal_usuarios.php');
+}
+else{
+    echo "Datos incorrectos :(";
 }
 
 ?>
