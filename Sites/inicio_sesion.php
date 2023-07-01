@@ -11,8 +11,9 @@ echo "Bienvendio $usuario $clave";
 $query = "SELECT * FROM usuarios 
     WHERE usuarios.nombre = '$usuario'
     AND usuarios.clave = '$clave';";
-$consulta = pg_query($db34, $query);
-$cantidad = pg_num_rows($consulta);
+$consulta = $db34 -> prepare($query);
+$consulta -> execute();
+$cantidad = $consulta -> fetchAll();
 
 echo "$cantidad";
 
