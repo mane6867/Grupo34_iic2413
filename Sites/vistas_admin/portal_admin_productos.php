@@ -79,7 +79,8 @@ $productos = $result -> fetchAll();
 <br>
 <br>
 
-<form  align="center" action="portal_admin_categorias.php" method="get">
+<form  align="center" action="portal_admin_categorias.php" method="post">
+  <input type="hidden" name="tienda" value= "<?php echo $_SESSION['id_tienda']; ?>">
     <input type="submit" value="Volver" class="button is-success">
 </form>
 </html>
