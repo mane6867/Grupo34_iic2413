@@ -6,8 +6,8 @@ $usuario = $_POST['nombre'];
 $clave = $_POST['contrasena'];
 
 $query = "SELECT * FROM usuarios 
-    WHERE '$usuario' = usuarios.nombre
-    AND '$clave' = usuarios.clave;";
+    WHERE usuarios.nombre = '$usuario'
+    AND usuarios.clave = '$clave';";
 $consulta = pg_query($db34, $query);
 $cantidad = pg_num_rows($consulta);
 
