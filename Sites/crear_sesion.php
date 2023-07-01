@@ -15,7 +15,7 @@ $region = $_SESSION['region'];
 
 
 
-$query = "SELECT crear_cuenta('$nombre', '$rut', $region, $comuna, '$calle', $numero_calle);";
+$query = "SELECT crear_cuenta($nombre, $rut, $region, $comuna, $calle, $numero_calle);";
 $consulta = $db34 -> prepare($query);
 $consulta -> execute();
 
