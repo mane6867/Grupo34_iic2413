@@ -14,6 +14,7 @@ $categorias = $result -> fetchAll();
 
 $id_tienda = $_POST['tienda'];
 $_SESSION['id_tienda'] = $id_tienda;
+$region = $_SESSION['region']
 ?>
 
 <html>
@@ -77,7 +78,9 @@ $_SESSION['id_tienda'] = $id_tienda;
 <br>
 <br>
 
-<form  align="center" action="portal_admin_tiendas.php" method="get">
+
+<form  align="center" action="portal_admin_tiendas.php" method="post">
+    <input type="hidden" name="region" value= "<?php echo $region; ?>">
     <input type="submit" value="Volver" class="button is-success">
 </form>
 
