@@ -45,7 +45,7 @@ session_start();
 
 $_SESSION['nombre'] = $nombre;
 $_SESSION['rut'] = $rut;
-$_SESSION['region'] = $region;
+$_SESSION['region'] = $id_region;
 
 
 $query = "SELECT comuna.nombre, comuna.id_comuna FROM region_comuna, comuna where comuna.id_comuna = region_comuna.id_comuna AND region_comuna.id_region = $id_region;";
