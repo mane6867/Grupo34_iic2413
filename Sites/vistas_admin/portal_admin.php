@@ -48,51 +48,28 @@ $regiones = $result -> fetchAll();
 
 <div class = "container">
     <div class = "form-container">
-    <div class="portal-title">Portal Administrador</div>
-<form align="center" method="POST" action = "portal_admin_tiendas.php">
-    <div>
-    Seleccione una región:
-    </div>
-    <div class="select is-success">
-    <select name="region">
-    <?php foreach ($regiones as $region): ?>
-        <option value="<?php echo $region[1]; ?>"><?php echo $region[1]; ?></option>
-    <?php endforeach; ?>
-    </select>
-    <br>
-    <input class="button is-success" type="submit" value="Enviar">
-    </br>
-    </select>
-    </div>
-</form>
-</div>
-</div>
-
-<!--
-<div class="container">
-    <div class="text-center" style="background-color: #aaa;">
-        <p class="formulario-login-fuente-cabecera">Portal Administrador</p>
-        <div class="formulario-login">
-            <form action="portal_admin_tiendas.php" method="POST">
-            <div class="formulario-login-cabecera">
-            <p class="formulario-login-fuente-cabecera">Seleccione una región:</p>
-          </div>
-                <div class="login-elements">
-                <div class="select">
-                    <select name="region">
-                        <?php //foreach ($regiones as $region): ?>
-                            <option value="<?php //echo $region[1]; ?>"><?php //echo $region[1]; ?></option>
-                        <?php //endforeach; ?>
-                    </select>
-                </div>
-                <div class="login-elements">
-                    <input type="submit" value="Enviar" class="btn btn-success">
-                </div>
-            </form>
-        </div>
+        <div class="portal-title">Portal Administrador</div>
+        <form align="center" method="POST" action = "portal_admin_tiendas.php">
+            <div>
+            Seleccione una región:
+            </div>
+            <div class="select is-success">
+            <select name="region">
+            <?php foreach ($regiones as $region): ?>
+                <option value="<?php echo $region[1]; ?>"><?php echo $region[1]; ?></option>
+            <?php endforeach; ?>
+            </select>
+            <br>
+            <input class="button is-success" type="submit" value="Enviar">
+            </br>
+            </select>
+            </div>
+        </form>
+        <form  align="center" action="../index.php" method="get">
+            <input type="submit" value="Volver" class="button is-success">
+        </form>
     </div>
 </div>
--->
 
 <br>
 <br>
@@ -102,14 +79,4 @@ $regiones = $result -> fetchAll();
     <input type="submit" value="Volver" class="button is-success">
 </form>
 
-
-<?php
-//  if (! $_POST["region"]== ''){
-//    header('Location: index.php');
-//    session_start();
-//    $_SESSION["region"] =  $_POST["region"];
-//    exit;
-//  }
-//
-//?>
 </html>
