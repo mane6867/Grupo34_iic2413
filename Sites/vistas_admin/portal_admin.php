@@ -9,14 +9,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 70vh;
+      height: 50vh;
     }
     .form-container {
       background-color: #eee;
       padding: 20px;
       width: 400px;
       border: 2px solid #ccc;
-      height: 350px; /* Ajusta la altura según tus necesidades */
+      height: 370px; /* Ajusta la altura según tus necesidades */
       display: flex;
       flex-direction: column;
       justify-content: center;
