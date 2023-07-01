@@ -11,9 +11,19 @@ input[type=text] {
 }
 
 input[type=submit] {
-    width: 10em;
+    width: 8em;
     height: 2em;
+    font-size: 20px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
     font-size: 25px;
+    padding: 5px;
+    size: 20px;
 }
 
 h1 {
