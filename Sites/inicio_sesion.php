@@ -19,8 +19,5 @@ if($cantidad > 0){
     $_SESSION['nombre_usuario'] = $usuario;
     header('Location:portal_usuarios.php');
 }
-else{
-    echo "Datos incorrectos :(";
-}
 
 ?>
