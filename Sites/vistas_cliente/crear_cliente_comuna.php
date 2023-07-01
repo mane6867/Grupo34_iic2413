@@ -46,8 +46,6 @@ $query = "SELECT comuna.nombre, comuna.id_comuna FROM region_comuna, comuna wher
 $result = $db34 -> prepare($query);
 $result -> execute();
 $comunas = $result -> fetchAll();
-
-print_r($comunas);
 ?>
 
 
@@ -55,7 +53,7 @@ print_r($comunas);
 <div class = "container">
     <div class = "form-container">
         <div class="portal-title">Crear cuenta</div>
-        <form align="center" method="POST" action = "portal_admin_tiendas.php">
+        <form align="center" method="POST" action = "../crear_sesion.php">
             <div>
             Seleccione una comuna:
             </div>
@@ -66,6 +64,13 @@ print_r($comunas);
                 <option value="<?php echo $comuna[1]; ?>"><?php echo $comuna[0]; ?></option>
             <?php endforeach; ?>
             </select>
+            Calle:
+            </div>
+            <input type="text" name="calle" placeholder = "Calle" required>
+            <div>
+            Número:
+            </div>
+            <input type="number" name="numero" placeholder = "Número" required>
             <br>
             <input class="button is-success" type="submit" value="Enviar">
             </select>
