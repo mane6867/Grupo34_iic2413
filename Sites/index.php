@@ -22,9 +22,7 @@
           <div class="login-elements">
             <input type="text" name="nombre"placeholder="Usuario" required>
           </div>
-          <br>
           <input type="password" name="contrasena"placeholder="Contraseña" required>
-          <br>
           <br>
           <br>
           <input type="submit" name="Ingresar" value="Ingresar" class="button is-success">
