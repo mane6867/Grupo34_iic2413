@@ -49,10 +49,12 @@ $regiones = $result -> fetchAll();
                 Nombre:
             </div>
             <input type="text" name="nombre" placeholder = "Nombre" required>
+            <br>
             <div>
                 Rut:
             </div>
             <input type="text" name="rut" placeholder = "Rut" required>
+            <br>
             <div>
                 Seleccione una región:
             </div>
