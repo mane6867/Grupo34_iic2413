@@ -88,9 +88,6 @@ $comunas = $result -> fetchAll();
             <input class="button is-success" type="submit" value="Enviar">
             </select>
         </form>
-        <br>
-        <br>
-        <br>
         <form  align="center" action="../index.php" method="get">
             <input type="submit" value="Volver" class="button is-success">
         </form>
