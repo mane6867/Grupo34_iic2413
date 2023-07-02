@@ -33,11 +33,22 @@
 <script>
   function validarRut() {
     var rut = document.getElementById("rut").value;
-    // Expresión regular para validar el formato del RUT
+    rut = rut.replace(/\./g, ""); // Eliminar puntos del RUT
+    // Expresión regular para validar el formato del RUT sin puntos
     var rutRegex = /^\d{1,2}\.\d{3}\.\d{3}[-][0-9kK]{1}$/;
 
     if (!rut.match(rutRegex)) {
-      alert("Por favor, ingrese un RUT válido (Ejemplo: 12.345.678-9).");
+      alert("Por favor, ingrese un RUT válido (Ejemplo: 12345678-9).");
+      return false;
+    }
+  }
+  function validarNombre() {
+    var nombre = document.getElementById("nombre").value;
+    // Expresión regular para validar el contenido del nombre (letras y espacios)
+    var nombreRegex = /^[a-zA-Z\s]+$/;
+
+    if (!nombre.match(nombreRegex)) {
+      alert("Por favor, ingrese un nombre válido.");
       return false;
     }
   }
@@ -56,11 +67,11 @@ $regiones = $result -> fetchAll();
 <div class = "container">
     <div class = "form-container">
         <div class="portal-title"> Crear cuenta</div>
-        <form align="center" method="POST" action = "crear_cliente_comuna.php" onsubmit= 'return validarRut()'>
+        <form align="center" method="POST" action = "crear_cliente_comuna.php" onsubmit= 'return validarRut() && validarNombre()'>
             <div>
                 Nombre:
             </div>
-            <input type="text" name="nombre" placeholder = "Nombre" required>
+            <input type="text" id = 'nombre' name="nombre" placeholder = "Nombre" required>
             <div>
                 Rut:
             </div>
