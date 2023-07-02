@@ -31,13 +31,14 @@
     </style>
 </head>
 <script>
+
   function validarRut() {
-    var rut = document.getElementById("rut").value; // Eliminar puntos del RUT
-    // Expresión regular para validar el formato del RUT sin puntos
+    var rut = document.getElementById("rut").value;
+    // Expresión regular para validar el formato del RUT
     var rutRegex = /^\d{1,2}\.\d{3}\.\d{3}[-][0-9kK]{1}$/;
 
     if (!rut.match(rutRegex)) {
-      alert("Por favor, ingrese un RUT válido (con puntos y guion).");
+      alert("Por favor, ingrese un RUT válido (Ejemplo: 12.345.678-9).");
       return false;
     }
   }
@@ -66,7 +67,7 @@ $regiones = $result -> fetchAll();
 <div class = "container">
     <div class = "form-container">
         <div class="portal-title"> Crear cuenta</div>
-        <form align="center" method="POST" action = "crear_cliente_comuna.php" onsubmit= 'return validarRut() && validarNombre()'>
+        <form align="center" method="POST" action = "crear_cliente_comuna.php" onsubmit= 'return validarRut()'>
             <div>
                 Nombre:
             </div>
