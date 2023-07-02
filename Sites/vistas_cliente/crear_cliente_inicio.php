@@ -42,16 +42,6 @@
       return false;
     }
   }
-  function validarNombre() {
-    var nombre = document.getElementById("nombre").value;
-    // Expresión regular para validar el contenido del nombre (letras y espacios)
-    var nombreRegex = /^[a-zA-Z\s]+$/;
-
-    if (!nombre.test(nombreRegex)) {
-      alert("Por favor, ingrese un nombre válido.");
-      return false;
-    }
-  }
 </script>
 <?php
 error_reporting(E_ALL);
@@ -67,11 +57,11 @@ $regiones = $result -> fetchAll();
 <div class = "container">
     <div class = "form-container">
         <div class="portal-title"> Crear cuenta</div>
-        <form align="center" method="POST" action = "crear_cliente_comuna.php" onsubmit= 'return validarRut() && validarNombre()'>
+        <form align="center" method="POST" action = "crear_cliente_comuna.php" onsubmit= 'return validarRut()'>
             <div>
                 Nombre:
             </div>
-            <input type="text" id = 'nombre' name="nombre" placeholder = "Nombre" required>
+            <input type="text" id = 'nombre' name="nombre" placeholder = "Nombre" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+" title="Ingrese solo caracteres alfabéticos" required>
             <div>
                 Rut:
             </div>
