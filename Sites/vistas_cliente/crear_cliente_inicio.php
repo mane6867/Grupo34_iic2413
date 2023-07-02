@@ -30,19 +30,6 @@
         }
     </style>
 </head>
-<script>
-
-  function validarRut() {
-    var rut = document.getElementById("rut").value;
-    // Expresión regular para validar el formato del RUT
-    var rutRegex = /^\d{1,2}\.\d{3}\.\d{3}[-][0-9kK]{1}$/;
-
-    if (!rut.match(rutRegex)) {
-      alert("Por favor, ingrese un RUT válido (Ejemplo: 12.345.678-9).");
-      return false;
-    }
-  }
-</script>
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -61,11 +48,11 @@ $regiones = $result -> fetchAll();
             <div>
                 Nombre:
             </div>
-            <input type="text" id = 'nombre' name="nombre" placeholder = "Nombre" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+" title="Ingrese solo caracteres alfabéticos" required>
+            <input type="text" name="nombre" placeholder = "Nombre" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+" title="Ingrese solo caracteres alfabéticos" required>
             <div>
                 Rut:
             </div>
-            <input type="text" id = 'rut' name="rut" placeholder = "Rut" pattern="[0-9]{7,8}-[0-9Kk]{1}" title="Ingrese un Rut válido (sin puntos y con guion)" required>
+            <input type="text" name="rut" placeholder = "Rut" pattern="[0-9]{7,8}-[0-9Kk]{1}" title="Ingrese un Rut válido (sin puntos y con guion)" required>
             <div>
                 Seleccione una región:
             </div>
