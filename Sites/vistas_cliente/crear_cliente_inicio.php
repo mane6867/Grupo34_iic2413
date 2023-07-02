@@ -57,7 +57,7 @@ $regiones = $result -> fetchAll();
 <div class = "container">
     <div class = "form-container">
         <div class="portal-title"> Crear cuenta</div>
-        <form align="center" method="POST" action = "crear_cliente_comuna.php" onsubmit= 'return validarRut()'>
+        <form align="center" method="POST" action = "crear_cliente_comuna.php" >
             <div>
                 Nombre:
             </div>
@@ -65,7 +65,7 @@ $regiones = $result -> fetchAll();
             <div>
                 Rut:
             </div>
-            <input type="text" id = 'rut' name="rut" placeholder = "Rut" required>
+            <input type="text" id = 'rut' name="rut" placeholder = "Rut" pattern="[0-9]{7,8}-[0-9Kk]{1}" title="Ingrese un Rut válido" required>
             <div>
                 Seleccione una región:
             </div>
