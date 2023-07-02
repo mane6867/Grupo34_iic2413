@@ -64,6 +64,7 @@ $regiones = $result -> fetchAll();
                     <?php endforeach; ?>
                 </select>
             </div>
+            <br>
             <input class="button is-success" type="submit" value="Enviar">
         </form>
         <form  align="center" action="../index.php" method="get">
