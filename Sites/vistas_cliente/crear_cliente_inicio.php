@@ -67,7 +67,7 @@ $regiones = $result -> fetchAll();
 <div class = "container">
     <div class = "form-container">
         <div class="portal-title"> Crear cuenta</div>
-        <form align="center" method="POST" action = "crear_cliente_comuna.php" onsubmit= 'return validarRut()'>
+        <form align="center" method="POST" action = "crear_cliente_comuna.php" onsubmit= 'return validarRut() && validarNombre()'>
             <div>
                 Nombre:
             </div>
