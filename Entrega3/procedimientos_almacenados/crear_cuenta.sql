@@ -1,7 +1,6 @@
 CREATE OR REPLACE FUNCTION
 
 crear_cliente (nombre VARCHAR, rut VARCHAR, region INT, comuna INT, calle VARCHAR, numero INT)
-
 RETURNS VOID AS $$
 
 DECLARE

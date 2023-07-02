@@ -30,6 +30,18 @@
         }
     </style>
 </head>
+<script>
+  function validarRut() {
+    var rut = document.getElementById("rut").value;
+    // Expresión regular para validar el formato del RUT
+    var rutRegex = /^\d{1,2}\.\d{3}\.\d{3}[-][0-9kK]{1}$/;
+
+    if (!rut.match(rutRegex)) {
+      alert("Por favor, ingrese un RUT válido (Ejemplo: 12.345.678-9).");
+      return false;
+    }
+  }
+</script>
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -44,7 +56,7 @@ $regiones = $result -> fetchAll();
 <div class = "container">
     <div class = "form-container">
         <div class="portal-title"> Crear cuenta</div>
-        <form align="center" method="POST" action = "crear_cliente_comuna.php">
+        <form align="center" method="POST" action = "crear_cliente_comuna.php" onsubmit= 'return validarRut()'>
             <div>
                 Nombre:
             </div>
@@ -52,7 +64,7 @@ $regiones = $result -> fetchAll();
             <div>
                 Rut:
             </div>
-            <input type="text" name="rut" placeholder = "Rut" required>
+            <input type="text" id = 'rut' name="rut" placeholder = "Rut" required>
             <div>
                 Seleccione una región:
             </div>
