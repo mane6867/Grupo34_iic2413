@@ -4,10 +4,18 @@ importar_cliente (id INT, nombre VARCHAR, tipo VARCHAR)
 
 RETURNS BOOLEAN AS $$
 
+DECLARE
+contrasena VARCHAR := '';
+characters VARCHAR := 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*';
+i INT;
+
 BEGIN
-    
+    FOR i IN 1..10 LOOP 
+        contrasena := contrasena || substr(characters, ceil(random() * length(characters)), 1);
+    END LOOP;
+
     IF id NOT IN (SELECT id_usuario from usuarios) THEN
-        INSERT INTO usuarios values(id, nombre, tipo, '1234');
+        INSERT INTO usuarios values(id, nombre, tipo, contrasena);
         RETURN TRUE;
     ELSE
         RETURN FALSE;

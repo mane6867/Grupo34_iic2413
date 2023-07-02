@@ -47,7 +47,7 @@ $id_region = $_POST['region'];
 
 session_start();
 
-$_SESSION['nombre'] = $nombre;
+$_SESSION['nombre_usuario'] = $nombre;
 $_SESSION['rut'] = $rut;
 $_SESSION['region'] = $id_region;
 

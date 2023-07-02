@@ -56,10 +56,11 @@ ini_set('display_errors', 1);
       <th>ID</th>
       <th>Nombre</th>
       <th>Tipo</th>
+      <th>Clave</th>
     </tr>
     <?php
       foreach ($usuarios as $usuario) {
-        echo "<tr><td>$usuario[0]</td><td>$usuario[1]</td> <td>$usuario[2]</td></tr>";
+        echo "<tr><td>$usuario[0]</td><td>$usuario[1]</td> <td>$usuario[2]</td> <td>$usuario[3]</td> </tr>";
     }
     ?>
   </table>
