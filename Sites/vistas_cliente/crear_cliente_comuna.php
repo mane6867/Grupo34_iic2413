@@ -6,8 +6,6 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link href="../styles/mystyles.css" rel="stylesheet" type="text/css">
-    <title>Muebles3465</title>
     <style>
         .container {
             display: flex;
@@ -34,6 +32,7 @@
         }
     </style>
 </head>
+<?php include('templates/header.html');   ?>
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
