@@ -46,27 +46,25 @@ $regiones = $result -> fetchAll();
         <div class="portal-title"> Crear cuenta</div>
         <form align="center" method="POST" action = "crear_cliente_comuna.php">
             <div>
-            Nombre:
+                Nombre:
             </div>
             <input type="text" name="nombre" placeholder = "Nombre" required>
             <div>
-            Rut:
+                Rut:
             </div>
             <input type="text" name="rut" placeholder = "Rut" required>
             <div>
-            Seleccione una región:
+                Seleccione una región:
             </div>
             <br>
             <div class="select is-success">
-            <select name="region">
-            <?php foreach ($regiones as $region): ?>
-                <option value="<?php echo $region[0]; ?>"><?php echo $region[1]; ?></option>
-            <?php endforeach; ?>
-            </select>
-
-            <input class="button is-success" type="submit" value="Enviar">
-
+                <select name="region">
+                    <?php foreach ($regiones as $region): ?>
+                        <option value="<?php echo $region[0]; ?>"><?php echo $region[1]; ?></option>
+                    <?php endforeach; ?>
+                </select>
             </div>
+            <input class="button is-success" type="submit" value="Enviar">
         </form>
         <form  align="center" action="../index.php" method="get">
             <input type="submit" value="Volver" class="button is-success">

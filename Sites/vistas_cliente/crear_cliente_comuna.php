@@ -68,21 +68,21 @@ $comunas = $result -> fetchAll();
                 Seleccione una comuna:
             </div>
             <div class="select is-success">
-            <select name="comuna">
-                <?php foreach ($comunas as $comuna): ?>
-                    <option value="<?php echo $comuna[1]; ?>"><?php echo $comuna[0]; ?></option>
-                <?php endforeach; ?>
-            </select>
+                <select name="comuna">
+                    <?php foreach ($comunas as $comuna): ?>
+                        <option value="<?php echo $comuna[1]; ?>"><?php echo $comuna[0]; ?></option>
+                    <?php endforeach; ?>
+                </select>
             </div>
             <div>
-            <br>
-            Calle:
-            <input type="text" name="calle" placeholder = "Calle" required>
+                <br>
+                Calle:
+                <input type="text" name="calle" placeholder = "Calle" required>
             </div>
             <br>
             <div>
-            Número:
-            <input type="number" name="numero" placeholder = "Número" required>
+                Número:
+                <input type="number" name="numero" placeholder = "Número" required>
             </div>
             <br>
             <input class="button is-success" type="submit" value="Enviar">
