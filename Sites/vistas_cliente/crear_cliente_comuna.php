@@ -32,7 +32,7 @@
         }
     </style>
 </head>
-<?php include('templates/header.html');   ?>
+<?php include('../templates/header.html');   ?>
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
