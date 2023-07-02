@@ -65,7 +65,7 @@ $regiones = $result -> fetchAll();
             <div>
                 Rut:
             </div>
-            <input type="text" id = 'rut' name="rut" placeholder = "Rut" pattern="[0-9]{7,8}-[0-9Kk]{1}" title="Ingrese un Rut válido" required>
+            <input type="text" id = 'rut' name="rut" placeholder = "Rut" pattern="[0-9]{7,8}-[0-9Kk]{1}" title="Ingrese un Rut válido (sin puntos y con guion)" required>
             <div>
                 Seleccione una región:
             </div>
