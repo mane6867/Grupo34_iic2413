@@ -47,7 +47,7 @@
     // Expresión regular para validar el contenido del nombre (letras y espacios)
     var nombreRegex = /^[a-zA-Z\s]+$/;
 
-    if (!nombre.match(nombreRegex)) {
+    if (!nombre.test(nombreRegex)) {
       alert("Por favor, ingrese un nombre válido.");
       return false;
     }
