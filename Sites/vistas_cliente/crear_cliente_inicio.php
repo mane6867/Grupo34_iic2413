@@ -33,7 +33,7 @@
 <script>
   function validarRut() {
     var rut = document.getElementById("rut").value;
-    rut = rut.replace(/\./g, ""); // Eliminar puntos del RUT
+    rut = rut.replace(/\./g, "").replace("-", ""); // Eliminar puntos del RUT
     // Expresión regular para validar el formato del RUT sin puntos
     var rutRegex = /^\d{1,2}\.\d{3}\.\d{3}[-][0-9kK]{1}$/;
 
