@@ -50,17 +50,17 @@ $compras = $result -> fetchAll();
 ?>
 
 <body>
-<br/><br/>
+<br>
 <div style="text-align: center;">
   <div class="tabla-centrada">
-    <table class='table' style="margin: 0 auto;">
-            <tr>
+    <table style="margin: 0 auto;">
+        <tr>
             <th>Nombre</th>
             <th>Región</th>
             <th>Comuna</th>
             <th>Calle</th>
             <th>Número</th>
-            </tr>
+        </tr>
         <tbody>  
             <?php
             foreach ($datos as $dato) {
@@ -80,7 +80,7 @@ $compras = $result -> fetchAll();
 <br/><br/>
 <div style="text-align: center;">
   <div class="tabla-centrada">
-    <table class='table' style="margin: 0 auto;">
+    <table style="margin: 0 auto;">
             <tr>
             <th>Id Compra</th>
             <th>Id Tienda</th>
