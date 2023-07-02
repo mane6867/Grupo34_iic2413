@@ -31,14 +31,14 @@
             margin-bottom: 30px;
         }
     </style>
+    <title>Muebles3465</title>
 </head>
-<?php include('../templates/header.html');   ?>
+
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
     #Llama a conexión, crea el objeto PDO y obtiene la variable $db
     require("../config/conexion.php");
-// Obtener las regiones
 
 
 $nombre = $_POST['nombre'];
