@@ -77,7 +77,7 @@ $comunas = $result -> fetchAll();
             <div>
                 <br>
                 Calle:
-                <input type="text" name="calle" placeholder = "Calle" required>
+                <input type="text" name="calle" placeholder = "Calle" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+" title="Ingrese solo caracteres alfabéticos" required>
             </div>
             <br>
             <div>
