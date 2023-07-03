@@ -12,6 +12,9 @@ Por otro lado, para visualizarlas en la base de datos, se puede realizar la sigu
 
 ```SELECT nombre, clave FROM usuarios```
 
+### Importar usuarios:
+La acción de importar usuarios fue realizada mediante dos procedimiento almacenados, uno de ellos corresponde a la función ```crear_admin()``` y el otro a la función ```importar_cliente(id_cliente, nombre, tipo)```.
+
 ### Procedimientos almacenados
 Los procedimientos creados se encuentran en dentro de ```Entrega3```, en la carpeta ```procedimientos_almacenados``` dentro del server del Grupo 34 y dentro de ```Entrega3``` en el server del Grupo 65.
 
