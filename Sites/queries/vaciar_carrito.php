@@ -7,4 +7,6 @@
     $result = $db65 -> prepare($query);
     $result -> execute();
 
+    header("Location: ../portal_usuarios.php");
+
 ?>

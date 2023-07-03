@@ -40,7 +40,7 @@
         <form  action='continuar_compra.php' method='POST'>
             <div class='form-element'>
                 <label for='name'>Id del Producto:</label>
-                <input type="text" name="id_Producto" style="width: 150px;">
+                <input type="text" name="id_producto" style="width: 150px;">
             </div>
             <br/><br/>
             <input type="submit" value="Seguir" style="width: 100px;">

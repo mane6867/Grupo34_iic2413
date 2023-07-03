@@ -1,33 +1,35 @@
 <html>
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="styles/mystyles.css" rel="stylesheet" type="text/css">
-    <style>
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 50vh;
-        }
-        .form-container {
-            background-color: #eee;
-            padding: 20px;
-            width: 400px;
-            border: 2px solid #ccc;
-            height: 370px; /* Ajusta la altura según tus necesidades */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 190px;
-        }
-        .portal-title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-    </style>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+    .form-container {
+        background-color: #eee;
+        padding: 20px;
+        width: 400px;
+        border: 2px solid #ccc;
+        height: 370px; /* Ajusta la altura según tus necesidades */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 190px;
+    }
+    .portal-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+</style>
+
 </head>
 
 
@@ -50,17 +52,17 @@ $compras = $result -> fetchAll();
 ?>
 
 <body>
-<br>
+<br/><br/>
 <div style="text-align: center;">
   <div class="tabla-centrada">
-    <table style="margin: 0 auto;">
-        <tr>
+    <table class='table' style="margin: 0 auto;">
+            <tr>
             <th>Nombre</th>
             <th>Región</th>
             <th>Comuna</th>
             <th>Calle</th>
             <th>Número</th>
-        </tr>
+            </tr>
         <tbody>  
             <?php
             foreach ($datos as $dato) {
@@ -78,9 +80,10 @@ $compras = $result -> fetchAll();
   </div>
 </div>
 <br/><br/>
+<div class="portal-title">Historial de compras</div>
 <div style="text-align: center;">
   <div class="tabla-centrada">
-    <table style="margin: 0 auto;">
+    <table class='table' style="margin: 0 auto;">
             <tr>
             <th>Id Compra</th>
             <th>Id Tienda</th>
@@ -112,6 +115,7 @@ Nombre del producto:
 <input type="text" name="nombre_producto" style="width: 150px;">
 <br/><br/>
 <input type="submit" value= "Buscar" style="width: 100px;">
+</form>
 <br/><br/>
 <form action="queries/vaciar_carrito.php" method="post">
 <div class="portal-title">Vaciar carrito</div>
