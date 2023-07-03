@@ -3,11 +3,14 @@
     require("../config/conexion.php");
     include('../templates/header.html');
 
-    $id = $_POST['id_producto'];
-    $id = intval($id);
+    $id_p = $_POST['id_producto'];
+    $id_p = intval($id_p);
 
-    $query = "INSERT INTO carrito (id_producto) VALUES ('$id');";
-    $result = $db65 -> prepare($query);
+    $id_t = $_POST['id_tienda'];
+    $id_t = intval($id_t);
+
+    $query = "INSERT INTO carrito (id_producto, id_tienda) VALUES ('$id_p', '$id_t');";
+    $result = $db34 -> prepare($query);
     $result -> execute();
 
 ?>

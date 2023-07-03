@@ -4,7 +4,7 @@
     include('../templates/header.html');
 
     $query = "DELETE FROM Carrito;";
-    $result = $db65 -> prepare($query);
+    $result = $db34 -> prepare($query);
     $result -> execute();
 
     header("Location: ../portal_usuarios.php");

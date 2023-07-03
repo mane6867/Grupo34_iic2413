@@ -13,7 +13,7 @@
     $result -> execute();
     $producto = $result -> fetchAll();
 
-    $query = "SELECT actualizar_compras('$nombre'::varchar, $fecha::DATE);";
+    $query = "SELECT actualizar_compras('$nombre', '$fecha');";
     $result = $db34 -> prepare($query);
     $result -> execute();
     $result -> fetchAll();

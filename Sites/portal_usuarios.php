@@ -39,13 +39,16 @@ ini_set('display_errors', 1);
     #Llama a conexión, crea el objeto PDO y obtiene la variable $db
     require("config/conexion.php");
     include('templates/header.html');
-// Obtener las regiones
-$query = "SELECT cl.nombre, r.nombre AS region, co.nombre AS comuna, d.calle, d.numero FROM clientes cl JOIN direccion d ON cl.id_direccion = d.id_direccion JOIN region_comuna rc ON d.id_ubicacion = rc.id_ubicacion JOIN region r ON rc.id_region = r.id_region JOIN comuna co ON rc.id_comuna = co.id_comuna WHERE cl.nombre = 'Jacqueline Bryant';";
+
+session_start();
+$usuario = $_SESSION['nombre_usuario'];
+
+$query = "SELECT cl.nombre, r.nombre AS region, co.nombre AS comuna, d.calle, d.numero FROM clientes cl JOIN direccion d ON cl.id_direccion = d.id_direccion JOIN region_comuna rc ON d.id_ubicacion = rc.id_ubicacion JOIN region r ON rc.id_region = r.id_region JOIN comuna co ON rc.id_comuna = co.id_comuna WHERE cl.nombre = '$usuario';";
 $result = $db34 -> prepare($query);
 $result -> execute();
 $datos = $result -> fetchAll();
 
-$query = "SELECT * FROM compras WHERE id_cliente = (SELECT id_cliente FROM clientes WHERE nombre = 'Jacqueline Bryant') ORDER BY id_compra;";
+$query = "SELECT * FROM compras WHERE id_cliente = (SELECT id_cliente FROM clientes WHERE nombre = '$usuario') ORDER BY id_compra;";
 $result = $db34 -> prepare($query);
 $result -> execute();
 $compras = $result -> fetchAll();
