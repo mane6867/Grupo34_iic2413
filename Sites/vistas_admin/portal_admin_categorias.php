@@ -46,6 +46,7 @@ $region = $_SESSION['region'];
       margin-bottom: 30px;
     }
   </style>
+  <title>Muebles3465</title>
 
 </head>
 
