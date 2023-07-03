@@ -5,7 +5,7 @@ Un usuario no registrado puede crear su propia cuenta mediante el botón "Crear 
 
 
 ### Contraseñas aleatorias: 
-Las claves para los usuarios son creadas al azar, se seleccionó una serie de carácteres que pueden ser parte de las contraseñas y se programó de tal mamnera que las claves de los usuarios fueran de largo 10 y que puedan contener únicamente los carácteres indicados. Para poder visualizar estas contraseñas y poder acceder al portal de usuarios, se puede presionar el botón "Importar Usuarios", con esto se desplegará una tabla que contiene los datos de todos los usuarios, incluyendo sus claves.
+Las claves para los usuarios son creadas al azar, se seleccionó una serie de carácteres que pueden ser parte de estas y se programó de tal manera que las claves de los usuarios fueran de largo 10 y que puedan contener únicamente los carácteres indicados. Para poder visualizar estas contraseñas se puede presionar el botón "Importar Usuarios", con esto se desplegará una tabla que contiene los datos de todos los usuarios, incluyendo sus claves.
 
 
 Por otro lado, para visualizarlas en la base de datos, se puede realizar la siguiente consulta en el server del Grupo 34, en la base de datos ```grupo34e3```:
